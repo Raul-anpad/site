@@ -1,0 +1,79 @@
+{
+  // Define o tema do VSCode
+  "workbench.colorTheme": "Omni",
+
+  //Aumenta a fonte do terminal
+  "terminal.integrated.fontSize": 12,
+
+  //Define o tema dos ícones na sidebar
+  "workbench.iconTheme": "material-icon-theme",
+
+  //Configura tamanho e familia da fonte
+
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "all",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "breadcrumbs.enabled": true,
+
+  "colorize.languages": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "json",
+    "html",
+    "css"
+  ],
+
+  "editor.rulers": [80, 120],
+
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "editor.parameterHints.enabled": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "editor.codeActionsOnSave": null,
+  "C_Cpp.updateChannel": "Insiders"
+}
