@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ANPAD</title>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900" rel="stylesheet">
+        <link rel="stylesheet" href="/build/vendors~app.css"><link rel="stylesheet" href="/build/app.css">
+    </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary static-top">
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="/build/images/logo//anpad.png" alt="ANPAD logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto menuTop">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pt_br/associate/">Associe-se</a>
+                </li>
+                                    <li class="nav-item">
+                        <a class="nav-link" href="/pt_br/sign_up/">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle login active" data-toggle="dropdown">Entrar</a>
+                        <div class="dropdown-menu dropdown-menu-right login">
+                            <div id="login-container">
+                                <form action="/pt_br/login" id="formLoginLogin"  class="row" method="POST">
+	<div class="col-12 form-group">
+		<input id="inputIdentifier" type="text" class="form-control" name="identifier" required autofocus placeholder="CPF / Passaport"/>
+	</div>
+	<div class="col-12 form-group">
+		<input id="inputPassword" type="password" class="form-control" name="password" required placeholder="Senha"/>
+    	</div>
+
+			<div class="col-6 links">
+			<a href="/pt_br/sign_up/">Quero me cadastrar</a><br/>
+			Lembrar Senha
+		</div>
+		<div class="col-6">
+			<a class="btn btn-sm btn-primary btn-block follow" id="BtFormLogin">Entrar
+				<i id="btnLoginLoad" style="margin-left:10px;" class="fa fa-spinner fa-spin d-none"></i>
+			</a>
+		</div>
+        <input type="hidden" id="login" name="_csrf_token" value="--PB5i0SW-XDunTtLWeMwfL8BLtUFhKXbebABD83KCE"/>
+	
+</form>
+
+                            </div>
+                        </div>
+                    </li>
+                                <li class="nav-item" id="buscaHeader">
+                    <form action="/busca">
+                        <input type="text" name="busca" required>
+                    </form>
+                    <a class="nav-link icon"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-language="pt_br" class="btnLanguage nav-link icon float-left px-1 language active"><img src="/build/images//br.png"></a>
+                    <a href="#" data-language="en" class="btnLanguage nav-link icon float-left px-1 language"><img src="/build/images//us.png"></a>
+                    <a href="#" data-language="es" class="btnLanguage nav-link icon float-left px-1 language"><img src="/build/images//es.png"></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto menuBottom">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pt_br/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Periódicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informativo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content hasBreadcumb">
+        <div class="container">
+  <div id="breadcumb" class="pb-md-5">
+    <div class="route">
+      <span>::</span>
+          <a href="/pt_br/" ><span>
+                            ANPAD                        </span></a><meta itemprop="position" content="1"/><span class='separator'>/</span><span>
+                            Eventos                        </span><meta itemprop="position" content="2"/>
+    </div>
+
+    <div class="title">
+                  Detalhes do Evento
+        
+
+    </div>
+      
+    
+        <div class="label">3Es 2020</div>
+          </div>
+</div>
+            <nav id="sidebar" class="active">
+        <h1>3Es 2020</h1>
+        <ul class="nav list-unstyled" id="sidebarnav">
+            <li class="active"><a href="#navsidebar-0" data-toggle="tab" role="tab" class="active" aria-selected="true">Apresentação</a></li>
+
+                                                <li><a href="#navsidebar-1686" data-toggle="tab" role="tab">Palestrante Internacional</a></li>
+                                    <li><a href="#navsidebar-1676" data-toggle="tab" role="tab">Coordenação e Comitê / Temas de Interesse</a></li>
+                                    <li><a href="#navsidebar-1702" data-toggle="tab" role="tab">Programação Detalhada</a></li>
+                                    <li><a href="#navsidebar-1708" data-toggle="tab" role="tab">Trabalhos Apresentados</a></li>
+                                    <li><a href="#navsidebar-1705" data-toggle="tab" role="tab">Prêmios e Menções Honrosas</a></li>
+                                    <li><a href="#navsidebar-1719" data-toggle="tab" role="tab">Destaques</a></li>
+                                    </ul>
+    </nav>
+    <div class="container nobc">
+        <div class="fieldset">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <ul class="nav flex-column navsidebar" role="tablist">
+                        <li class="active"><a href="#navsidebar-0" data-toggle="tab" role="tab" class="active" aria-selected="true">Apresentação</a></li>
+
+                                                                                    <li><a href="#navsidebar-1686" data-toggle="tab" role="tab">Palestrante Internacional</a></li>
+                                                            <li><a href="#navsidebar-1676" data-toggle="tab" role="tab">Coordenação e Comitê / Temas de Interesse</a></li>
+                                                            <li><a href="#navsidebar-1702" data-toggle="tab" role="tab">Programação Detalhada</a></li>
+                                                            <li><a href="#navsidebar-1708" data-toggle="tab" role="tab">Trabalhos Apresentados</a></li>
+                                                            <li><a href="#navsidebar-1705" data-toggle="tab" role="tab">Prêmios e Menções Honrosas</a></li>
+                                                            <li><a href="#navsidebar-1719" data-toggle="tab" role="tab">Destaques</a></li>
+                                                                        </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="badge badge-warning d-md-none mb-3">3Es 2020</div>
+                    <h2 class="d-md-none">Detalhes do Evento</h2>
+                    <button class="btn btn-block btn-primary sidebarCollapse d-lg-none">MENU EVENTO</button>
+                    <div class="tab-content" id="navsidebar">
+                        <div class="tab-pane fade show active" id="navsidebar-0" role="tabpanel">
+
+<div class="fs-90">
+    <h1 class="mb-0">Apresentação</h1>
+    <p class="pb primary">3Es 2020</p>
+    <p class="pb danger mb-0">Evento On-line</p>
+    <p class="pb danger">Data:         
+                    
+                
+                
+                                                        6 - 10 de dez de 2019
+                                        </p>
+    IX ENCONTRO DE ESTUDOS EM ESTRATÉGIA - 3Es ISSN Principal: 2177-2452 - versão onlineEvento On-lineData: 1º e 2 de setembro de 2020DATAS IMPORTANTES18/11/2019 - Divulgação das Chamadas de Trabalho; 09/12/2019 - Abertura do endereço eletrônico para receber as submissões; 03/03/2020 - Data limite para submissão de trabalhos, até 18h (horário de Brasília); 09/04/2020 - Divulgação dos resultados; 24/04/2020 - Data limite parainscrição de autores com trabalhos selecionados;1º e 2/09/2020 - Realização do Evento on-lineAPRESENTAÇÃOO IX Encontro de Estudos em Estratégia - 3Es será realizado nos dias 01 e 02 de setembro de 2020, de forma on-line, sob promoção da Associação Nacional dePós-Graduação e Pesquisa em Administração/ANPAD e de responsabilidade da Divisão Acadêmicade Estratégia em Organizações - ESO.O 3Es é um espaço de discussão de temas científicos no âmbito da Divisão. Esta Chamada deTrabalhos é um convite aos pesquisadores e professores de quaisquer instituições do país e doexterior. O objetivo do evento é fomentar o desenvolvimento da área de estudos em Estratégia emOrganizações, considerando os diferentes subsistemas e dimensões de análise, observando,preferencialmente, os Temas de Interesse destacados, por meio de artigos teórico-empíricos, ensaiosteóricos e artigos tecnológicos.DocumentosData de Publicação[%%FILE_6%%]18/11/2019[%%FILE_37%%]06/04/2020SUBMISSÕES ENCERRADAS
+
+    </div>
+</div>
+
+                                                                                    <div class="tab-pane fade" id="navsidebar-1686" role="tabpanel">
+                                    <h1>Palestrante Internacional</h1>
+                                            <p><span style='text-align: center;'>[%%PALESTRANTE_I%%]</span><br></p>
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1676" role="tabpanel">
+                                    <h1>Coordenação e Comitê / Temas de Interesse</h1>
+                                            <div class='well'>
+                    <b>ESO - Estratégia em Organizações</b><br>
+                    <br>
+                    <b>Coordenador:</b> Mário Henrique Ogasavara (Programa de Pós-Graduação em Administração/PPGA/ESPM - Esc Sup de Prop e MKT de São Paulo/Ass Esc Sup de Prop e MKT)<br>
+                    <br>
+                    <b>Comitê Científico:</b><br>
+                    Douglas Wegner (Prog de Pós-Grad em Admin/Área Escola de Gestão e Negócios – PPGAdm/UNISINOS - Universidade do Vale do Rio dos Sinos)<br>Márcio Moutinho Abdalla (Mestr Prof em Admin/Prog de Pós-Grad em Admin - MPA/PPGA/UFF - Universidade Federal Fluminense)<br>Samir Adamoglu De Oliveira (Prog de Pós-Grad em Admin – PPGA/UFPB - Universidade Federal da Paraíba)
+                  </div>
+<div role='tabpanel' class='tab-pane active' id='ESO'>
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading1'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse1' aria-expanded='false' aria-controls='ESOcollapse1' class='collapsed'>
+                         </a></h4><h4 class='panel-title'><a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse1' aria-expanded='false' aria-controls='ESOcollapse1' class='collapsed'>Tema 1 - Estratégia comportamental
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading1' aria-expanded='false' style='height: 0px;'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Fernando Antonio Ribeiro Serra (Prog de Pós-Grad em Admin/Mestr e Dout Acadêmico - PPGA/UNINOVE - Universidade Nove de Julho - outro/UNIFESP - Universidade Federal de São Paulo)<br>
+FELLIPE SILVA MARTINS (Programa de Pós-Graduação em Informática e Gestão do Conhecimento/UNINOVE - Universidade Nove de Julho)<br>
+Ivano Ribeiro (Mestr Prof em Admin/Centro de Ciências Sociais Aplicadas/UNIOESTE - Universidade Estadual do Oeste do Paraná  - Prog de Pós-Grad em Admin/Mestr e Dout Acadêmico - PPGA/UNINOVE - Universidade Nove de Julho)<br>
+Jorge Manoel Teixeira Carneiro (Mestr e Dout em Admin de Empresas /FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+Carlos Alberto Gonçalves (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD/UFMG - Universidade Federal de Minas Gerais - Prog de Mestr e Dout em Admin da FACE/FUMEC - Universidade FUMEC)<br>
+                  <br>
+                      “Estratégia é uma construção humana” (Andrews, 1971:107) e, como tal, é influenciada por diversos fatores. Assim, “escolhas estratégicas em organizações são consequências de fatores totalmente humanos, incluindo imaginação, julgamento, ideias, preconceitos, vieses e fadiga” (Hambrick & Crossland, 2018:24) e consequentemente, tal conjunto de aspectos é um campo de estudos em franco crescimento. O tema 'Estratégia comportamental' visa divulgar as pesquisas que envolvem, de forma ampla, aspectos ligados ao comportamento, cognição, emoção, atenção, interações sociais e processos de tomada de decisão estratégica. São de interesse trabalhos que envolvam quaisquer dos itens supracitados juntamente como desenvolvimento, implementação, alteração, distorção e interpretação de estratégia. Outros assuntos afins também serão considerados.<br>
+Os estudos de tomada de decisão evoluíram do ponto de vista racionalista nas escolhas estratégicas (Child, 1972; Van de Ven, 1992), assunto que ainda é central em estratégia (Steensen, 2014; Suddaby, 2014). Assim, os processos de tomada de decisão tornaram-se cada vez mais centrais para a literatura de estratégia. No entanto, vários paradigmas e escolas de pensamento para a estratégia emergem, especialmente fora da base econométrica e racionalista (Wiltbank et al., 2006). <br>
+Hambrick e Crossland (2017) argumentam que o campo de estratégia comportamental pode apresentar três configurações distintas (restrita, média e ampla) conforme sua evolução. Neste sentido uma forma mais conservadora é a transposição da economia comportamental aplicada à tomada de decisão estratégica (i.e., transpor a base teórica vigente de vieses e heurísticas para a estratégia). Em seguida, outra versão mais expandida atrela a tomada de decisão a um panorama mais amplo, abrindo espaço também para psicologia cognitiva e social. Por último, a versão mais aberta, por outro lado, tem como propósito a abertura tanto teórica quanto metodológica a todo e qualquer tipo de teoria da psicologia e campos afins como sociologia e política.<br>
+Este campo, além de incluir métodos tradicionais de pesquisa, inclui outros importantes para a compreensão dos aspectos comportamentais da estratégia, tanto quantitativos, como experimentos, modelagem, simulações e métodos oriundos da neurociência. Também inclui métodos qualitativos como a etnografia, a análise textual e a grounded theory (Reypens; Levine, 2018).<br>
+Diversos temas podem ser incluídos e contribuir, inclusive com o aprimoramento de abordagens teóricas e temas da estratégia como Teoria do Alto Escalão, Teoria da Agência, Governança Corporativa, Threat-Rigidity. Adaptação, Attention-based View, Transaction Cost Theory, Microfundamentos de estratégia, Effectuation e Bricolage, pesquisando as características dos decisores e desempenho, a tomada de decisão estratégica, o oportunismo, a adaptação de recurso, a implementação da estratégia, o comportamento sobre crise. Em especial, a tomada de decisão e outros aspectos, são influenciados pelo contexto. A pesquisa num contexto institucional, incluindo o cultural, como o do Brasil, pode contribuir significativamente para o desenvolvimento da área.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Estratégia comportamental ; Fundamentos psicológicos da estratégia ; Tomada de decisão estratégica
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading2'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse2' aria-expanded='true' aria-controls='ESOcollapse2'>
+                         Tema 2 - Estratégia em Empresas Familiares
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading2'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Tobias Coutinho Parente (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Cláudio Antonio Pinheiro Machado Filho (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Luiz Ricardo Kabbach de Castro (Management/University of Florida)<br>
+Marco Antonio Conejero (Mestr Prof em Admin/Prog de Pós-Grad em Admin - MPA/PPGA/UFF - Universidade Federal Fluminense)<br>
+Thiago Henrique Moreira Goes (Câmara de Gestão e Empreendedorismo/UFPR - Universidade Federal do Paraná)<br>
+                  <br>
+                      Empresa familiar é a estrutura de negócio dominante na maioria dos países, sendo uma das principais responsáveis pela geração de emprego e renda (Zellweger, 2017). Mesmo entre as empresas de capital aberto, as famílias empresárias formam a maioria dos acionistas majoritários (Bennedsen, Pérez-González, & Wolfenzon, 2010). O reconhecimento desse predomínio tem suscitado um número crescente de estudos focados nessas empresas. Todavia, a simples prevalência da empresa familiar não é suficiente para considerá-la um tópico de estudo, é preciso observar o que as tornam um corpo de organizações diferente. Assim, as pesquisas têm sido impulsionadas pela perspectiva de que o envolvimento da família no negócio por meio da gestão, governança e propriedade influencia a definição e condução da estratégia organizacional (Chrisman, Chua, & Sharma, 2005; Chua, Chrisman, & Sharma, 1999). Familiares podem buscar satisfazer seus objetivos não econômicos por meio da empresa, o que envolve aspectos emocionais. Por isso, familiares, mesmo que não presentes no dia-a-dia da empresa, podem influenciar as decisões estratégicas do negócio. Por outro lado, a coesão familiar pode ser uma força para o negócio, que transparece confiança ao mercado. De forma positiva ou não, a constante interação entre o sistema da família e do negócio é característica única das empresas familiares. Sob essa ótica, as empresas familiares possuem comportamentos diferentes das suas contrapartes, uma vez que as empresas não familiares não possuem a família como stakeholder. <br>
+<br>
+Nesse sentido, o tema proposto espera receber artigos, com diferentes lentes teóricas e metodológicas, que contribuam para o avanço do conhecimento sobre empresas familiares, considerando as idiossincrasias das famílias empresárias e como suas relações com o negócio afetam a estratégia, tanto no campo da gestão, quanto da governança. Também serão bem-vindos trabalhos que tratem das estratégias da família enquanto empresária. Vale ressaltar que o tema não se restringe apenas a comparação das empresas familiares com suas contrapartes, espera-se também por trabalhos que explorem a heterogeneidade entre as empresas familiares. <br>
+<br>
+Alguns temas são sugeridos, porém esta não é uma lista exaustiva:<br>
+<br>
+•	Aplicação de conceitos sobre empresas familiares: envolvimento familiar, modelo dos três círculos, familiness, socioemotional wealth, etc.;<br>
+•	Aspectos comportamentais: altruísmo, conflitos, comprometimento, emoções, identidade, valores, etc.;<br>
+•	Ciclo de vida das empresas familiares e transição geracional;<br>
+•	Consultoria e assessoramento às famílias empresárias;<br>
+•	Criação de valor econômico e social;<br>
+•	Dinâmica da família e sua influência no negócio;<br>
+•	Governança corporativa e familiar;<br>
+•	Heterogeneidade e análises comparativas entre empresas familiares – companhias abertas x fechadas, grandes x pequenas e médias, unifamiliar x multifamiliar, etc.;<br>
+•	Influência dos empregados não familiares e cônjuges;<br>
+•	Objetivos econômicos e não econômicos;<br>
+•	Relacionamento da família e da empresa com a sociedade: aspectos ambientais, políticos e sociais;<br>
+•	Sucessão em diferentes perspectivas: propriedade, negócio e família.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Empresa Familiar ; Família Empresária ; Sucessão na Empresa Familiar ; Governança Familiar
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading3'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse3' aria-expanded='true' aria-controls='ESOcollapse3'>
+                         Tema 3 - Gestão de Riscos Corporativos
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading3'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Fábio Lotti Oliva (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo - Mestr Prof em Empreendedorismo/Facul de Economia, Admin e Contab - MPE/FEA/USP - Universidade de São Paulo)<br>
+ADILSON CALDEIRA (Mestrado Profissional em Administração do Desenvolvimento de Negócios/Mackenzie - Universidade Presbiteriana Mackenzie)<br>
+Peter Kelle  (Stephenson Department of Entrepreneurship & Information Systems/Louisiana State University)<br>
+                  <br>
+                      O tema proposto é Gestão de Riscos Corporativos. Fundamentado por COSO (2004, 2017), considerando risco como a possibilidade de um evento ocorra e afete negativamente a consecução dos objetivos organizacionais e oportunidade como a possibilidade de que um evento ocorra e influencie favoravelmente a realização dos objetivos organizacionais, entende-se que o tema proposto está associado à divisão acadêmica “Estratégia em Organizações”, no sentido de que a gestão dos riscos corporativos conspira para a efetiva implementação da estratégia das organizações. A abordagem adotada contempla os riscos de todas as fontes possíveis que impactam a gestão organizacional, por exemplo, riscos financeiros, riscos estratégicos, riscos operacionais, riscos políticos, riscos econômicos, riscos naturais, riscos de imagem, riscos cibernéticos e outros. De forma integrada, pode-se entender que a gestão de riscos corporativos conecta-se com o planejamento estratégico por meio da avaliação do desempenho organizacional mensurado pelo Balanced Scorecard (Kaplan, 2012, 2009). Dessa maneira, a atualidade e a importância do tema proposto “Gestão de Riscos Corporativos” residem na proximidade que guarda como ferramenta de gestão para potencializar a consecução dos objetivos propostos pela estratégia organizacional em um ambiente cada vez mais volátil, incerto, complexo e ambíguo. Indo muito além do compliance, atendimento às regras, o que pode em uma primeira impressão mostrar-se como uma abordagem reativa, a gestão de riscos corporativos objetiva, de forma proativa, identificar, analisar e tratar os riscos do negócio buscando elevar a possibilidade de que os objetivos organizacionais se concretizem. Adicionalmente, vale destacar que a gestão de riscos corporativos deve ir além das fronteiras da organização, considerando que os riscos se potencializam a medida que a organização estabelece relações com outros agentes do ambiente de negócios.<br>
+Alguns tópicos que podem ser adotados são:<br>
+•	Modelos de Gestão de Riscos Corporativos;<br>
+•	Gestão de Riscos Corporativos e Gestão Estratégica dos Negócios;<br>
+•	Cultura da Gestão de Riscos Corporativos;<br>
+•	Análise de Riscos na Cadeia de Valor;<br>
+•	Gestão de Riscos Corporativos e Planejamento Estratégico;<br>
+•	Gestão de Riscos Corporativos e Gestão da Inovação;<br>
+•	Gestão de Riscos Corporativos e Gestão dos Negócios Digitais;<br>
+•	Gestão de Riscos Corporativos e Gestão de Negócios Internacionais<br>
+•	Gestão de Riscos Corporativos no Setor Público;<br>
+•	Gestão de Riscos em Startups;<br>
+•	Maturidade em Gestão de Riscos Corporativos.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Gestão de Riscos Corporativos ; Análise de Riscos Corporativos ; Maturidade em Gestão de Riscos Corporativos
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading4'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse4' aria-expanded='true' aria-controls='ESOcollapse4'>
+                         Tema 4 - Estratégias Orientadas à Sustentabilidade 
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading4'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Renata Peregrino de Brito (Mestr e Dout em Admin de Empresas/IAG-A Esc de Negócios da PUC-Rio – IAG/PUC-Rio - Pontifícia Universidade Católica do Rio de Janeiro)<br>
+Raquel da Silva Pereira (Prog de Pós-Grad em Admin/USCS - Universidade Municipal de São Caetano do Sul)<br>
+Marcos Cohen (Mestr e Dout em Admin de Empresas/IAG-A Esc de Negócios da PUC-Rio – IAG/PUC-Rio - Pontifícia Universidade Católica do Rio de Janeiro)<br>
+Clandia Maffini Gomes (Prog de Pós-Grad em Admin/Centro de Ciências Sociais Humanas – PPGA/CCSH/UFSM - Universidade Federal de Santa Maria - Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Flavio Hourneaux Junior (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+                  <br>
+                      O compromisso com o desenvolvimento sustentável requer a integração da inovação e da sustentabilidade na estratégia e nas operações das organizações por meio da adoção de novos valores que não considerem apenas aspectos econômicos, mas também incorporem métricas não financeiras, valores éticos, sociais e ambientais. Dessa forma, o tema proposto se subdivide em três grandes eixos, detalhados a seguir.<br>
+<br>
+1.Estratégias Organizacionais para a Sustentabilidade  <br>
+<br>
+Esse eixo aborda as teorias, conceitos e práticas relacionadas aos processos de concepção, implementação e avaliação das estratégias com vistas à sustentabilidade em organizações públicas, privadas ou do terceiro setor, assim como os desafios estratégicos da transição das organizações rumo à sustentabilidade. Os tópicos abrangidos são: estratégias competitivas e colaborativas para o alcance da sustentabilidade socioambiental das organizações; projetos estratégicos sustentáveis; criação de valor sustentável para os múltiplos stakeholders das organizações; estratégias funcionais sustentáveis; gestão estratégica da sustentabilidade na cadeia de valor; estratégias para implantação de ecoparques industriais e economia circular. Busca-se estimular, também, a discussão dos fatores motivadores e limitantes da adaptação das empresas, mudanças nas rotinas e o desenvolvimento de capacidades dinâmicas sociais e ambientais. Adicionalmente, são encorajadas pesquisas sobre modelos de mensuração da sustentabilidade e do desempenho socioambiental; balanced scorecard sustentável; abordagem do Triple Bottom Line, indicadores relativos aos Objetivos do Desenvolvimento Sustentável (ODS).<br>
+<br>
+2. Modelos de Negócios Inovadores e Sustentáveis <br>
+<br>
+Nesse eixo são abordados os conceitos e práticas relacionadas aos novos modelos de negócios que buscam alcançar a sustentabilidade por diferentes caminhos, causando, sobretudo, impactos positivos de natureza social e ambiental. O eixo abrange tópicos como: estratégias relacionadas ao empreendedorismo social, ambiental e sustentável; projetos sociais e ambientais estratégicos das empresas; corporações B; negócios de impacto social e /ou ambiental; negócios voltados para a base da pirâmide; modelos de negócio com base na economia compartilhada e economia circular; estratégias de financiamento para projetos e negócios sociais e ambientais; parcerias institucionais para negócios e projetos socioambientais. A principal preocupação consiste em discutir a criação de negócios orientados estrategicamente para a sustentabilidade por meio da aplicação de modelos de negócios inovadores, que permitam o gerenciamento sistemático de práticas sociais e ambientais. <br>
+<br>
+3.Estratégias e Mudanças Climáticas <br>
+Mudanças climáticas representam uma grande ameaça às operações das empresas e ao desenvolvimento de uma estratégia de longo prazo, com início imediato. De um lado, as empresas enfrentam cada vez mais pressão para reduzir suas emissões de gases de efeito estufa (GEE) para mitigar os efeitos das mudanças climáticas. Por outro lado, as operações, os ativos e as cadeias de suprimentos das empresas estão ameaçados pela crescente ocorrência de eventos climáticos extremos. A relevância dos estudos sobre adaptação a mudanças climáticas não está apenas na identificação dos fatores motivadores e limitantes, mas também no reconhecimento de que mudanças nas rotinas e o desenvolvimento de capacidades precisam de um contexto adequado para serem percebidas e assimiladas. Assim, este eixo busca estimular discussões que analisem como as empresas incorporam a mudança climática em seu planejamento estratégico e promovem a adaptação dos seus recursos.
+                      <br><br>
+                      <b>Palavras-chave:</b> Sustentabilidade organizacional ; Estratégias socioambientais ; Estratégia e Mudanças Climáticas ; Modelos de Negócios Inovadores Sustentáveis ; Inovação orientada para sustentabilidade
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading5'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse5' aria-expanded='true' aria-controls='ESOcollapse5'>
+                         Tema 5 - Estratégias de não mercado
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading5'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Marina Amado Bahia Gama (Prog de Mestr Prof em Admin - MPA/FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+Jeferson Lana (Prog de Pós-Grad em Admin/Cursos de Mestr Acad em Admin e Dout em Admin e Turismo/UNIVALI - Universidade do Vale do Itajaí)<br>
+Rosilene Marcon (Prog de Pós-Grad em Admin/Cursos de Mestr Acad em Admin e Dout em Admin e Turismo/UNIVALI - Universidade do Vale do Itajaí)<br>
+                  <br>
+                      Este tema discute os principais problemas e vantagens em se fazer pesquisas e de implementar estratégias políticas e sociais hoje em dia. O mundo sofreu uma turbulência política considerável nos últimos anos, instando as empresas a se adaptar simbolicamente ou efetivamente em ambientes políticos e sociais. Por exemplo, na América Latina, é comum as empresas que cultivam conexões políticas com o governo de origem (BANDEIRA-DE-MELLO; ARREOLA; MARCON, 2012), existe um histórico de relacionamento entre empresas e governo (GAMA; BANDEIRA-DE- MELLO; SPULDARO, 2018; MUSACCHIO; LAZZARINI, 2016), e as empresas estão tendendo a desenvolver mais estratégias sociais (Henisz, W. J., Dorobantu, S., & Nartey, L., 2014).Nesse contexto, este tema terá como objetivo abordar estas questões: Qual o papel da teoria na explicação da relação estratégica entre empresas, poder público e sociedade? Que papel deve desempenhar daqui para frente para explicar esse fenômeno na América Latina e no resto do mundo? Até que ponto a corrupção desenfreada é uma oportunidade e uma ameaça à pesquisa e prática das relações comerciais, governamentais e sociais? Quais são as oportunidades de pesquisa disponíveis na América Latina e no resto do mundo, considerando a disponibilidade dos dados? Quais serão as melhores estratégias não mercado para tratar de questões políticas e sociais futuras que afetam a estratégia e a organização na América Latina e no resto do mundo? Qual é o futuro da responsabilidade social corporativa (RSE)? Como as empresas estão adaptando suas estratégias após os choques institucionais no Brasil?
+                      <br><br>
+                      <b>Palavras-chave:</b> Estratégia não-mercado ; Atividade Política Corporativa ; Responsabilidade Social Corporativa ; Organizações sem fins lucrativos ; Poder Público e Estratégia
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading6'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse6' aria-expanded='true' aria-controls='ESOcollapse6'>
+                         Tema 6 - Relações Interpessoais e Governança de Redes Interorganizacionais
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading6'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Edgar Reyes Junior (Prog de Pós-Grad em Admin – PPGA/UnB - Universidade de Brasília)<br>
+Francesc Xavier Molina Morales  (Dep. d`Administració d`Empreses i Màrqueting/UNiversidad Jaume I)<br>
+Cristiano de Oliveira Maciel (Prog de Pós-Grad em Admin – PPAD/PUCPR - Pontifícia Universidade Católica do Paraná)<br>
+Marina Figueiredo Moreira (Prog de Pós-Grad em Admin – PPGA/UnB - Universidade de Brasília)<br>
+                  <br>
+                      Redes interorganizacionais vêm sendo foco de estudos acadêmicos e preocupação gerencial devido à sua ampla disseminação em contextos públicos e privados. De um lado, políticas públicas são formuladas, implementadas e monitoradas por meio de redes de atores, com o objetivo de atender melhor as expectativas da sociedade e aumentar a efetividade das ações. De outro lado, organizações privadas buscam atuar coletivamente para potencializar resultados, gerar ganhos relacionais e aumentar sua competitividade, por meio de alianças, parcerias, redes e cadeias de suprimentos. O volume de estudos publicados sobre esses temas nas últimas décadas demonstra sua relevância acadêmica e gerencial, ao mesmo tempo em que indica as dificuldades da ação coletiva. Com base nessa contextualização, o foco deste tema está na estratégia e governança de redes interorganizacionais, dois elementos centrais para o funcionamento de redes públicas e privadas e para o alcance de resultados coletivos. Enquanto a estratégia consiste na definição dos objetivos e da direção que os participantes de uma rede devem seguir, a governança reflete o conjunto de regras que regulam, mobilizam e alinham a atuação coletiva dos participantes. Nesta proposta, considera-se que as redes interorganizacionais, tanto públicas como privadas, podem se configurar em diferentes níveis de análise: redes sociais, redes de conhecimento e redes de empresas ou organizações. O foco das redes sociais é estudar as relações sociais entre os indivíduos, tanto formais quanto informais, o capital social gerado por meio dessas relações e o seu impacto nas organizações. Procura estudar ainda como os fenômenos tácitos impactam no desempenho em seus diferentes níveis analíticos. Nas redes de conhecimento investiga-se os processos de aprendizagem coletiva; de criação, transferência e aplicação do conhecimento em redes de empresas, organizações e ou indivíduos e seus resultados para o desempenho das unidades de análise. Nas redes de empresas ou organizações o foco se encontra nos diferentes tipos de redes de negócios e de atendimento a demandas sociais, suas conexões diádicas e múltiplas, verticais e horizontais, dispersas ou em clusters, assim como sua relação com desempenho, aprendizagem, competitividade, inovação em rede, cooperação e confiança e conflito. Neste tema, espera-se debater estudos direcionados para a estratégia e a governança de diversos modelos de redes interorganizacionais, bem como seus impactos para o funcionamento dessas redes e para os resultados alcançados. Ao mesmo tempo em que se deseja debater estudos com profundidade teórica e rigor metodológico, estimula-se os autores a refletir sobre as implicações gerenciais dos seus estudos e como seus resultados podem ser utilizados por gestores e formuladores de políticas públicas para aperfeiçoar a atuação em rede e alcançar melhores resultados coletivos.
+                      <br><br>
+                      <b>Palavras-chave:</b> Governança de Redes ; Relações interorganizacionais ; Relações interpessoais ; Confiança e Conflito ;  Inovação em rede.
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading7'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse7' aria-expanded='true' aria-controls='ESOcollapse7'>
+                         Tema 7 - AMBIDESTRIA ORGANIZACIONAL E INDIVIDUAL: - Estratégias para geração de vantagem competitiva
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading7'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      SILVIO POPADIUK (Prog de Pós-Grad em Admin de Empresas - PPGA /Mackenzie - Universidade Presbiteriana Mackenzie)<br>
+SUZANA GILIOLI DA COSTA NUNES (Prog de Mestr Prof em Gestão de Políticas Públicas - GESPOL/UFT - Universidade Federal do Tocantins)<br>
+Aruana Rosa Souza (Prog de Pós-Grad em Admin/Área Escola de Gestão e Negócios – PPGAdm/UNISINOS - Universidade do Vale do Rio dos Sinos)<br>
+FERNANDO RIBEIRO DOS SANTOS (Tecnólogos e Bacharelados/Instituto Federal de São Paulo - Campus Cubatão - Tecnólogos/FATEC Praia Grande)<br>
+                  <br>
+                      Desde o início dos anos 90 quando o ambiente competitivo passou por uma grande transformação, devido à globalização, as organizações têm intensificado suas pesquisas em estratégias que lhes permitam a obtenção de vantagem competitiva sustentável. Tais estratégias geralmente requerem que essas organizações, continuadamente, diferenciem seus produtos e serviços. Em outras palavras, devem ser inovadoras. Qualquer organização pode ser compreendida como um feixe de recursos tangíveis e intangíveis relativos a elementos físicos, humanos e relacionais (Penrose, 1959) que devem ser gerenciados eficiente e eficazmente, visando potencializar sua capacidade de obtenção de vantagem competitiva sustentável (Barney, 1986) e, principalmente, a sua sobrevivência (Rejeb, Guessoum, & Hallah, 2005). A potencialização desses recursos advém da capacidade da firma em promover o melhor trade-off entre o processo de exploitation (explotação) e exploration (exploração) (March, 1991). A compreensão desses dois conceitos relativos à busca e aplicação do conhecimento organizacional – exploração e explotação – envolve a sua conexão com um amplo conjunto de outros elementos que fazem parte de seu modelo ontológico e epistemológico. Sem essa conexão, o entendimento de ambos fica limitado e pouco contribui para a avaliação da importância relativa deles no contexto de geração de vantagem competitiva para as organizações. Ressalta-se que, ao especificar mais detalhadamente as características relativas aos dois conceitos, automaticamente contribui para o entendimento do terceiro conceito derivado de ambos, a ambidestria (ambidexterity). <br>
+Gupta, Smith e Shalley (2006), em análise de artigos publicados no Academy Management Journal, em 2006, avaliaram que os conceitos de exploração e explotação precisam ser discutidos sob diferentes correntes teóricas: inovação tecnológica, design organizacional, adaptação organizacional, aprendizagem organizacional, vantagem competitiva ou sobrevivência organizacional e elaboraram questões sobre como defini-los, de que forma eles acontecem nas organizações, como atingir um equilíbrio ao se utilizar ambos simultaneamente. <br>
+Raisch & Birkinshaw (2008) avaliaram que a literatura sugere vários fatores moderadores que contribuem para a explicação dos achados conflitantes sobre o construto ambidestria. Citam que as diferenças de recursos entre as firmas também se constituem em um fator moderador da ambidestria sobre os desempenhos.  <br>
+<br>
+Desde 2007 quando foi publicado o primeiro artigo sobre ambidestria no EnAnpad outros trabalhos sobre o tema já foram desenvolvidos no Brasil entre publicações em periódicos, congressos, livros, capítulos e dissertações. Contudo, essa discussão ainda é muito incipiente no Brasil. No EnAnpad de 2109 foi apresentado apenas um Painel sobre o tema, enquanto que desde 2010 foram publicados pelo menos 1.000 artigos internacionais sobre o tema, segundo a Web of Science. Assim, entendemos que essa discussão tem potencial para ser explorada no contexto brasileiro. De todas a publicações nacionais apenas um autor possui mais de 50% das publicações. <br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Exploração  ; Explotação ; Ambidestria ; Ambidestria e Vantagem Competitiva
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading8'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse8' aria-expanded='true' aria-controls='ESOcollapse8'>
+                         Tema 8 - Estratégia como prática social e perspectivas processuais da estratégia: uma agenda propositiva
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading8'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Natália Rese (Centro de Pesq e Pós-Grad em Admin – CEPPAD/UFPR - Universidade Federal do Paraná)<br>
+Rosalia Aldraci Barbosa Lavarda (Prog de Pós-Grad em Admin – PPGA/UFSC - Universidade Federal de Santa Catarina)<br>
+Juliano Danilo Spuldaro (Prog de Dout Acadêmico em Admin/UNOESC - Universidade do Oeste de Santa Catarina - Mest Prof em Admin - MPA/UNOESC - Universidade do Oeste de Santa Catarina)<br>
+Eduardo Guedes Villar (Centro de Pesq e Pós-Grad em Admin – CEPPAD/UFPR - Universidade Federal do Paraná - ./Instituto Federal Catarinense - IFC)<br>
+                  <br>
+                      Explicar desempenhos acima da média e mapear os caminhos para a vantagem competitiva de organizações são preocupações fundamentais do campo da estratégia (Schendel & Hofer, 1979; Chakravarthy & Doz, 1992). A perspectiva de processo permite compreender em detalhe aspectos relevantes de como as estratégias são moldadas e implementadas (Burgelman, Flyd, Laamanen, Mantere, Vaara & Whittington, 2018). Embora a abordagem tradicional da perspectiva de processo tenha se aberto para novos níveis de análise, conjuntos mais amplos de atores e métodos mais robustos de pesquisa, ainda há carência de pesquisas na área norteadas pelo pensamento processual (Langley, 2007; Langley & Tsoukas, 2017). Paralelamente, Whittington (1996) lançou um olhar compreensivo sobre a estratégia, fundando a perspectiva da estratégia como prática social, a partir da virada prática das ciências sociais para explicar que a estratégia é um desempenho situado, realizado cotidianamente por uma série de praticantes (Jarzabkowski, Kaplan, Seidl, & Whittington, 2016). Entende-se assim, que a estratégia é realizada em um nível micro, mas, também carrega todos os significados, modelos, ferramentas etc. compartilhados em nível macro (Golsorkhi, Seidl, Rouleau, & Vaara, 2015). Desde o surgimento da estratégia como prática social, as discussões sobre aproximações e distanciamentos com a abordagem processual da estratégia são constantes (Whittington, 2007) e culminaram na proposição de uma agenda comum de pesquisa, em que atividades e processos são vistos como intimamente entrelaçados e, essencialmente, aspectos do mesmo fenômeno (Burgelman et al., 2018). Sob este enfoque combinado, acredita-se que pesquisadores das duas tradições podem se unir em uma agenda de pesquisa propositiva que explore o fenômeno da estratégia sob: (i) diversas abordagens onto-epistemológicas, (ii) diferentes teorias, concepções, conceitos sociológicos e organizacionais, e (iii) procedimentos metodológicos inovadores e aproximações não-tradicionais. Neste tema são de especial interesse as temáticas relacionadas às práticas desenvolvidas pelos gerentes de nível médio (middle managers), o papel das rotinas na articulação de processos e práticas, a dimensão sociomaterial no strategizing, sensemaking, sensegiving e sensebreaking, os elementos de linguagem envolvidos (discursos, narrativas, retórica, vocabulários), o fenômeno da abertura da estratégia (open strategy), a processualidade e a temporalidade no fazer estratégico, entre outras temáticas de interesse que fazem interface com a discussão proposta. Particularmente, encoraja-se a pensar problemas de pesquisa que possam (re)discutir as lógicas e pressupostos dominantes da área de estratégia sob ângulos próprios e idiossincráticos da realidade brasileira. Assim, propomos algumas questões provocativas (mas não exaustivas) em relação ao tema, a exemplo de: Como os gestores, de posse de modelos processuais, realizam a estratégia? Como se dá o envolvimento de diferentes atores (intra e inter-organizacionais) nesta perspectiva? Como a linguagem é empregada na descrição sistêmico-processual da estratégia? Como artefatos sociomateriais são utilizados nessa realização cotidiana? Como práticas e processos variam em relação à natureza da organização? Como se dá o fazer estratégico em contextos pluralísticos e/ou em processos organizativos não-tradicionais? Como diferentes práticas organizacionais afetam a abertura da estratégia? Que procedimentos metodológicos permitem concatenar as visões da prática e de processo? Que benefícios esses métodos possibilitam? Novas questões são bem-vindas.
+                      <br><br>
+                      <b>Palavras-chave:</b> Práticas sociais ; Perspectivas processuais da estratégia  ; Strategizing ; Temporalidade
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading9'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse9' aria-expanded='true' aria-controls='ESOcollapse9'>
+                         Tema 9 - Stakeholders, Networks, Valor e Desempenho
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading9'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      João Maurício Gama Boaventura (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Benny Kramer Costa (Prog de Pós-Grad em Admin/Mestr e Dout Acadêmico - PPGA/UNINOVE - Universidade Nove de Julho - outro/USP - Universidade de São Paulo)<br>
+Greici Sarturi (Programa de Pós-Graduação em Administração Pública/UFSM - Universidade Federal de Santa Maria - Programa de Pós-Graduação em Gestão de Organizações Públicas - PPGOP/UFSM - Universidade Federal de Santa Maria)<br>
+Keysa Manuela Cunha de Mascena (Prog de Pós-Grad em Admin de Empresas - PPGA/UNIFOR - Universidade de Fortaleza)<br>
+RENATO TELLES (Prog de Mestr em Admin/UNIP - Universidade Paulista)<br>
+                  <br>
+                      A medida que os campos teóricos envolvendo os temas Stakeholders, Networks, Valor e Desempenho vão se consolidando, a partir de pesquisas teórico-empíricas, modificam-se as formas de gestão das organizações e meta-organizações, voltando-se para o melhor atendimento das necessidades das comunidades, sociedades, competidores, fornecedores, funcionários e clientes, dentre outros.<br>
+Em que pese o incontestável avanço das teorias destes quatro subcampos; no momento atual, seus respectivos estados da arte ainda não resolveram certos elementos carentes de teses e evidências empíricas, pontos que tocam os limites da teoria.<br>
+Como preceito para o entendimento das evoluções téorico-conceituais, dos estados da arte e das fronteiras do conhecimento, envolvendo os temas propostos e suas conexões, faz-se necessário a compreensão histórica de suas definições, caracterizações, priorizações, variáveis, esquemas teóricos, modelos e abordagens, tanto de maneiras isoladas como integradas, que são explicativas deste fenômeno.<br>
+Em função deste panorama, o tema proposto divide-se em 4 grupos com seus respectivos subtemas:<br>
+1. Gestão dos Stakeholders<br>
+- Teoria dos Stakeholders<br>
+- Gestão de Stakeholders em Organizações Públicas e Privadas<br>
+- Estratégia para Stakeholders<br>
+- Cooperação, Envolvimento e Engajamento de Stakeholders<br>
+- Valor para Stakeholders<br>
+- Stakeholders e Responsabilidade Social Corporativa<br>
+- Stakeholders e Governança Corporativa<br>
+- Gestão de Projetos e Stakeholders<br>
+- Capacidades Organizacionais para a Gestão de Stakeholders<br>
+- Outras Concepções de Stakeholders no Contexto da Administração, Economia e Engenharia.<br>
+2. Networks e arranjos organizacionais <br>
+- Teoria de Networks e arranjos organizacionais<br>
+- Competitividade de Redes e Clusters de negócios<br>
+- Desempenho de Redes<br>
+- Redes de Stakeholders<br>
+- Outras Abordagens de Networks e Arranjos Organizacionais<br>
+3. Criação, Cocriação, Distribuição e Apropriação de Valor<br>
+- Teorias de Criação, Cocriação, Distribuição e Apropriação de Valor<br>
+- Valor em Uso (Value in use ou value-in-use)<br>
+- Coprodução de Valor (Value co-production)<br>
+- Cocriação de Valor (Value co-creating)<br>
+- Codestruição de Valor<br>
+- Criação de Valor<br>
+- Apropriação de Valor <br>
+- Distribuição de Valor<br>
+- Valor, Vantagem Competitiva e Competitividade<br>
+- Outros Aspectos de Agregação de Valor<br>
+4. Desempenho Organizacional<br>
+- Desempenho social corporativo - Corporate Social Performance (CSP)<br>
+- Disclosure de CSP<br>
+- Desempenho financeiro corporativo - Corporate Financial Performance (CFP)<br>
+- Relação entre CSP e CFP<br>
+- Gestão de stakeholders e desempenho <br>
+- Competências organizacionais e desempenho<br>
+- Influência dos stakeholders no desempenho<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Gestão dos Stakeholders ; Networks e Arranjos Organizacionais ; Criação, Cocriação, Distribuição e Apropriação de Valor ; Desempenho Organizacional
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading10'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse10' aria-expanded='true' aria-controls='ESOcollapse10'>
+                         Tema 10 - Conhecimento e estratégia: proposições atuais e questões emergentes
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading10'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Yeda Swirski de Souza (Prog de Pós-Grad em Admin/Área Escola de Gestão e Negócios – PPGAdm/UNISINOS - Universidade do Vale do Rio dos Sinos)<br>
+CLAUDIO REIS GONCALO (Prog de Pós-Grad em Admin/Cursos de Mestr Acad em Admin e Dout em Admin e Turismo/UNIVALI - Universidade do Vale do Itajaí)<br>
+Roberto Lima Ruas (Prog de Pós-Grad em Admin/Mestr e Dout Acadêmico - PPGA/UNINOVE - Universidade Nove de Julho - Prog de Pós-Grad em Admin/Esc de Admin – PPGA/EA/UFRGS - Universidade Federal do Rio Grande do Sul)<br>
+                  <br>
+                      Em linha com a visão baseada em recursos, a “visão baseada em conhecimento' posiciona o conhecimento como um recurso estratégico e mobilizador da inovação, criação de valor e competitividade em contextos de incerteza e risco.<br>
+A singularidade do conhecimento como objeto de investigação demanda a integração entre teorias e abordagens metodológicas provenientes de diferentes vertentes, tais como:<br>
+a) a pesquisa em administração da informação e sistemas que avança no entendimento dos processos de geração de dados, informação e criação de conhecimento;<br>
+b) os estudos do comportamento organizacional com modelos sobre a ação de indivíduos e grupos, contribuindo para o entendimento da aprendizagem organizacional, da produção do sentido, da criação de memórias coletivas e da flexibilidade organizacional;<br>
+c) os estudos sobre desenho organizacional, já que o conhecimento organizacional requer uma perspectiva de sistemas complexos, em seus atributos de redundância e retroalimentação;<br>
+d) estudos sobre empresas baseadas em conhecimento e criatividade que se configuram em padrões e ambientes específicos e passam a interrogar modelos e práticas de indústrias tradicionais.<br>
+Neste tema, são especialmente convidados os trabalhos como foco na relação entre conhecimento organizacional e modelos e práticas organizacionais, em tópicos atuais e emergentes, tais como:<br>
+- Os estudos sobre implicações os diferentes desenhos e configurações organizacionais, como alianças, redes, terceirização na gestão estratégica do conhecimento organizacional;<br>
+- A investigação sobre como novas tecnologias e metodologias na análise de grandes conjuntos de dados (Big data) influem na criação, transferência, memória e transformação do conhecimento e da inovação;<br>
+- As implicações entre gestão do capital humano, especialmente expresso em profissionais altamente qualificados nas áreas de ciência, engenharia, matemática (STEMs) e o conhecimento e inovação em organizações;<br>
+- As implicações de ambientes de inovação como clusters, regiões e cidades em seus aspectos institucionais e socioculturais para o desenvolvimento de empresas baseadas em conhecimento e criatividade como startups.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> visão baseada em conhecimento ; conhecimento e aprendizagem organizacional ; criação e transferência de conhecimento ; processos e rotinas  ; empresas baseadas em conhecimento 
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading11'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse11' aria-expanded='true' aria-controls='ESOcollapse11'>
+                         Tema 11 - Microfundamentos das capacidades e rotinas organizacionais  
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading11'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Rodrigo Assunção Rosa (Mestr e Dout em Admin de Empresas /FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+Sergio Bulgacov (Prog de Mestr e Dout em Admin – PMDA/UP - Universidade Positivo)<br>
+Marcos Vinícius Pereira Correa (Centro de Pesq e Pós-Grad em Admin – CEPPAD/UFPR - Universidade Federal do Paraná)<br>
+Diego M. Coraiola (Augustana Campus/Universidade de Alberta)<br>
+Dimária Silva e Meirelles (Prog de Pós-Grad em Admin de Empresas - PPGA /Mackenzie - Universidade Presbiteriana Mackenzie)<br>
+                  <br>
+                      O conceito ainda em desenvolvimento sobre microfundamentos tem sido difundido entre diversos pesquisadores e vem se revelando uma vertente de pesquisa prolífica, principalmente dentro do campo de estratégia organizacional em periódicos internacionais de prestígio (Barney & Felin, 2013; Felin, Foss, & Ployhart, 2015). No Brasil, todavia, os estudos em periódicos ainda têm sido escassos (Gofredo & Bataglia, 2015), mas como percebido em congressos anteriores, esta temática tem despertado o interesse e atenção recente de vários pesquisadores brasileiros. Nesse sentido, a proposta central deste tema é o de agregar o debate a partir do conjunto central de pesquisas que estão sendo desenvolvidas sob a ótica dos microfundamentos das capacidades e rotinas. Os microfundamentos enquanto perspectiva teórica têm contribuído para o avanço das teorias de estratégia ao revelarem o papel que os indivíduos e a ação humana possuem para a estratégia organizacional, anteriormente tidos como “caixa-preta” em diversas explicações sobre o desempenho e outros tipos de resultados organizacionais. Tal enfoque tem considerado os diversos níveis de análise da organização (Salvato & Rerup, 2011) e os processos e práticas envolvidas no desenvolvimento de resultados estratégicos (Parmigiani & Howard-Grenville, 2011), possibilitando investigar a administração estratégica para além do foco em grandes mudanças a nível de mercado ou organização. A relação entre os níveis macro e micro tem nos microfundamentos condição necessária ainda a ser explorada conceitualmente e empiricamente, tanto em termos de níveis de análise como nas ações individuais, principalmente no que diz respeito a busca por explicações de fatores ainda não solucionados no nível macro. Tendo em vista a pluralidade de perspectivas existentes e o caráter multinível de investigação dos microfundamentos (Aguinis & Molina-Azorín, 2015), esta proposta de tema busca realizar a conversa entre pesquisas de natureza teórica e metodológica diversificada, podendo estar fundamentadas em diferentes abordagens oriundas da economia (Barney & Felin, 2013), psicologia (Helfat & Peteraf, 2015), sociologia (Nayak, Chia & Canales, 2019), história (Suddaby et al., 2019), entre outras. A partir disso, tem-se como referência de pesquisa as seguintes questões centrais:<br>
+Microfundamentos, Capacidades e Rotinas: Como as rotinas e capacidades organizacionais se inter-relacionam no desenvolver das estratégias organizacionais?<br>
+Microfundamentos, Práticas e Processos: Como os microfundamentos da estratégia podem ser explorados sob as perspectivas de práticas e processos organizacionais?	<br>
+Microfundamentos e Capacidades Dinâmicas: Em que aspectos os microfundamentos podem contribuir para uma melhor compreensão do desenvolvimento das capacidades dinâmicas nas organizações?<br>
+Microfundamentos e História: Quais são os elementos históricos relevantes para se compreender relação micro e macro da estratégia organizacional?<br>
+Microfundamentos e outras Teorias de Gestão: Como os microfundamentos podem ser teorizadas para além dos resultados estratégicos? Como os microfundamentos estão relacionados a outros temas e teorias na pesquisa organizacional?<br>
+<br>
+<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Microfundamentos da Estratégia ; Capacidades Organizacionais ; Rotinas Organizacionais ; Capacidades Dinâmicas ; Teoria Organizacional aplicado à Estratégia
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading12'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse12' aria-expanded='true' aria-controls='ESOcollapse12'>
+                         Tema 12 - Capacidade de Absorção do conhecimento: seus antecedentes, o processo de absorção e seus resultantes
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading12'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Carlos Ricardo Rossetto (Prog de Pós-Grad em Admin/Cursos de Mestr Acad em Admin e Dout em Admin e Turismo/UNIVALI - Universidade do Vale do Itajaí)<br>
+Gloria Charão Ferreira (Programa de Mestrado e Doutorado Programa de Pós-graduação em Desenvolvimento Regional - PPGDR/UNIJUÍ)<br>
+Carlos Eduardo Carvalho (Prog de Dout Acadêmico em Admin/UNOESC - Universidade do Oeste de Santa Catarina)<br>
+Jorge Oneide Sausen (PPGDR/UNIJUI)<br>
+??ngela França Versiani (Prog de Pós-Grad em Admin – PPGA/PUC Minas - Pontifícia Universidade Católica de Minas Gerais)<br>
+                  <br>
+                      A relação entre a estratégia das organizações e a busca da internalização de conhecimentos tem se tornado um tema de destaque no campo da estratégia. Trabalhos que antes se voltavam a identificar práticas de monitoramento ambiental como elementos influentes no comportamento estratégico (Beal, 2000) têm evoluído no sentido de conceber tal comportamento a partir dos processos de aprendizagem (Volberda, Foss & Lyles, 2014) e dos fluxos de conhecimento (Jeong-Duk & Ji-Hoon, 2017). A difusão do construto capacidade absortiva (Lane et al., 2006), entendido como o conjunto de habilidades voltadas à identificação, interiorização e aplicação organizacional de conhecimentos obtidos no meio externo ( Todorova & Dursin, 2007) tem se constituído, mais recentemente, como importante arcabouço teórico para se entender os resultados estratégicos (Maldonado et al., 2018), tais como os da flexibilidade e da inovação (Zahra & George, 2002). Tal discussão no contexto brasileiro tem se fortalecido sob diversas óticas. Por exemplo, somente para citar alguns trabalhos, deve-se mencionar o trabalho de Engelman et al., (2017) que analisaram a influência do capital intelectual, da capacidade absortiva e da inovação. Adams et al. (2016) comparam a ACAP de indústrias em diferentes contextos internacionais, incluindo empresas brasileiras. Garrido et al. (2017), também, focando empresas do Brasil, verificaram o papel da ACAP mediada pelo comportamento de internacionalização. Considerando a importância identificada do tema e as várias oportunidades de pesquisa atuais envolvendo a estratégia e inovação associadas a capacidade absortiva, propomos os seguintes subtemas ou descritores: (1) Desenvolvimento da capacidade absortiva; (2) Aprendizagem organizacional e interorganizacional; (3) Capacidade dinâmica; (4) Inovação aberta; Inovação Disruptiva; incremental e radical; (5) Transferência de conhecimento; (6) Ecossistemas de inovação, (7) Desenvolvimento territorial e suas relações com o conhecimento; (8) Capacidade absortiva individual; (9) Mediadores da capacidade de absorção do conhecimento; (10) Inovação social; (11) Ambiente institucional; (12) Drivers organizacionais (cultura; liderança; estrutura, modelos mentais); (13) Adaptação e Mudança; (14) Capacidade absortiva de times/departamental/setorial; (15) Capacidade absortiva em clusters; (16) Capacidade de absorção e sistemas regionais de inovação; (17) Relevância da capacidade de absorção para empresas nascidas globalmente; (18) Recursos dinâmicos e startups; (19) Barreiras à capacidade de absorção em empresas de mercados emergentes; (20) Mecanosmos de integração social e (21) gatilhos de ativação da capacidade absortiva. 
+                      <br><br>
+                      <b>Palavras-chave:</b> Conhecimentos prévios da capacidade absortiva ; Processo de absorção de conhecimentos ; Efeitos da capacidade de absorção ; Desenvolvimento da capacidade de absorção
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading13'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse13' aria-expanded='true' aria-controls='ESOcollapse13'>
+                         Tema 13 - Estratégia global, internacionalização e as novas oportunidades da transformação digital
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse13' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='ESOheading13' aria-expanded='true' style=''>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Cláudia Sofia Frias Pinto (Prog de Dout Acadêmico em Admin/UNOESC - Universidade do Oeste de Santa Catarina)<br>
+Felipe Mendes Borini (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Manuel Anibal Silva Portugal Vasconcelos Ferreira (Prog de Pós-Grad em Admin – PPGA/UFLA - Universidade Federal de Lavras - DGE/ESTG - Instituto Politécnico de Leiria)<br>
+Christian Daniel Falaster (Prog de Pós-Grad em Admin/Centro de Ciências Sociais Aplic – PPGAd/CCSA/FURB - Universidade Regional de Blumenau)<br>
+Fernanda Cahen ()<br>
+                  <br>
+                      Este tema foca as questões de negócios e estratégia global. Incluem-se as pesquisas sobre internacionalização, modos de entrada, localização, estratégias e tomada de decisão nas multinacionais, subsidiárias, inovação internacional, fluxos de conhecimento globais, interação entre o ambiente global e as empresas, estudos comparativos em diferentes países, economias emergentes, internacionalização de e para a América Latina, cadeia de valor global, atuação subnacional, as diversas componentes do ambiente internacional de negócios, entre outros assuntos, usando as teorias disponíveis. Sugere-se pesquisas que abordem os novos aspetos globais envolvendo a internacionalização na era digital, como também as oportunidades e desafios da transformação digital, plataformas digitais globais, ecossistemas digitais, novas estruturas organizacionais, novos modelos de negócio, entre outras.<br>
+<br>
+O tema busca trabalhos que abordam assuntos como os seguintes, não estando restrita a estes:<br>
+- Estratégias globais e estruturas nas empresas multinacionais.<br>
+- Competição global, multinacionais e subsidiárias.<br>
+- A produção internacional e a cadeia de valor global.<br>
+- Transferência de tecnologia e conhecimento e inovação internacional.<br>
+- Como o ambiente internacional (p.ex., cultural, econômico, legal, político) influencia as atividades, estratégias, estruturas e processos de tomada de decisão das multinacionais.<br>
+- A influência do ambiente político, legal e regulatório na internacionalização e suas disfunções.<br>
+- O ambiente institucional e os negócios internacionais.<br>
+- A influência do governo e conexões na internacionalização e nas estratégias das empresas globais. <br>
+- Decisões de localização internacional e subnacional.<br>
+- CEOs, top management team e tomada de decisão nas multinacionais.<br>
+- Estudos sobre os modos de entrada (exportação, alianças estratégicas, aquisições). <br>
+- Estudos comparativos em diferentes países e ambientes institucionais.<br>
+- A internacionalização envolvendo mercados emergentes, multinacionais emergentes e (des)vantagens internacionais.<br>
+- Como a transformação digital influencia as estratégias de internacionalização e os negócios das empresas.<br>
+- A digitalização e novos modelos de negócio na internacionalização
+                      <br><br>
+                      <b>Palavras-chave:</b> Estratégia global ; Negócios internacionais ; Internacionalização de empresas ; Empresas multinacionais ; Transformação digital
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='ESOheading14'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#ESOaccordion' href='#ESOcollapse14' aria-expanded='true' aria-controls='ESOcollapse14'>
+                         Tema 14 - Estratégia em Mobilidade Global: as diferentes perspectivas, desafios e competências de empresas e indivíduos
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='ESOcollapse14' class='panel-collapse collapse' role='tabpanel' aria-labelledby='ESOheading14'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Janaína Maria Bueno (Prog de Pós-Grad em Admin/UFU - Universidade Federal de Uberlândia - outro/UFU - Universidade Federal de Uberlândia)<br>
+Adriana Roseli Wünsch Takahashi (Centro de Pesq e Pós-Grad em Admin – CEPPAD/UFPR - Universidade Federal do Paraná)<br>
+Carlos Roberto Domingues (Programa de Pós-Graduação Mestrado Profissional em Gestão Organizacional/UFU - Universidade Federal de Uberlândia)<br>
+Eduardo Picanço Cruz  (Programa de Pós-Graduação em Gestão e Empreendedorismo/UFF - Universidade Federal Fluminense)<br>
+Michel Mott Machado (Unidade de Pós-Graduação, Extensão e Pesquisa/CEETEPS - Centro Estadual de Educação Tecnológica Paula Souza)<br>
+                  <br>
+                      O final do século XX e o início do XXI trouxeram profundas mudanças estimulando transformações no que diz respeito aos fluxos de capital e de pessoas em diferentes partes do globo (SASSEN, 1988) que redesenham os espaços de internacionalização e de mobilidade de empresas e de indivíduos (FREITAS, 2009). Em meio a estes fluxos, configura-se um ambiente dinâmico de acirrada competição onde as empresas são pressionadas a compreender os percursos dos negócios internacionais, a sua capacidade e dos profissionais de se envolverem em atividades globais, e os aspectos da economia, da política, da cultura e da tecnologia que influenciam a sua estratégia e a gestão organizacional contemplando elementos como a estrutura e o desempenho organizacional (PARKER, 2014). Além do mais, as recentes mudanças e impasses no contexto sócio-político global (como por exemplo o Brexit e as crises migratórias em diferentes países) têm tornado mais complexos os desafios para as empresas e os profissionais atuantes neste contexto.<br>
+Junto a estes desafios, a multinacionalidade - característica das organizações atuantes no ambiente global (TEIXEIRA et al., 2017) - acarreta diferentes implicações como a necessidade de uma gestão intercultural (DAVEL; DUPUIS; CHANLAT, 2008; FREITAS, 2009); do desenvolvimento de competências interculturais individuais e coletivas (DEARDORFF, 2015; SCHIMIDMEYER; TAKAHASHI, 2018); da formação e trabalho de equipes multiculturais, inclusive as virtuais (BUENO; FREITAS, 2018); políticas e processos para mobilidade internacional como a expatriação (McNULTY; SELMER, 2017) e os contratos locais. Também têm surgido iniciativas individuais como dos chamados self-initiated expatriates que se movem através das fronteiras nacionais com objetivos acadêmicos, de trabalho e também em ações empreendedoras, estas últimas recentemente têm emergido na literatura como expat-preneurs” (VANCE et al., 2017). <br>
+Assim, diante desse quadro em que estão submetidas as empresas e os profissionais
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1702" role="tabpanel">
+                                    <h1>Programação Detalhada</h1>
+                                                                        </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1708" role="tabpanel">
+                                    <h1>Trabalhos Apresentados</h1>
+                                        
+
+                                    </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1705" role="tabpanel">
+                                    <h1>Prêmios e Menções Honrosas</h1>
+                                            <p class='MsoNoSpacing'><span style='background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;'><b><u style='background-color: rgb(255, 255, 255);'><span style='font-size: 18px;'>MELHOR TRABALHO DA DIVISÃO DE ESO</span></u></b><o:p></o:p></span></p><blockquote><span style='background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;'><o:p><b>&nbsp;PRÊMIO</b></o:p></span></blockquote><p class='MsoNoSpacing'><b>3Es93 - Tema 9<br>Revisitando a Relação entre Reputação e Desempenho Financeiro: uma
+Análise Baseada em Mineração de Texto</b><br>Claudio Gomes (PPGA/FEA/USP)<br>Adriana Backx Noronha Viana (PPGA/FEA/USP)</p><p class='MsoNoSpacing'><o:p></o:p></p><blockquote><o:p><b>&nbsp;MENÇÃO HONROSA</b></o:p></blockquote><p class='MsoNoSpacing'><b>3Es102 - Tema 7<br>O Papel das Dimensões da Ambidestria Organizacional sobre o
+Desempenho de Empresas Exportadoras</b><br>Rodrigo Marques de Almeida Guerra (PPGAd/UFPA)<br>Maria Emilia Camargo (UCS)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><o:p>&nbsp;</o:p></p><p class='MsoNoSpacing'><b>3Es211 - Tema 15<br>Dairy Cooperatives in
+Australia: Study in The Last Bastion</b><br>Gustavo Leonardo Simão (PPG-ADM/UFV)<br>Luiz Marcelo Antonialli (PPGA/UFLA)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><o:p>&nbsp;</o:p></p><p class='MsoNoSpacing'><b><u><span style='font-size: 18px;'>MELHOR
+TRABALHO DECORRENTE DE UMA TESE DE DOUTORADO</span></u></b><o:p></o:p></p><blockquote><o:p>&nbsp;<b>PRÊMIO</b></o:p></blockquote><p class='MsoNoSpacing'><b><span lang='EN-US' style=''>3Es59 - Tema 2<br></span>Outside Directors and
+Financial Performance: Can Family Firms Be More Benefited?</b><br>Samy Sznajder Mesnik
+(FGV/EAESP)</p><p class='MsoNoSpacing'><br></p><blockquote><span lang='EN-US' style=''><o:p><b>&nbsp;MENÇÃO HONROSA</b></o:p></span></blockquote><p class='MsoNoSpacing'><b>3Es77 - Tema 1<br>Fatores Determinantes como estratégia para a Intenção Empreendedora de
+Professores</b><br>Humberto Rodrigues Marques (PPGA/UFLA)<br>Andre Luiz Zambalde (PPGA/UFLA)<br>Andre Grutzmann (PPGA/UFLA)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><span lang='EN-US' style=''><o:p>&nbsp;</o:p></span></p><p class='MsoNoSpacing'><b>3Es211 - Tema 15<br>Dairy Cooperatives in
+Australia: Study in The Last Bastion</b><br>Gustavo Leonardo Simão (PPG-ADM/UFV)<br>Luiz Marcelo Antonialli (PPGA/UFLA)</p><p class='MsoNoSpacing'><o:p>&nbsp;</o:p></p><p class='MsoNoSpacing'><b><u><span style='font-size: 18px;'>MELHOR
+TRABALHO DECORRENTE DE UMA DISSERTAÇÃO DE MESTRADO</span></u></b><o:p></o:p></p><blockquote><o:p>&nbsp;<b>PRÊMIO</b></o:p></blockquote><p class='MsoNoSpacing'><b>3Es93 - Tema 9<br>Revisitando a Relação entre Reputação e Desempenho Financeiro: uma
+Análise Baseada em Mineração de Texto</b><br>Claudio Gomes (PPGA/FEA/USP)<br>Adriana Backx Noronha Viana (PPGA/FEA/USP)</p><p class='MsoNoSpacing'><o:p></o:p></p><blockquote><o:p><b>MENÇÃO HONROSA</b></o:p></blockquote><p class='MsoNoSpacing'><b>3Es146 - Tema 3&nbsp; &nbsp; &nbsp; <br>A Influência da Governança Corporativa e seus Fatores Ambientais na
+Prática de Gestão de Riscos: um estudo na Fundação Renova</b><br>Simone Ribeiro Furbino e Souza (FACE/FUMEC)<br>Henrique Cordeiro Martins (FACE/FUMEC)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><o:p>&nbsp;</o:p></p><p class='MsoNoSpacing'><b>3Es242 - Tema 14<br>A Internacionalização de Instituições de Ensino Superior sob a Ótica da
+Teoria de Uppsala: Mobilidade Cultural, do Ensino, da Pesquisa e da Organização</b><br>Patricia Mara Simões Andrade (PMDA/UP)<br>Marcello Romani-Dias (PMDA/UP e <span style='background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;'>ESEG</span>)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><o:p>&nbsp;</o:p></p><p class='MsoNoSpacing'><b><u><span style='font-size: 18px;'>MELHOR
+ARTIGO TECNOLÓGICO</span> </u></b><o:p></o:p></p><blockquote><o:p><b>&nbsp;PRÊMIO</b></o:p></blockquote><p class='MsoNoSpacing'><b>3Es90 - Tema 13<br>Diagnóstico da Vantagem competitiva do chocolate Tree to Bar brasileiro
+à luz do diamante de Porter</b><br>Mariele Laís Christ (PROPAD/DCA/CCSA/UFPE)<br><span lang='EN-US'>Viviane S Salazar (PROPAD/DCA/CCSA/UFPE
+e </span><span style='background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;'>PPHTUR</span>/UFPE<span lang='EN-US'>)</span></p><blockquote><span lang='EN-US' style=''><o:p><b>MENÇÃO HONROSA</b></o:p></span></blockquote><p class='MsoNoSpacing'><b>3Es277 - Tema 13<br>Benefícios e Dificuldades de um Programa de Promoção à Exportação em uma
+Economia Emergente: uma perspectiva institucional</b><br>Ane Izabelle Bezerra de Arruda (PROPAD/DCA/CCSA/UFPE)&nbsp;&nbsp;</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><span lang='EN-US' style=''><o:p>&nbsp;</o:p></span></p><p class='MsoNoSpacing'><b>3Es286 - Tema 7<br>Ambidestria Organizacional: &nbsp;Relato técnico na execução na Abril Educação
+entre 2010 e 2015</b><br>Marcelo Mirabelli (MPGN/FFA)</p><p class='MsoNoSpacing'><span style='font-size: 12pt; font-family: ' times='' new='' roman',='' serif;'=''><o:p>&nbsp;</o:p></span></p><p class='MsoNoSpacing'><span style='font-size: 12pt; font-family: ' times='' new='' roman',='' serif;'=''><o:p></o:p></span></p><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'><span style='font-size: 18px;'><b><u>PRÊMIO DE MELHOR AVALIADOR&nbsp;</u></b></span></p><p class='MsoNoSpacing'><span style='font-size: 12pt; font-family: ' times='' new='' roman',='' serif;'=''><o:p><br></o:p></span></p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><blockquote><p><span style='font-size: 12pt; font-family: ' times='' new='' roman',='' serif;'=''><o:p><span style='font-size: 18px;'>&nbsp;</span><b><span style='font-size: 18px;'>PREMIADO -&nbsp;</span></b></o:p></span><span style='font-size: 18px;'><b>Diego Maganhotto Coraiola&nbsp;(University of Alberta)</b></span></p></blockquote><p></p><blockquote><span style='font-size: 17.5px;'><b>MENÇÃO HONROSA</b></span></blockquote><p></p><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'>Dennys Eduardo Rossetto<br></p><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'>Ahiram Brunni Cartaxo de Castro&nbsp;</p><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'><u style=''><br></u></p><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'><span style='font-size: 18px;'><b><u>PRÊMIO DE TRAJETÓRIA ACADÊMICA (LIFETIME ACHIEVEMENT)</u></b></span></p><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'><span style='font-size: 18px;'><b><u><br></u></b></span></p><blockquote style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'><p><span style='font-size: 18px;'><b><u>PREMIADO -&nbsp;</u></b></span><u style='font-size: 18px;'><b>Sergio
+Bulgacov</b></u></p></blockquote><p style='margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;'><span style='font-size: 18px;'><b><u><br></u></b></span></p>
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1719" role="tabpanel">
+                                    <h1>Destaques</h1>
+                                            <p><span style='color: rgb(0, 49, 99); font-weight: bold;'><span style='font-size: 18px;'>Painel Internacional</span><br><span style='font-size: 18px;'>Reflexões sobre o futuro das pesquisas em Estratégia</span></span></p><p><span style='color: rgb(0, 49, 99);'><b>Palestrante:</b> Anthony Goerzen (Queen's University, Smith School of Business)<br style=''><b>Resumo:&nbsp;</b>O painel com a presença do palestrante internacional, Prof. Anthony Goerzen (Queen's University, Smith School of Business), teve como objetivo discutir as questões atuais da estratégia e negócios internacionais, considerando as perspectivas de acadêmicos e profissionais de mercado.</span></p><p><b style='color: rgb(0, 49, 99);'><u>Acessem abaixo as apresentações.</u></b></p><p><span style='text-align: center;'>[%%FILE_60%%]</span></p><p><span style='text-align: center;'>[%%FILE_61%%]</span><span style='text-align: center;'><br></span><br><br style='color: rgb(49, 112, 143);'></p><p></p>
+                                </div>
+                                                                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row endereco">
+            <div class="col-md-6">
+                <h1>Telefone ANPAD</h1>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pb-2">(44) 3354-8545</div>
+                        <div>(44) 98826-2467</div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>  <!-- ./class="col-md-offset-2 col-md-4" -->
+
+            <div class="col-md-6">
+                <h1>Endereço</h1>
+                <address>
+                    <div class="pb-2">Av. Pedro Taques, 294</div>
+                    <div class="pb-2">CEP 87030-008 - Maringá, PR</div>
+                    <div>Brasil</div>
+                </address>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center"><br>Associação Nacional de Pós Graduação e Pesquisa em Administração - CNPJ 42.595.652/0001-66</div>
+        </div>
+    </div>
+</footer><div class="modal" id="modalDelete" tabindex="-1" role="dialog" data-word="EXCLUIR">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title">CONFIRMAR EXCLUSÃO</span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Tem certeza de que deseja excluir $type $name?<br/>Esta ação não poderá ser desfeita!</p>
+        <p>Para confirmar a exclusão $type $name, digite a palavra $word abaixo e confirme.</p>
+        <div class="row form my-0">
+          <div class="col-12 form-group">
+            <input type="text" id="deleteInput" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-block btn-lg btn-grey-dark" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" id="deleteConfirm" class="btn btn-block btn-lg btn-danger" disabled>
+              CONFIRMAR
+              <span class="d-none fa fa-spinner fa-spin"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-success d-none" id="itemDeleted" role="alert">
+  <b class="message"></b>
+  <a class="close ml-3">
+    <span aria-hidden="true">&times;</span>
+  </a>
+</div>
+    <script src="/build/runtime.js"></script><script src="/build/vendors~activity~app~articleEvaluation~associate~certificate~cookieconsent~dashboard/admin~dashboard~780886de.js"></script><script src="/build/vendors~activity~app~associate~certificate~cookieconsent~dashboard/admin~dashboard/user~ensalement/g~8018043c.js"></script><script src="/build/vendors~activity~app~associate~cookieconsent~dashboard/user~ensalement/general~ensalement/priority~e~257752a3.js"></script><script src="/build/cookieconsent.js"></script>
+        <script src="/build/vendors~activity~app~associate~dashboard/admin~dashboard/user~ensalement/general~ensalement/sections~b3c04876.js"></script><script src="/build/vendors~app~certificate~gestorSpeakers~panelEvaluation~themeEvaluation.js"></script><script src="/build/vendors~activity~app~panels~user_articles.js"></script><script src="/build/vendors~app~certificate~panelEvaluation~themeEvaluation.js"></script><script src="/build/vendors~app.js"></script><script src="/build/app.js"></script>
+    <script src="/build/login.js"></script>
+
+    <script src="/build/vendors~events/show.js"></script><script src="/build/events/show.js"></script>
+
+<div id="sfwdt4e8aaf" class="sf-toolbar sf-display-none"></div><script nonce="d162c98418afc8ab915371d90bdd8c2a">/*<![CDATA[*/        Sfjs = (function() {        "use strict";        if ('classList' in document.documentElement) {            var hasClass = function (el, cssClass) { return el.classList.contains(cssClass); };            var removeClass = function(el, cssClass) { el.classList.remove(cssClass); };            var addClass = function(el, cssClass) { el.classList.add(cssClass); };            var toggleClass = function(el, cssClass) { el.classList.toggle(cssClass); };        } else {            var hasClass = function (el, cssClass) { return el.className.match(new RegExp('\\b' + cssClass + '\\b')); };            var removeClass = function(el, cssClass) { el.className = el.className.replace(new RegExp('\\b' + cssClass + '\\b'), ' '); };            var addClass = function(el, cssClass) { if (!hasClass(el, cssClass)) { el.className += " " + cssClass; } };            var toggleClass = function(el, cssClass) { hasClass(el, cssClass) ? removeClass(el, cssClass) : addClass(el, cssClass); };        }        var noop = function() {};        var profilerStorageKey = 'symfony/profiler/';        var addEventListener;        var el = document.createElement('div');        if (!('addEventListener' in el)) {            addEventListener = function (element, eventName, callback) {                element.attachEvent('on' + eventName, callback);            };        } else {            addEventListener = function (element, eventName, callback) {                element.addEventListener(eventName, callback, false);            };        }        var request = function(url, onSuccess, onError, payload, options) {            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');            options = options || {};            options.maxTries = options.maxTries || 0;            xhr.open(options.method || 'GET', url, true);            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');            xhr.onreadystatechange = function(state) {                if (4 !== xhr.readyState) {                    return null;                }                if (xhr.status == 404 && options.maxTries > 1) {                    setTimeout(function(){                        options.maxTries--;                        request(url, onSuccess, onError, payload, options);                    }, 1000);                    return null;                }                if (200 === xhr.status) {                    (onSuccess || noop)(xhr);                } else {                    (onError || noop)(xhr);                }            };            xhr.send(payload || '');        };        var getPreference = function(name) {            if (!window.localStorage) {                return null;            }            return localStorage.getItem(profilerStorageKey + name);        };        var setPreference = function(name, value) {            if (!window.localStorage) {                return null;            }            localStorage.setItem(profilerStorageKey + name, value);        };        var requestStack = [];        var extractHeaders = function(xhr, stackElement) {            /* Here we avoid to call xhr.getResponseHeader in order to */            /* prevent polluting the console with CORS security errors */            var allHeaders = xhr.getAllResponseHeaders();            var ret;            if (ret = allHeaders.match(/^x-debug-token:\s+(.*)$/im)) {                stackElement.profile = ret[1];            }            if (ret = allHeaders.match(/^x-debug-token-link:\s+(.*)$/im)) {                stackElement.profilerUrl = ret[1];            }            if (ret = allHeaders.match(/^Symfony-Debug-Toolbar-Replace:\s+(.*)$/im)) {                stackElement.toolbarReplaceFinished = false;                stackElement.toolbarReplace = '1' === ret[1];            }        };        var successStreak = 4;        var pendingRequests = 0;        var renderAjaxRequests = function() {            var requestCounter = document.querySelector('.sf-toolbar-ajax-request-counter');            if (!requestCounter) {                return;            }            requestCounter.textContent = requestStack.length;            var infoSpan = document.querySelector(".sf-toolbar-ajax-info");            if (infoSpan) {                infoSpan.textContent = requestStack.length + ' AJAX request' + (requestStack.length !== 1 ? 's' : '');            }            var ajaxToolbarPanel = document.querySelector('.sf-toolbar-block-ajax');            if (requestStack.length) {                ajaxToolbarPanel.style.display = 'block';            } else {                ajaxToolbarPanel.style.display = 'none';            }            if (pendingRequests > 0) {                addClass(ajaxToolbarPanel, 'sf-ajax-request-loading');            } else if (successStreak < 4) {                addClass(ajaxToolbarPanel, 'sf-toolbar-status-red');                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');            } else {                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');                removeClass(ajaxToolbarPanel, 'sf-toolbar-status-red');            }        };        var startAjaxRequest = function(index) {            var tbody = document.querySelector('.sf-toolbar-ajax-request-list');            if (!tbody) {                return;            }            var nbOfAjaxRequest = tbody.rows.length;            if (nbOfAjaxRequest >= 100) {                tbody.deleteRow(0);            }            var request = requestStack[index];            pendingRequests++;            var row = document.createElement('tr');            request.DOMNode = row;            var requestNumberCell = document.createElement('td');            requestNumberCell.textContent = index + 1;            row.appendChild(requestNumberCell);            var profilerCell = document.createElement('td');            profilerCell.textContent = 'n/a';            row.appendChild(profilerCell);            var methodCell = document.createElement('td');            methodCell.textContent = request.method;            row.appendChild(methodCell);            var typeCell = document.createElement('td');            typeCell.textContent = request.type;            row.appendChild(typeCell);            var statusCodeCell = document.createElement('td');            var statusCode = document.createElement('span');            statusCode.textContent = 'n/a';            statusCodeCell.appendChild(statusCode);            row.appendChild(statusCodeCell);            var pathCell = document.createElement('td');            pathCell.className = 'sf-ajax-request-url';            if ('GET' === request.method) {                var pathLink = document.createElement('a');                pathLink.setAttribute('href', request.url);                pathLink.textContent = request.url;                pathCell.appendChild(pathLink);            } else {                pathCell.textContent = request.url;            }            pathCell.setAttribute('title', request.url);            row.appendChild(pathCell);            var durationCell = document.createElement('td');            durationCell.className = 'sf-ajax-request-duration';            durationCell.textContent = 'n/a';            row.appendChild(durationCell);            request.liveDurationHandle = setInterval(function() {                durationCell.textContent = (new Date() - request.start) + 'ms';            }, 100);            row.className = 'sf-ajax-request sf-ajax-request-loading';            tbody.insertBefore(row, null);            var toolbarInfo = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');            toolbarInfo.scrollTop = toolbarInfo.scrollHeight;            renderAjaxRequests();        };        var finishAjaxRequest = function(index) {            var request = requestStack[index];            clearInterval(request.liveDurationHandle);            if (!request.DOMNode) {                return;            }            if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {                /* Flag as complete because finishAjaxRequest can be called multiple times. */                request.toolbarReplaceFinished = true;                /* Search up through the DOM to find the toolbar's container ID. */                for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {                    if (elem.id.match(/^sfwdt/)) {                        Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);                        break;                    }                }            }            pendingRequests--;            var row = request.DOMNode;            /* Unpack the children from the row */            var profilerCell = row.children[1];            var methodCell = row.children[2];            var statusCodeCell = row.children[4];            var statusCodeElem = statusCodeCell.children[0];            var durationCell = row.children[6];            if (request.error) {                row.className = 'sf-ajax-request sf-ajax-request-error';                methodCell.className = 'sf-ajax-request-error';                successStreak = 0;            } else {                row.className = 'sf-ajax-request sf-ajax-request-ok';                successStreak++;            }            if (request.statusCode) {                if (request.statusCode < 300) {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status');                } else if (request.statusCode < 400) {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-yellow');                } else {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');                }                statusCodeElem.textContent = request.statusCode;            } else {                statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');            }            if (request.duration) {                durationCell.textContent = request.duration + 'ms';            }            if (request.profilerUrl) {                profilerCell.textContent = '';                var profilerLink = document.createElement('a');                profilerLink.setAttribute('href', request.profilerUrl);                profilerLink.textContent = request.profile;                profilerCell.appendChild(profilerLink);            }            renderAjaxRequests();        };                    if (window.fetch && window.fetch.polyfill === undefined) {                var oldFetch = window.fetch;                window.fetch = function () {                    var promise = oldFetch.apply(this, arguments);                    var url = arguments[0];                    var params = arguments[1];                    var paramType = Object.prototype.toString.call(arguments[0]);                    if (paramType === '[object Request]') {                        url = arguments[0].url;                        params = {                            method: arguments[0].method,                            credentials: arguments[0].credentials,                            headers: arguments[0].headers,                            mode: arguments[0].mode,                            redirect: arguments[0].redirect                        };                    } else {                        url = String(url);                    }                    if (!url.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var method = 'GET';                        if (params && params.method !== undefined) {                            method = params.method;                        }                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'fetch',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        promise.then(function (r) {                            stackElement.duration = new Date() - stackElement.start;                            stackElement.error = r.status < 200 || r.status >= 400;                            stackElement.statusCode = r.status;                            stackElement.profile = r.headers.get('x-debug-token');                            stackElement.profilerUrl = r.headers.get('x-debug-token-link');                            stackElement.toolbarReplaceFinished = false;                            stackElement.toolbarReplace = '1' === r.headers.get('Symfony-Debug-Toolbar-Replace');                            finishAjaxRequest(idx);                        }, function (e){                            stackElement.error = true;                            finishAjaxRequest(idx);                        });                        startAjaxRequest(idx);                    }                    return promise;                };            }            if (window.XMLHttpRequest && XMLHttpRequest.prototype.addEventListener) {                var proxied = XMLHttpRequest.prototype.open;                XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {                    var self = this;                    /* prevent logging AJAX calls to static and inline files, like templates */                    var path = url;                    if (url.substr(0, 1) === '/') {                        if (0 === url.indexOf('')) {                            path = url.substr(0);                        }                    }                    else if (0 === url.indexOf('http\u003A\/\/52.254.21.60')) {                        path = url.substr(19);                    }                    if (!path.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'xhr',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        this.addEventListener('readystatechange', function() {                            if (self.readyState == 4) {                                stackElement.duration = new Date() - stackElement.start;                                stackElement.error = self.status < 200 || self.status >= 400;                                stackElement.statusCode = self.status;                                extractHeaders(self, stackElement);                                finishAjaxRequest(idx);                            }                        }, false);                        startAjaxRequest(idx);                    }                    proxied.apply(this, Array.prototype.slice.call(arguments));                };            }                return {            hasClass: hasClass,            removeClass: removeClass,            addClass: addClass,            toggleClass: toggleClass,            getPreference: getPreference,            setPreference: setPreference,            addEventListener: addEventListener,            request: request,            renderAjaxRequests: renderAjaxRequests,            load: function(selector, url, onSuccess, onError, options) {                var el = document.getElementById(selector);                if (el && el.getAttribute('data-sfurl') !== url) {                    request(                        url,                        function(xhr) {                            el.innerHTML = xhr.responseText;                            el.setAttribute('data-sfurl', url);                            removeClass(el, 'loading');                            var pending = pendingRequests;                            for (var i = 0; i < requestStack.length; i++) {                                startAjaxRequest(i);                                if (requestStack[i].duration) {                                    finishAjaxRequest(i);                                }                            }                            /* Revert the pending state in case there was a start called without a finish above. */                            pendingRequests = pending;                            (onSuccess || noop)(xhr, el);                        },                        function(xhr) { (onError || noop)(xhr, el); },                        '',                        options                    );                }                return this;            },            loadToolbar: function(token, newToken) {                newToken = (newToken || token);                this.load(                    'sfwdt' + token,                    '\/_wdt\/xxxxxx'.replace(/xxxxxx/, newToken),                    function(xhr, el) {                        /* Evaluate in global scope scripts embedded inside the toolbar */                        var i, scripts = [].slice.call(el.querySelectorAll('script'));                        for (i = 0; i < scripts.length; ++i) {                            eval.call({}, scripts[i].firstChild.nodeValue);                        }                        el.style.display = -1 !== xhr.responseText.indexOf('sf-toolbarreset') ? 'block' : 'none';                        if (el.style.display == 'none') {                            return;                        }                        if (getPreference('toolbar/displayState') == 'none') {                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';                        } else {                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'none';                        }                        /* Handle toolbar-info position */                        var toolbarBlocks = [].slice.call(el.querySelectorAll('.sf-toolbar-block'));                        for (i = 0; i < toolbarBlocks.length; ++i) {                            toolbarBlocks[i].onmouseover = function () {                                var toolbarInfo = this.querySelectorAll('.sf-toolbar-info')[0];                                var pageWidth = document.body.clientWidth;                                var elementWidth = toolbarInfo.offsetWidth;                                var leftValue = (elementWidth + this.offsetLeft) - pageWidth;                                var rightValue = (elementWidth + (pageWidth - this.offsetLeft)) - pageWidth;                                /* Reset right and left value, useful on window resize */                                toolbarInfo.style.right = '';                                toolbarInfo.style.left = '';                                if (elementWidth > pageWidth) {                                    toolbarInfo.style.left = 0;                                }                                else if (leftValue > 0 && rightValue > 0) {                                    toolbarInfo.style.right = (rightValue * -1) + 'px';                                } else if (leftValue < 0) {                                    toolbarInfo.style.left = 0;                                } else {                                    toolbarInfo.style.right = '0px';                                }                            };                        }                        addEventListener(document.getElementById('sfToolbarHideButton-' + newToken), 'click', function (event) {                            event.preventDefault();                            var p = this.parentNode;                            p.style.display = 'none';                            (p.previousElementSibling || p.previousSibling).style.display = 'none';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';                            setPreference('toolbar/displayState', 'none');                        });                        addEventListener(document.getElementById('sfToolbarMiniToggler-' + newToken), 'click', function (event) {                            event.preventDefault();                            var elem = this.parentNode;                            if (elem.style.display == 'none') {                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';                                elem.style.display = 'block';                            } else {                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';                                elem.style.display = 'none'                            }                            setPreference('toolbar/displayState', 'block');                        });                        renderAjaxRequests();                        addEventListener(document.querySelector('.sf-toolbar-ajax-clear'), 'click', function() {                            requestStack = [];                            renderAjaxRequests();                            successStreak = 4;                            document.querySelector('.sf-toolbar-ajax-request-list').innerHTML = '';                        });                        addEventListener(document.querySelector('.sf-toolbar-block-ajax'), 'mouseenter', function (event) {                            var elem = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');                            elem.scrollTop = elem.scrollHeight;                        });                        addEventListener(document.querySelector('.sf-toolbar-block-ajax > .sf-toolbar-icon'), 'click', function (event) {                            event.preventDefault();                            toggleClass(this.parentNode, 'hover');                        });                        var dumpInfo = document.querySelector('.sf-toolbar-block-dump .sf-toolbar-info');                        if (null !== dumpInfo) {                            addEventListener(dumpInfo, 'sfbeforedumpcollapse', function () {                                dumpInfo.style.minHeight = dumpInfo.getBoundingClientRect().height+'px';                            });                            addEventListener(dumpInfo, 'mouseleave', function () {                                dumpInfo.style.minHeight = '';                            });                        }                    },                    function(xhr) {                        if (xhr.status !== 0) {                            var sfwdt = document.getElementById('sfwdt' + token);                            sfwdt.innerHTML = '\                                <div class="sf-toolbarreset">\                                    <div class="sf-toolbar-icon"><svg width="26" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 28" enable-background="new 0 0 26 28" xml:space="preserve"><path fill="#FFFFFF" d="M13 0C5.8 0 0 5.8 0 13c0 7.2 5.8 13 13 13c7.2 0 13-5.8 13-13C26 5.8 20.2 0 13 0z M20 7.5 c-0.6 0-1-0.3-1-0.9c0-0.2 0-0.4 0.2-0.6c0.1-0.3 0.2-0.3 0.2-0.4c0-0.3-0.5-0.4-0.7-0.4c-2 0.1-2.5 2.7-2.9 4.8l-0.2 1.1 c1.1 0.2 1.9 0 2.4-0.3c0.6-0.4-0.2-0.8-0.1-1.3C18 9.2 18.4 9 18.7 8.9c0.5 0 0.8 0.5 0.8 1c0 0.8-1.1 2-3.3 1.9 c-0.3 0-0.5 0-0.7-0.1L15 14.1c-0.4 1.7-0.9 4.1-2.6 6.2c-1.5 1.8-3.1 2.1-3.8 2.1c-1.3 0-2.1-0.6-2.2-1.6c0-0.9 0.8-1.4 1.3-1.4 c0.7 0 1.2 0.5 1.2 1.1c0 0.5-0.2 0.6-0.4 0.7c-0.1 0.1-0.3 0.2-0.3 0.4c0 0.1 0.1 0.3 0.4 0.3c0.5 0 0.9-0.3 1.2-0.5 c1.3-1 1.7-2.9 2.4-6.2l0.1-0.8c0.2-1.1 0.5-2.3 0.8-3.5c-0.9-0.7-1.4-1.5-2.6-1.8c-0.8-0.2-1.3 0-1.7 0.4C8.4 10 8.6 10.7 9 11.1 l0.7 0.7c0.8 0.9 1.3 1.7 1.1 2.7c-0.3 1.6-2.1 2.8-4.3 2.1c-1.9-0.6-2.2-1.9-2-2.7c0.2-0.6 0.7-0.8 1.2-0.6 c0.5 0.2 0.7 0.8 0.6 1.3c0 0.1 0 0.1-0.1 0.3C6 15 5.9 15.2 5.9 15.3c-0.1 0.4 0.4 0.7 0.8 0.8c0.8 0.3 1.7-0.2 1.9-0.9 c0.2-0.6-0.2-1.1-0.4-1.2l-0.8-0.9c-0.4-0.4-1.2-1.5-0.8-2.8c0.2-0.5 0.5-1 0.9-1.4c1-0.7 2-0.8 3-0.6c1.3 0.4 1.9 1.2 2.8 1.9 c0.5-1.3 1.1-2.6 2-3.8c0.9-1 2-1.7 3.3-1.8C20 4.8 21 5.4 21 6.3C21 6.7 20.8 7.5 20 7.5z"/></svg></div>\                                    An error occurred while loading the web debug toolbar. <a href="\/_profiler\/' + newToken + '>Open the web profiler.</a>\                                </div>\                            ';                            sfwdt.setAttribute('class', 'sf-toolbar sf-error-toolbar');                        }                    },                    { maxTries: 5 }                );                return this;            },            toggle: function(selector, elOn, elOff) {                var tmp = elOn.style.display,                    el = document.getElementById(selector);                elOn.style.display = elOff.style.display;                elOff.style.display = tmp;                if (el) {                    el.style.display = 'none' === tmp ? 'none' : 'block';                }                return this;            },            createTabs: function() {                var tabGroups = document.querySelectorAll('.sf-tabs:not([data-processed=true])');                /* create the tab navigation for each group of tabs */                for (var i = 0; i < tabGroups.length; i++) {                    var tabs = tabGroups[i].querySelectorAll(':scope > .tab');                    var tabNavigation = document.createElement('ul');                    tabNavigation.className = 'tab-navigation';                    var selectedTabId = 'tab-' + i + '-0'; /* select the first tab by default */                    for (var j = 0; j < tabs.length; j++) {                        var tabId = 'tab-' + i + '-' + j;                        var tabTitle = tabs[j].querySelector('.tab-title').innerHTML;                        var tabNavigationItem = document.createElement('li');                        tabNavigationItem.setAttribute('data-tab-id', tabId);                        if (hasClass(tabs[j], 'active')) { selectedTabId = tabId; }                        if (hasClass(tabs[j], 'disabled')) { addClass(tabNavigationItem, 'disabled'); }                        tabNavigationItem.innerHTML = tabTitle;                        tabNavigation.appendChild(tabNavigationItem);                        var tabContent = tabs[j].querySelector('.tab-content');                        tabContent.parentElement.setAttribute('id', tabId);                    }                    tabGroups[i].insertBefore(tabNavigation, tabGroups[i].firstChild);                    addClass(document.querySelector('[data-tab-id="' + selectedTabId + '"]'), 'active');                }                /* display the active tab and add the 'click' event listeners */                for (i = 0; i < tabGroups.length; i++) {                    tabNavigation = tabGroups[i].querySelectorAll(':scope > .tab-navigation li');                    for (j = 0; j < tabNavigation.length; j++) {                        tabId = tabNavigation[j].getAttribute('data-tab-id');                        document.getElementById(tabId).querySelector('.tab-title').className = 'hidden';                        if (hasClass(tabNavigation[j], 'active')) {                            document.getElementById(tabId).className = 'block';                        } else {                            document.getElementById(tabId).className = 'hidden';                        }                        tabNavigation[j].addEventListener('click', function(e) {                            var activeTab = e.target || e.srcElement;                            /* needed because when the tab contains HTML contents, user can click */                            /* on any of those elements instead of their parent '<li>' element */                            while (activeTab.tagName.toLowerCase() !== 'li') {                                activeTab = activeTab.parentNode;                            }                            /* get the full list of tabs through the parent of the active tab element */                            var tabNavigation = activeTab.parentNode.children;                            for (var k = 0; k < tabNavigation.length; k++) {                                var tabId = tabNavigation[k].getAttribute('data-tab-id');                                document.getElementById(tabId).className = 'hidden';                                removeClass(tabNavigation[k], 'active');                            }                            addClass(activeTab, 'active');                            var activeTabId = activeTab.getAttribute('data-tab-id');                            document.getElementById(activeTabId).className = 'block';                        });                    }                    tabGroups[i].setAttribute('data-processed', 'true');                }            },            createToggles: function() {                var toggles = document.querySelectorAll('.sf-toggle:not([data-processed=true])');                for (var i = 0; i < toggles.length; i++) {                    var elementSelector = toggles[i].getAttribute('data-toggle-selector');                    var element = document.querySelector(elementSelector);                    addClass(element, 'sf-toggle-content');                    if (toggles[i].hasAttribute('data-toggle-initial') && toggles[i].getAttribute('data-toggle-initial') == 'display') {                        addClass(toggles[i], 'sf-toggle-on');                        addClass(element, 'sf-toggle-visible');                    } else {                        addClass(toggles[i], 'sf-toggle-off');                        addClass(element, 'sf-toggle-hidden');                    }                    addEventListener(toggles[i], 'click', function(e) {                        e.preventDefault();                        if ('' !== window.getSelection().toString()) {                            /* Don't do anything on text selection */                            return;                        }                        var toggle = e.target || e.srcElement;                        /* needed because when the toggle contains HTML contents, user can click */                        /* on any of those elements instead of their parent '.sf-toggle' element */                        while (!hasClass(toggle, 'sf-toggle')) {                            toggle = toggle.parentNode;                        }                        var element = document.querySelector(toggle.getAttribute('data-toggle-selector'));                        toggleClass(toggle, 'sf-toggle-on');                        toggleClass(toggle, 'sf-toggle-off');                        toggleClass(element, 'sf-toggle-hidden');                        toggleClass(element, 'sf-toggle-visible');                        /* the toggle doesn't change its contents when clicking on it */                        if (!toggle.hasAttribute('data-toggle-alt-content')) {                            return;                        }                        if (!toggle.hasAttribute('data-toggle-original-content')) {                            toggle.setAttribute('data-toggle-original-content', toggle.innerHTML);                        }                        var currentContent = toggle.innerHTML;                        var originalContent = toggle.getAttribute('data-toggle-original-content');                        var altContent = toggle.getAttribute('data-toggle-alt-content');                        toggle.innerHTML = currentContent !== altContent ? altContent : originalContent;                    });                    /* Prevents from disallowing clicks on links inside toggles */                    var toggleLinks = toggles[i].querySelectorAll('a');                    for (var j = 0; j < toggleLinks.length; j++) {                        addEventListener(toggleLinks[j], 'click', function(e) {                            e.stopPropagation();                        });                    }                    toggles[i].setAttribute('data-processed', 'true');                }            },            createFilters: function() {                document.querySelectorAll('[data-filters] [data-filter]').forEach(function (filter) {                    var filters = filter.closest('[data-filters]'),                        type = 'choice',                        name = filter.dataset.filter,                        ucName = name.charAt(0).toUpperCase()+name.slice(1),                        list = document.createElement('ul'),                        values = filters.dataset['filter'+ucName] || filters.querySelectorAll('[data-filter-'+name+']'),                        labels = {},                        defaults = null,                        indexed = {},                        processed = {};                    if (typeof values === 'string') {                        type = 'level';                        labels = values.split(',');                        values = values.toLowerCase().split(',');                        defaults = values.length - 1;                    }                    addClass(list, 'filter-list');                    addClass(list, 'filter-list-'+type);                    values.forEach(function (value, i) {                        if (value instanceof HTMLElement) {                            value = value.dataset['filter'+ucName];                        }                        if (value in processed) {                            return;                        }                        var option = document.createElement('li'),                            label = i in labels ? labels[i] : value,                            active = false,                            matches;                        if ('' === label) {                            option.innerHTML = '<em>(none)</em>';                        } else {                            option.innerText = label;                        }                        option.dataset.filter = value;                        option.setAttribute('title', 1 === (matches = filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').length) ? 'Matches 1 row' : 'Matches '+matches+' rows');                        indexed[value] = i;                        list.appendChild(option);                        addEventListener(option, 'click', function () {                            if ('choice' === type) {                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {                                    if (option.dataset.filter === row.dataset['filter'+ucName]) {                                        toggleClass(row, 'filter-hidden-'+name);                                    }                                });                                toggleClass(option, 'active');                            } else if ('level' === type) {                                if (i === this.parentNode.querySelectorAll('.active').length - 1) {                                    return;                                }                                this.parentNode.querySelectorAll('li').forEach(function (currentOption, j) {                                    if (j <= i) {                                        addClass(currentOption, 'active');                                        if (i === j) {                                            addClass(currentOption, 'last-active');                                        } else {                                            removeClass(currentOption, 'last-active');                                        }                                    } else {                                        removeClass(currentOption, 'active');                                        removeClass(currentOption, 'last-active');                                    }                                });                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {                                    if (i < indexed[row.dataset['filter'+ucName]]) {                                        addClass(row, 'filter-hidden-'+name);                                    } else {                                        removeClass(row, 'filter-hidden-'+name);                                    }                                });                            }                        });                        if ('choice' === type) {                            active = null === defaults || 0 <= defaults.indexOf(value);                        } else if ('level' === type) {                            active = i <= defaults;                            if (active && i === defaults) {                                addClass(option, 'last-active');                            }                        }                        if (active) {                            addClass(option, 'active');                        } else {                            filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').forEach(function (row) {                                toggleClass(row, 'filter-hidden-'+name);                            });                        }                        processed[value] = true;                    });                    if (1 < list.childNodes.length) {                        filter.appendChild(list);                        filter.dataset.filtered = '';                    }                });            }        };    })();    Sfjs.addEventListener(document, 'DOMContentLoaded', function() {        Sfjs.createTabs();        Sfjs.createToggles();    });/*]]>*/</script><style nonce="be8311b358f5193dab314516f49e7f39">    .sf-minitoolbar {    background-color: #222;    border-top-left-radius: 4px;    bottom: 0;    box-sizing: border-box;    display: none;    height: 36px;    padding: 6px;    position: fixed;    right: 0;    z-index: 99999;}.sf-minitoolbar a {    display: block;}.sf-minitoolbar svg,.sf-minitoolbar img {    max-height: 24px;    max-width: 24px;    display: inline;}.sf-toolbar-clearer {    clear: both;    height: 36px;}.sf-display-none {    display: none;}.sf-toolbarreset * {    box-sizing: content-box;    vertical-align: baseline;    letter-spacing: normal;    width: auto;}.sf-toolbarreset {    background-color: #222;    bottom: 0;    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);    color: #EEE;    font: 11px Arial, sans-serif;    left: 0;    margin: 0;    padding: 0 36px 0 0;    position: fixed;    right: 0;    text-align: left;    text-transform: none;    z-index: 99999;    direction: ltr;    /* neutralize the aliasing defined by external CSS styles */    -webkit-font-smoothing: subpixel-antialiased;    -moz-osx-font-smoothing: auto;}.sf-toolbarreset abbr {    border: dashed #777;    border-width: 0 0 1px;}.sf-toolbarreset svg,.sf-toolbarreset img {    height: 20px;    width: 20px;    display: inline-block;}.sf-toolbarreset .hide-button {    background: #444;    display: block;    position: absolute;    top: 0;    right: 0;    width: 36px;    height: 36px;    cursor: pointer;    text-align: center;}.sf-toolbarreset .hide-button svg {    max-height: 18px;    margin-top: 10px;}.sf-toolbar-block {    cursor: default;    display: block;    float: left;    height: 36px;    margin-right: 0;    white-space: nowrap;    max-width: 15%;}.sf-toolbar-block > a,.sf-toolbar-block > a:hover {    display: block;    text-decoration: none;    color: inherit;}.sf-toolbar-block span {    display: inline-block;}.sf-toolbar-block .sf-toolbar-value {    color: #F5F5F5;    font-size: 13px;    line-height: 36px;    padding: 0;}.sf-toolbar-block .sf-toolbar-label,.sf-toolbar-block .sf-toolbar-class-separator {    color: #AAA;    font-size: 12px;}.sf-toolbar-block .sf-toolbar-info {    border-collapse: collapse;    display: table;    z-index: 100000;}.sf-toolbar-block hr {    border-top: 1px solid #777;    margin: 4px 0;    padding-top: 4px;}.sf-toolbar-block .sf-toolbar-info-piece {    /* this 'border-bottom' trick is needed because 'margin-bottom' doesn't work for table rows */    border-bottom: solid transparent 3px;    display: table-row;}.sf-toolbar-block .sf-toolbar-info-piece-additional,.sf-toolbar-block .sf-toolbar-info-piece-additional-detail {    display: none;}.sf-toolbar-block .sf-toolbar-info-group {    margin-bottom: 4px;    padding-bottom: 2px;    border-bottom: 1px solid #333333;}.sf-toolbar-block .sf-toolbar-info-group:last-child {    margin-bottom: 0;    padding-bottom: 0;    border-bottom: none;}.sf-toolbar-block .sf-toolbar-info-piece .sf-toolbar-status {    padding: 2px 5px;    margin-bottom: 0;}.sf-toolbar-block .sf-toolbar-info-piece .sf-toolbar-status + .sf-toolbar-status {    margin-left: 4px;}.sf-toolbar-block .sf-toolbar-info-piece:last-child {    margin-bottom: 0;}div.sf-toolbar .sf-toolbar-block .sf-toolbar-info-piece a {    color: #99CDD8;    text-decoration: underline;}div.sf-toolbar .sf-toolbar-block a:hover {    text-decoration: none;}.sf-toolbar-block .sf-toolbar-info-piece b {    color: #AAA;    display: table-cell;    font-size: 11px;    padding: 4px 8px 4px 0;}.sf-toolbar-block:not(.sf-toolbar-block-dump) .sf-toolbar-info-piece span {    color: #F5F5F5;}.sf-toolbar-block .sf-toolbar-info-piece span {    font-size: 12px;}.sf-toolbar-block .sf-toolbar-info {    background-color: #444;    bottom: 36px;    color: #F5F5F5;    display: none;    padding: 9px 0;    position: absolute;}.sf-toolbar-block .sf-toolbar-info:empty {    visibility: hidden;}.sf-toolbar-block .sf-toolbar-status {    display: inline-block;    color: #FFF;    background-color: #666;    padding: 3px 6px;    margin-bottom: 2px;    vertical-align: middle;    min-width: 15px;    min-height: 13px;    text-align: center;}.sf-toolbar-block .sf-toolbar-status-green {    background-color: #4F805D;}.sf-toolbar-block .sf-toolbar-status-red {    background-color: #B0413E;}.sf-toolbar-block .sf-toolbar-status-yellow {    background-color: #A46A1F;}.sf-toolbar-block.sf-toolbar-status-green {    background-color: #4F805D;    color: #FFF;}.sf-toolbar-block.sf-toolbar-status-red {    background-color: #B0413E;    color: #FFF;}.sf-toolbar-block.sf-toolbar-status-yellow {    background-color: #A46A1F;    color: #FFF;}.sf-toolbar-block-request .sf-toolbar-status {    color: #FFF;    display: inline-block;    font-size: 14px;    height: 36px;    line-height: 36px;    padding: 0 10px;}.sf-toolbar-block-request .sf-toolbar-info-piece a {    text-decoration: none;}.sf-toolbar-block-request .sf-toolbar-info-piece a:hover {    text-decoration: underline;}.sf-toolbar-block-request .sf-toolbar-redirection-status {    font-weight: normal;    padding: 2px 4px;    line-height: 18px;}.sf-toolbar-block-request .sf-toolbar-info-piece span.sf-toolbar-redirection-method {    font-size: 12px;    height: 17px;    line-height: 17px;    margin-right: 5px;}.sf-toolbar-block-ajax .sf-toolbar-icon {    cursor: pointer;}.sf-toolbar-status-green .sf-toolbar-label,.sf-toolbar-status-yellow .sf-toolbar-label,.sf-toolbar-status-red .sf-toolbar-label {    color: #FFF;}.sf-toolbar-status-green svg path,.sf-toolbar-status-green svg .sf-svg-path,.sf-toolbar-status-red svg path,.sf-toolbar-status-red svg .sf-svg-path,.sf-toolbar-status-yellow svg path,.sf-toolbar-status-yellow svg .sf-svg-path {    fill: #FFF;}.sf-toolbar-block-config svg path,.sf-toolbar-block-config svg .sf-svg-path {    fill: #FFF;}.sf-toolbar-block .sf-toolbar-icon {    display: block;    height: 36px;    padding: 0 7px;    overflow: hidden;    text-overflow: ellipsis;}.sf-toolbar-block-request .sf-toolbar-icon {    padding-left: 0;    padding-right: 0;}.sf-toolbar-block .sf-toolbar-icon img,.sf-toolbar-block .sf-toolbar-icon svg {    border-width: 0;    position: relative;    top: 8px;    vertical-align: baseline;}.sf-toolbar-block .sf-toolbar-icon img + span,.sf-toolbar-block .sf-toolbar-icon svg + span {    margin-left: 4px;}.sf-toolbar-block-config .sf-toolbar-icon .sf-toolbar-value {    margin-left: 4px;}.sf-toolbar-block:hover,.sf-toolbar-block.hover {    position: relative;}.sf-toolbar-block:hover .sf-toolbar-icon,.sf-toolbar-block.hover .sf-toolbar-icon {    background-color: #444;    position: relative;    z-index: 10002;}.sf-toolbar-block-ajax.hover .sf-toolbar-info {    z-index: 10001;}.sf-toolbar-block:hover .sf-toolbar-info,.sf-toolbar-block.hover .sf-toolbar-info {    display: block;    padding: 10px;    max-width: 480px;    max-height: 480px;    word-wrap: break-word;    overflow: hidden;    overflow-y: auto;}.sf-toolbar-info-piece b.sf-toolbar-ajax-info {    color: #F5F5F5;}.sf-toolbar-ajax-requests {    table-layout: auto;    width: 100%;}.sf-toolbar-ajax-requests td {    background-color: #444;    border-bottom: 1px solid #777;    color: #F5F5F5;    font-size: 12px;    padding: 4px;}.sf-toolbar-ajax-requests tr:last-child td {    border-bottom: 0;}.sf-toolbar-ajax-requests th {    background-color: #222;    border-bottom: 0;    color: #AAA;    font-size: 11px;    padding: 4px;}.sf-ajax-request-url {    max-width: 250px;    line-height: 9px;    overflow: hidden;    text-overflow: ellipsis;}.sf-toolbar-ajax-requests .sf-ajax-request-url a {    text-decoration: none;}.sf-toolbar-ajax-requests .sf-ajax-request-url a:hover {    text-decoration: underline;}.sf-ajax-request-duration {    text-align: right;}.sf-ajax-request-loading {    animation: sf-blink .5s ease-in-out infinite;}@keyframes sf-blink {    0% { background: #222; }    50% { background: #444; }    100% { background: #222; }}.sf-toolbar-block.sf-toolbar-block-dump .sf-toolbar-info {    max-width: none;    width: 100%;    position: fixed;    box-sizing: border-box;    left: 0;}.sf-toolbar-block-dump pre.sf-dump {    background-color: #222;    border-color: #777;    border-radius: 0;    margin: 6px 0 12px 0;}.sf-toolbar-block-dump pre.sf-dump:last-child {    margin-bottom: 0;}.sf-toolbar-block-dump pre.sf-dump .sf-dump-search-wrapper {    margin-bottom: 5px;}.sf-toolbar-block-dump pre.sf-dump span.sf-dump-search-count {    color: #333;    font-size: 12px;}.sf-toolbar-block-dump .sf-toolbar-info-piece {    display: block;}.sf-toolbar-block-dump .sf-toolbar-info-piece .sf-toolbar-file-line {    color: #AAA;    margin-left: 4px;}.sf-toolbar-block-dump .sf-toolbar-info img {    display: none;}/* Responsive Design */.sf-toolbar-icon .sf-toolbar-label,.sf-toolbar-icon .sf-toolbar-value {    display: none;}.sf-toolbar-block-config .sf-toolbar-icon .sf-toolbar-label {    display: inline-block;}/* Legacy Design - these styles are maintained to make old panels look   a bit better on the new toolbar */.sf-toolbar-block .sf-toolbar-info-piece-additional-detail {    color: #AAA;    font-size: 12px;}.sf-toolbar-status-green .sf-toolbar-info-piece-additional-detail,.sf-toolbar-status-yellow .sf-toolbar-info-piece-additional-detail,.sf-toolbar-status-red .sf-toolbar-info-piece-additional-detail {    color: #FFF;}@media (min-width: 768px) {    .sf-toolbar-icon .sf-toolbar-label,    .sf-toolbar-icon .sf-toolbar-value {        display: inline;    }    .sf-toolbar-block .sf-toolbar-icon img,    .sf-toolbar-block .sf-toolbar-icon svg {        top: 6px;    }    .sf-toolbar-block-time .sf-toolbar-icon svg,    .sf-toolbar-block-memory .sf-toolbar-icon svg {        display: none;    }    .sf-toolbar-block-time .sf-toolbar-icon svg + span,    .sf-toolbar-block-memory .sf-toolbar-icon svg + span {        margin-left: 0;    }    .sf-toolbar-block .sf-toolbar-icon {        padding: 0 10px;    }    .sf-toolbar-block-time .sf-toolbar-icon {        padding-right: 5px;    }    .sf-toolbar-block-memory .sf-toolbar-icon {        padding-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-icon {        padding-left: 0;        padding-right: 0;    }    .sf-toolbar-block-request .sf-toolbar-label {        margin-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-status + svg {        margin-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-icon svg + .sf-toolbar-label {        margin-left: 0;     }    .sf-toolbar-block-request .sf-toolbar-label + .sf-toolbar-value {        margin-right: 10px;    }    .sf-toolbar-block-request:hover .sf-toolbar-info {        max-width: none;    }    .sf-toolbar-block .sf-toolbar-info-piece b {        font-size: 12px;    }    .sf-toolbar-block .sf-toolbar-info-piece span {        font-size: 13px;    }    .sf-toolbar-block-right {        float: right;        margin-left: 0;        margin-right: 0;    }}@media (min-width: 1024px) {    .sf-toolbar-block .sf-toolbar-info-piece-additional,    .sf-toolbar-block .sf-toolbar-info-piece-additional-detail {        display: inline;    }    .sf-toolbar-block .sf-toolbar-info-piece-additional:empty,    .sf-toolbar-block .sf-toolbar-info-piece-additional-detail:empty {        display: none;    }}/***** Error Toolbar *****/.sf-error-toolbar .sf-toolbarreset {    background: #222;    color: #f5f5f5;    font: 13px/36px Arial, sans-serif;    height: 36px;    padding: 0 15px;    text-align: left;}.sf-error-toolbar .sf-toolbarreset svg {    height: auto;}.sf-error-toolbar .sf-toolbarreset a {    color: #99cdd8;    margin-left: 5px;    text-decoration: underline;}.sf-error-toolbar .sf-toolbarreset a:hover {    text-decoration: none;}.sf-error-toolbar .sf-toolbarreset .sf-toolbar-icon {    float: left;    padding: 5px 0;    margin-right: 10px;}/***** Media query print: Do not print the Toolbar. *****/@media print {    .sf-toolbar {        display: none;    }}</style><script nonce="d162c98418afc8ab915371d90bdd8c2a">/*<![CDATA[*/    (function () {        Sfjs.loadToolbar('4e8aaf');    })();/*]]>*/</script>
+</body>
+</html>

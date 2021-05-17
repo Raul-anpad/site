@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ANPAD</title>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900" rel="stylesheet">
+        <link rel="stylesheet" href="/build/vendors~app.css"><link rel="stylesheet" href="/build/app.css">
+    </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary static-top">
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="/build/images/logo//anpad.png" alt="ANPAD logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto menuTop">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pt_br/associate/">Associe-se</a>
+                </li>
+                                    <li class="nav-item">
+                        <a class="nav-link" href="/pt_br/sign_up/">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle login active" data-toggle="dropdown">Entrar</a>
+                        <div class="dropdown-menu dropdown-menu-right login">
+                            <div id="login-container">
+                                <form action="/pt_br/login" id="formLoginLogin"  class="row" method="POST">
+	<div class="col-12 form-group">
+		<input id="inputIdentifier" type="text" class="form-control" name="identifier" required autofocus placeholder="CPF / Passaport"/>
+	</div>
+	<div class="col-12 form-group">
+		<input id="inputPassword" type="password" class="form-control" name="password" required placeholder="Senha"/>
+    	</div>
+
+			<div class="col-6 links">
+			<a href="/pt_br/sign_up/">Quero me cadastrar</a><br/>
+			Lembrar Senha
+		</div>
+		<div class="col-6">
+			<a class="btn btn-sm btn-primary btn-block follow" id="BtFormLogin">Entrar
+				<i id="btnLoginLoad" style="margin-left:10px;" class="fa fa-spinner fa-spin d-none"></i>
+			</a>
+		</div>
+        <input type="hidden" id="login" name="_csrf_token" value="WxugN5oST3CDoe5QYGGSZbOZ8gpRa-SLJdvD_Y-Snls"/>
+	
+</form>
+
+                            </div>
+                        </div>
+                    </li>
+                                <li class="nav-item" id="buscaHeader">
+                    <form action="/busca">
+                        <input type="text" name="busca" required>
+                    </form>
+                    <a class="nav-link icon"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-language="pt_br" class="btnLanguage nav-link icon float-left px-1 language active"><img src="/build/images//br.png"></a>
+                    <a href="#" data-language="en" class="btnLanguage nav-link icon float-left px-1 language"><img src="/build/images//us.png"></a>
+                    <a href="#" data-language="es" class="btnLanguage nav-link icon float-left px-1 language"><img src="/build/images//es.png"></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto menuBottom">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pt_br/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Periódicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informativo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content hasBreadcumb">
+        <div class="container">
+  <div id="breadcumb" class="pb-md-5">
+    <div class="route">
+      <span>::</span>
+          <a href="/pt_br/" ><span>
+                            ANPAD                        </span></a><meta itemprop="position" content="1"/><span class='separator'>/</span><span>
+                            Eventos                        </span><meta itemprop="position" content="2"/>
+    </div>
+
+    <div class="title">
+                  Detalhes do Evento
+        
+
+    </div>
+      
+    
+        <div class="label">EnEO 2019</div>
+          </div>
+</div>
+            <nav id="sidebar" class="active">
+        <h1>EnEO 2019</h1>
+        <ul class="nav list-unstyled" id="sidebarnav">
+            <li class="active"><a href="#navsidebar-0" data-toggle="tab" role="tab" class="active" aria-selected="true">Apresentação</a></li>
+
+                                                <li><a href="#navsidebar-1654" data-toggle="tab" role="tab">ISSN</a></li>
+                                    <li><a href="#navsidebar-1649" data-toggle="tab" role="tab">Trabalhos Apresentados</a></li>
+                                    <li><a href="#navsidebar-1655" data-toggle="tab" role="tab">Avaliadores</a></li>
+                                    <li><a href="#navsidebar-1656" data-toggle="tab" role="tab">Prêmio/Indicação</a></li>
+                                    <li><a href="#navsidebar-1594" data-toggle="tab" role="tab">Coordenação</a></li>
+                                    <li><a href="#navsidebar-1595" data-toggle="tab" role="tab">Temas de Interesse</a></li>
+                                    </ul>
+    </nav>
+    <div class="container nobc">
+        <div class="fieldset">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <ul class="nav flex-column navsidebar" role="tablist">
+                        <li class="active"><a href="#navsidebar-0" data-toggle="tab" role="tab" class="active" aria-selected="true">Apresentação</a></li>
+
+                                                                                    <li><a href="#navsidebar-1654" data-toggle="tab" role="tab">ISSN</a></li>
+                                                            <li><a href="#navsidebar-1649" data-toggle="tab" role="tab">Trabalhos Apresentados</a></li>
+                                                            <li><a href="#navsidebar-1655" data-toggle="tab" role="tab">Avaliadores</a></li>
+                                                            <li><a href="#navsidebar-1656" data-toggle="tab" role="tab">Prêmio/Indicação</a></li>
+                                                            <li><a href="#navsidebar-1594" data-toggle="tab" role="tab">Coordenação</a></li>
+                                                            <li><a href="#navsidebar-1595" data-toggle="tab" role="tab">Temas de Interesse</a></li>
+                                                                        </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="badge badge-warning d-md-none mb-3">EnEO 2019</div>
+                    <h2 class="d-md-none">Detalhes do Evento</h2>
+                    <button class="btn btn-block btn-primary sidebarCollapse d-lg-none">MENU EVENTO</button>
+                    <div class="tab-content" id="navsidebar">
+                        <div class="tab-pane fade show active" id="navsidebar-0" role="tabpanel">
+
+<div class="fs-90">
+    <h1 class="mb-0">Apresentação</h1>
+    <p class="pb primary">EnEO 2019</p>
+    <p class="pb danger mb-0">UNIFOR - Fortaleza - CE</p>
+    <p class="pb danger">Data:         
+                    
+                
+                
+                    01/01/2010 - 01/01/2030
+            </p>
+    X Encontro de Estudos Organizacionais da ANPAD - EnEO LOCAL - UNIFOR - Fortaleza - CEDATA - 16 a 18 de maio de 2019O X Encontro de Estudos Organizacionais da ANPAD - EnEO será realizado de 16 a 18 de maio de 2019, na cidade de Fortaleza, sob promoção da Associação Nacional de Pós-Graduação e Pesquisa em Administração/ANPAD e de responsabilidade da Divisão Acadêmica de Estudos Organizacionais - EOR.O EnEO é um espaço de discussão de temas científicos no âmbito da Divisão. Esta Chamada de Trabalhos é um convite aos pesquisadores e professores de quaisquer instituições do país e do exterior. O objetivo do evento é fomentar o desenvolvimento da área de estudos em Estudos Organizacionais, considerando os diferentes subsistemas e dimensões de análise, observando, preferencialmente, os Temas de Interesse destacados, por meio de artigos teórico-empíricos, ensaios teóricos e artigos tecnológicos.
+
+    </div>
+</div>
+
+                                                                                    <div class="tab-pane fade" id="navsidebar-1654" role="tabpanel">
+                                    <h1>ISSN</h1>
+                                            ISSN Principal: 2177-2371<br>
+versão online
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1649" role="tabpanel">
+                                    <h1>Trabalhos Apresentados</h1>
+                                        
+
+                                    </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1655" role="tabpanel">
+                                    <h1>Avaliadores</h1>
+                                            ADELE DE TOLEDO CARNEIRO<br>
+Ademir Rodrigues de Mattos<br>
+Adilson Cruz da Silva<br>
+ADRIANA VENTOLA MARRA<br>
+Agatha Justen Gonçalves Ribeiro<br>
+Albino Alves Simione<br>
+ALESSANDRA DE SÁ MELLO DA COSTA<br>
+Alexandre Aranha Arbia<br>
+Alexandre de Pádua Carrieri<br>
+ALICE DE FREITAS OLETO<br>
+Alison Cleiton de Araújo <br>
+Amanda Almeida Paiva<br>
+ANA CAROLINA DE GOUVEA DANTAS MOTTA<br>
+Ana Carolina Júlio<br>
+Ana Carolina Rezende Costa<br>
+Ana Clara Aparecida Alves de Souza<br>
+Ana Cristina Batista dos Santos <br>
+Ana Flávia Rezende<br>
+Ana Heloisa da Costa Lemos <br>
+Ana Paula Medeiros Bauer<br>
+Ana Paula Rodrigues Diniz<br>
+Anabelle Carrilho da Costa<br>
+Anderson de Souza Sant\\'Anna<br>
+ANDRE LUIZ DE PAIVA<br>
+André Luiz Maranhão de Souza-Leão<br>
+André Rubião<br>
+Andréa Cherman<br>
+Andréa Eloisa Bueno Pimentel<br>
+Andréia de Carvalho Silva<br>
+Angela Christina Lucas<br>
+Angelo Brigato Esther<br>
+Ariádne Scalfoni Rigo<br>
+ARISTON AZEVEDO MENDES<br>
+Armindo dos Santos de Sousa Teodósio<br>
+AUDREY SILVA HEIN<br>
+Bárbara Heliodora Andrade Ramos<br>
+Bárbara Katherine Faris Biondini<br>
+Bárbara Novaes Medeiros<br>
+Bartira Pereira Amorim<br>
+Bianca Francine Pollnow Galvão<br>
+Bruno de Souza Lessa<br>
+Caio César Coelho Rodrigues<br>
+Camila Fernanda dos Santos Carlos <br>
+CAMILA RODRIGUES SILVA SANTOS<br>
+carla fabiana cazella<br>
+Carla Vaz dos Santos Ribeiro <br>
+Carlos César de Oliveira Lacerda<br>
+Carlos Eduardo de Lima<br>
+CARLOS HENRIQUE GONCALVES FREITAS<br>
+CARLOS ROBERTO SANTOS VIEIRA<br>
+Carolina Pereira Tokarski<br>
+Caroline Bastos Capaverde<br>
+Cecília Leão Oderich<br>
+Celina Maria Frias Leal Martins<br>
+Charles dos Santos<br>
+Charles Kirschbaum<br>
+Chiara Gomes Costanzi<br>
+CINTIA RODRIGUES DE OLIVEIRA MEDEIROS<br>
+CLAUDIO ROBERTO MARQUES GURGEL<br>
+Cledinaldo Aparecido Dias<br>
+Cristiane Krüger<br>
+Cristiano de Oliveira Maciel<br>
+CRISTINA ESPINHEIRA COSTA PEREIRA<br>
+Daiane Batista de Jesua<br>
+Daniel Felipe Victor Martins<br>
+Daniel Moraes Pinheiro<br>
+DANIELA GIARETA DURANTE<br>
+Daniela Meirelles Andrade<br>
+daniella munhoz da costa lima<br>
+Danilo José Alano Melo<br>
+DANIVAL SOUSA CAVALCANTE<br>
+David Silva Franco<br>
+Débora Paschoal Dourado<br>
+Débora Vargas Ferreira Costa<br>
+Deborah Kelly Nascimento Pessoa<br>
+Denis Alves Perdigão <br>
+Denise Clementino de Souza<br>
+DENIZE GRZYBOVSKI<br>
+Dimitri Augusto da Cunha Toledo <br>
+Diógenes de Souza Bido<br>
+Diogo Henrique Helal<br>
+Dorival<br>
+Eder Ahmad Charaf Eddine<br>
+EDUARDO ARMANDO<br>
+Eduardo Guedes Villar<br>
+Eduardo Paes Barreto Davel<br>
+Eduardo Sá Barreto<br>
+Edy Lawson Silva Santos<br>
+Elaine Barbosa da Silva<br>
+Elaine Freitas de Sousa <br>
+elaine marinho bastos<br>
+Elcemir Paço Cunha<br>
+Elcio Gustavo Benini<br>
+ELIANA CRISTINA MOTTA DA SILVA BOURRY<br>
+ELIETI BIQUES FERNANDES<br>
+Elinaldo Santos<br>
+Elisa Yoshie Ichikawa<br>
+Elisabeth Cavalcante dos Santos<br>
+Elisângela de Jesus Furtado da Silva<br>
+Elisângela Domingues Michelatto Natt<br>
+Elton Oliveira de Moura <br>
+Ely  Severiano Junior<br>
+EMANUELLA LUSTOSA BANDEIRA<br>
+Emiliano Sousa Pontes<br>
+Enise Barth<br>
+Erica de Aguiar Botelho<br>
+Érica Souza Siqueira<br>
+ERNANI CARPENEDO BUSANELO<br>
+Ernesto Michelângelo Giglio<br>
+Evangelina da Silva Sousa<br>
+Everson Muckenberger<br>
+Eziel Gualberto de Oliveira<br>
+FABIANA FLORIO DOMINGUES<br>
+Fabiane Louise Pinto<br>
+Fábio Aurélio de Mario<br>
+Fabio Bittencourt Meira<br>
+Fábio Freitas Schilling Marquesan<br>
+Fabio Mello Fagundes<br>
+Fabio Vizeu<br>
+Fátima Matos<br>
+Felipe Fonseca de Araujo<br>
+Felipe Fróes Couto<br>
+Fernanda Geremias Leal<br>
+Fernanda Junia Dornela<br>
+Fernanda Kempner Moreira<br>
+Fernanda Rocha da Silva<br>
+Fernanda Tarabal Lopes<br>
+Fernando de Oliveira Vieira<br>
+Fernando Ressetti Pinheiro Marques Vianna<br>
+Filipe Cabacine Lopes Machado<br>
+Flavio Macau<br>
+Francis Kanashiro Meneghetti<br>
+Francisco Raniere Moreira da Silva<br>
+Frederico José Lustosa da Costa<br>
+Gabriel do Carmo Yamamoto<br>
+Gabriel Farias Alves Correia<br>
+Gabriela Ostrovski Cabral<br>
+Gean Carlos Tomazzoni<br>
+Georgiana Luna Batinga<br>
+Gesinaldo Ataíde Cândido<br>
+Gilmara Lima de Elua Roble<br>
+Giselle Cavalcante Queiroz<br>
+Guilherme Osiris Hübner<br>
+Gustavo Henrique Petean<br>
+Gustavo Matarazzo Rezende<br>
+Helga Midori Iwamoto<br>
+Henrique<br>
+HENRIQUE CESAR MUZZIO DE PAIVA BARROSO<br>
+HERRISSON FABIO DE OLIVEIRA DUTRA<br>
+Irene Dobarrio Machado Ciccarino<br>
+Isabella Stroppa Rodrigues<br>
+Isadora Bacha lopes<br>
+Ivan de Souza Dutra<br>
+Ivor Prolo<br>
+Izabely Regina Gibelato<br>
+Janaína Maria Bueno<br>
+Janaynna de Moura Ferraz<br>
+Janette Brunstein<br>
+JEAN CARLO SILVA DOS SANTOS<br>
+Jefferson Rodrigues Pereira<br>
+Jessica Rani Ferreira de Sousa<br>
+JOAO LUIS JOSINO SOARES<br>
+João Paulo Cavalcante Lima<br>
+Joelma Kremer<br>
+joelma soares da silva<br>
+Joice Chiareto<br>
+JORGE ALTAIR  PINTO STURMER<br>
+Jorge Tenório Fernando<br>
+José Edemir da Silva Anjo<br>
+Jose Henrique Bortoluci<br>
+José Ricardo Costa de Mendonça<br>
+JOSE RODOLFO TENÓRIO LIMA<br>
+José Vitor Palhares<br>
+Josiane Barbosa Gouvêa<br>
+Josiane Silva de Oliveira<br>
+Juan Arturo Castaneda Ayarza<br>
+julia melo macluf biberg<br>
+Juliana Cristina Teixeira<br>
+Juliana de Fátima Pinto<br>
+Juliana Goulart Soares do Nascimento<br>
+Juliana Previatto Baldini Tonon<br>
+Juliane Sachser Angnes<br>
+Juliano Danilo Spuldaro<br>
+Jussara Jéssica Pereira<br>
+Karina Furtado Rodrigues<br>
+KATIA CYRLENE DE ARAUJO VASCONCELOS<br>
+Katiuscia Schiemer Vargas<br>
+Laerson Morais Silva Lopes<br>
+LAÍS SILVEIRA SANTOS<br>
+Leandro Ribeiro Silva<br>
+LEANDRO RODRIGO CANTO BONFIM<br>
+Leandro Theodoro Guedes<br>
+Leonardo Antonio Siervo da Motta<br>
+LEONARDO BORGES FERREIRA<br>
+LEONARDO TONON<br>
+LETICIA DIAS FANTINEL<br>
+Leticia Godinho de Souza<br>
+LILIAM DEISY GHIZONI<br>
+Lilian Alfaia Monteiro<br>
+Lindomar Pinto da Silva<br>
+Lorena Esteves de Oliveira<br>
+Luana Simões Pinheiro<br>
+LUCAS CASAGRANDE<br>
+Lucas Silvestre de Carvalho<br>
+Lucélia Rocha da Silva<br>
+LUCIANA APARECIDA BARBIERI DA ROSA<br>
+Luciana Merlin Bervian<br>
+Luciano Ferreira da Silva<br>
+Luciano Mendes<br>
+Lucimeiry Batista da Silva<br>
+Luiz Alberto da Costa Mariz<br>
+Luiz Alex Silva Saraiva<br>
+Luma Louise Sousa Lopes<br>
+Maciel Manoel de Queiroz<br>
+Maiara Oliveira Marinho<br>
+Marcelo Almeida de Carvalho Silva<br>
+Marcelo Augusto Finazzi Santos<br>
+Marcelo de Souza Bispo<br>
+MARCELO LOYOLA FRAGA<br>
+Marcelo Magno Rocha Nascimento<br>
+MARCIA ALESSANDRA F O PENNA<br>
+Marcia Cristiane Gruba<br>
+Márcia de Freitas Duarte<br>
+Márcia Zabdiele Moreira<br>
+Márcio André Leal Bauer<br>
+MARCIO AUGUSTO LASSANCE CUNHA FILHO<br>
+Marcio Gomes de Sá<br>
+MARCIO LUIZ MARIETTO<br>
+Márcio Noveli<br>
+Marcio Silva Rodrigues<br>
+Marcos Lopez Rego<br>
+MARCOS PAULO DE OLIVEIRA CORREA<br>
+Marcos Vinícius Pereira Correa<br>
+Marcus Vinicius S. Siqueira<br>
+Maria Aurelina Machado de Oliveira<br>
+Maria Camila Florêncio da Silva<br>
+Maria de Nazaré Moraes Soares<br>
+Maria Fernanda Rios Cavalcanti<br>
+Maria Gracinda Carvalho Teixeira<br>
+Maria Isabel Peixoto Guimarães<br>
+MARIA JOSÉ DA SILVA FEITOSA<br>
+Maria Salvelina Marques Lourenço<br>
+mariana aparecida euflausino dos santos<br>
+Mariana Luísa da Costa Lage<br>
+Mariana Mayumi Pereira de Souza<br>
+Mariana Mazzini Marcondes<br>
+MARIETE XIMENES ARAUJO LIMA<br>
+Marina Dantas de Figueiredo<br>
+MARINA GOMES COELHO <br>
+Mario Aquino Alves<br>
+Marllon Emanoel Souza Medeiros de Vasconcelos<br>
+Marta Chaves Vasconcelos de Oliveira<br>
+Marta Fabiano Sambiase<br>
+Martín Andrés Moreira Zamora<br>
+Maurício Donavan Rodrigues Paniza<br>
+Mayla Cristina Costa<br>
+Michelle de Souza Rocha<br>
+Milka Alves Correia Barbosa<br>
+Milton Carlos Farina<br>
+Míriam de Castro Possas<br>
+Miriam Pires Eustachio de Medeiros Vale<br>
+Mirian Assumpção e Lima<br>
+Mônica de Aguiar Mac-Allister da Silva<br>
+MONICA MATOS RIBEIRO<br>
+Moriel Luídgi Lenhard Savagnago<br>
+Nágila Giovanna Silva Vilela<br>
+NAIRANA RADTKE CANEPPELE BUSSLER <br>
+Natália Rese<br>
+Nathália de Fátima Joaquim<br>
+NILSON CESAR BERTOLI<br>
+Noézia Maria Ramos<br>
+Patricia Ayumi Hodge Viana de Carvalho<br>
+Patrícia Rosvadoski da Silva<br>
+Patrícia Teixeira Maggi Silva<br>
+Paula Cristina de Moura Fernandes<br>
+Paula Gontijo Martins<br>
+Paulo Emílio Matos Martins<br>
+paulo jordao de oliveira cerqueira fortes<br>
+Paulo José Góes Daltro<br>
+Paulo Ricardo Zilio Abdala<br>
+Pedro Henrique Mariosa<br>
+PEDRO HENRIQUE RODRIGUES DE SOUSA<br>
+Pedro Ivan Christoffoli<br>
+Plábio Marcos Martins Desidério<br>
+Priscilla Borgonhoni Chagas<br>
+Rafael Carvalho Machado<br>
+Raphael Schlickmann<br>
+Rebeka Maria Sotero Silva<br>
+Regina Stela Corrêa Vieira<br>
+Rejane Prevot Nascimento<br>
+Renan Gomes de Moura<br>
+Renata Cherém<br>
+Renata Couto de Azevedo de Oliveira<br>
+Renata de Almeida Bicalho Pinto<br>
+Renata Faleiros Camargo Moreno<br>
+RENATA GUIMARÃES QUELHA DE SÁ<br>
+Renato Koch Colomby<br>
+RENATO TELLES<br>
+RISIA KALIANE SANTANA DE SOUZA <br>
+Roberto Bazanini<br>
+Rodilon Teixeira<br>
+Rodrigo Bastos Monteiro<br>
+Rodrigo Bombonati de Souza Moraes<br>
+Rodrigo Furst de Freitas Accetta<br>
+Rodrigo Gameiro Guimarães<br>
+Rodrigo Guimarães Motta<br>
+Rodrigo Miranda<br>
+romulo gomes<br>
+Rosana Córdova Guimarães<br>
+Roseli Morena Porto<br>
+Rossi Henrique Soares Chaves<br>
+Rui Fernando Correia Ferreira<br>
+Sabrina Oliveira de Figueiredo<br>
+Samantha Luiza de Souza Broman<br>
+Samir Adamoglu de Oliveira<br>
+Sandra Regina da Rocha Pinto<br>
+Sergio Bulgacov<br>
+Sergio Eduardo de Pinho Velho Wanderley<br>
+Sergio Ricardo de Castro Gonçalves<br>
+Simarly Maria Soares<br>
+SIMONE COSTA SILVA<br>
+Susana Iglesias Webering<br>
+Susane Petinelli Souza<br>
+Taiz Vieira Alfaya <br>
+Tânia Moura Benevides<br>
+TATIANA APARECIDA FERREIRA DOIN<br>
+TATIANA DIAS SILVA<br>
+Tércio Antonio de Souza Xavier<br>
+Tereza Cristina Batista de Lima<br>
+thais zimovski garcia de oliveira<br>
+Valdir Costa Junior<br>
+Valdir Machado Valadão Júnior<br>
+Vanessa Brulon Soares<br>
+Vanessa Faria Silva<br>
+Vanessa Martines Cepellos<br>
+Vanêssa Silveira Pereira Simon<br>
+Vania Martins dos Santos<br>
+Victor Silva Corrêa<br>
+Vinícius Rennó Castro<br>
+Wellington Dias de Oliveira<br>
+Yákara Vasconcelos Pereira<br>
+YANA MOURA DE SOUSA<br>
+Yeda Swirski de Souza<br>
+
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1656" role="tabpanel">
+                                    <h1>Prêmio/Indicação</h1>
+                                            <h2>Prêmio de Melhor Trabalho</h2>
+
+<h2>Concorrentes:</h2>
+
+<b>EnEO321 Tema 01<br>
+A Evolução da Governança Corporativa: 2008 a 2018 estudo sobre as empresas da Bolsa de Valores Brasileiras e o IPO</b><br>
+Francisco Elder Escossio de Barros (UNIVALI)<br>
+Rosilene Marcon (UNIVALI)<br>
+Ruan Carlos Dos Santos (UNIVALI)<br>
+ <br>
+<b>EnEO415 Tema 13  <br>
+O Organizar (Organising) Must Go On: Propostas Teóricas para a Compreensão das “Organizações ao Vivo” </b><br>
+Márcia de Freitas Duarte (FGV/EAESP e PPGA/UNIFOR)<br>
+ <br>
+<b>EnEO420 Tema 02<br>
+A Construção do Discurso Hegemônico da Teoria das Organizações a partir da Interpretação Parsoniana de Weber</b><br>
+Amanda Keren Frois (PPGA/CESA/UEL)<br>
+
+<br>
+<div class=\\\"row\\\">
+	<div class=\\\"col-md-4\\\"><img style=\\\"width: 100%\\\" src=\\\"http://www.anpad.org.br/~anpad/diversos/2019/2019_EnEO_Premios_EnEO.png\\\"></div>
+	<div class=\\\"col-md-8\\\">
+		<b>EnEO415 - O Organizar (Organising) Must Go On: Propostas Teóricas para a Compreensão das “Organizações ao Vivo”</b><br>
+		<br>
+		Tema de Interesse: Tema 13<br>
+		<br>
+		Autora:<br>
+		Márcia de Freitas Duarte (FGV/EAESP e PPGA/UNIFOR)<br>
+	</div>
+</div>
+<br>
+
+<h2>Prêmio Melhor Avaliador </h2>
+<div class=\\\"row\\\">
+	<div class=\\\"col-md-4\\\"><img style=\\\"width: 100%\\\" src=\\\"http://www.anpad.org.br/~anpad/diversos/2019/2019_EnEO_Melhor_Avaliador.png\\\"></div>
+	<div class=\\\"col-md-8\\\">
+		<b>Samir Adamoglu de Oliveira</b><br>
+	</div>
+</div>
+<br>
+
+<h2>Prêmio Melhor Artigo Derivado de Dissertação de Mestrado</h2>
+<div class=\\\"row\\\">
+	<div class=\\\"col-md-4\\\"><img style=\\\"width: 100%\\\" src=\\\"http://www.anpad.org.br/~anpad/diversos/2019/2019_EnEO_Melhor_Artigo_Dissertacao.png\\\"></div>
+	<div class=\\\"col-md-8\\\">
+		<b>EnEO248 - Agravos físicos e sociais em policiais militares: relações com a organização do trabalho</b><br>
+		<br>
+		Tema de Interesse: Tema 9<br>
+		<br>
+		Autores:<br>
+		Leonardo Borges Ferreira (Programa de Pós-Graduação em Psicologia Social, do Trabalho e das Organizações/Universidade de Brasília e Estudos Policiais e Criminológicos/ Instituto Superior de Ciências Policiais – UnB e ISCP)<br>
+		Cledinaldo Aparecido Dias (PPGA/UnB)<br>
+		Marcus Vinicius S. Siqueira<br>
+	</div>
+</div>
+<br>
+
+<h2>Prêmio Melhor Artigo Derivado de Tese de Doutorado</h2>
+<div class=\\\"row\\\">
+	<div class=\\\"col-md-4\\\"><img style=\\\"width: 100%\\\" src=\\\"http://www.anpad.org.br/~anpad/diversos/2019/2019_EnEO_Melhor_Artigo_Tese.png\\\"></div>
+	<div class=\\\"col-md-8\\\">
+		<b>EnEO404 - Materialidade e Criatividade: Organizando um Espetáculo de Teatro Musical em São Paulo, SP, Brasil</b><br>
+		<br>
+		Tema de Interesse: Tema 8<br>
+		<br>
+		Autora:<br>
+		Márcia de Freitas Duarte (FGV/EAESP e PPGA/UNIFOR)<br>
+	</div>
+</div>
+<br>
+
+<h2>Prêmio de Trajetória Acadêmica</h2>
+<div class=\\\"row\\\">
+	<div class=\\\"col-md-4\\\"><img style=\\\"width: 100%\\\" src=\\\"http://www.anpad.org.br/~anpad/diversos/2019/2019_EnEO_Trajetoria_Academica.png\\\"></div>
+	<div class=\\\"col-md-8\\\">
+		<b>Tânia Maria Diederichs Fischer</b><br>
+	</div>
+</div>
+<br>
+
+<h2>Prêmio Jovem Pesquisador </h2>
+<div class=\\\"row\\\">
+	<div class=\\\"col-md-4\\\"><img style=\\\"width: 100%\\\" src=\\\"http://www.anpad.org.br/~anpad/diversos/2019/2019_EnEO_Jovem_Pesquisador.png\\\"></div>
+	<div class=\\\"col-md-8\\\">
+		<b>Juliana Cristina Teixeira</b><br>
+	</div>
+</div>
+<br>
+
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1594" role="tabpanel">
+                                    <h1>Coordenação</h1>
+                                            <b>Estudos Organizacionais - EOR</b><br>
+<br>
+<b>Coordenador:</b> Alessandra de Sá Mello da Costa - IAG/PUC-Rio <br>
+<br>
+<b>Comitê Científico:</b><br>
+Cintia Rodrigues de Oliveira Medeiros - PPGA/FAGEN/UFU e PPGGO/UFU<br>
+Marcelo de Souza Bispo - PPGA/UFPB<br>
+Rafael Alcadipani da Silveira - CMDE e MPGPP/FGV/EAESP<br>
+
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1595" role="tabpanel">
+                                    <h1>Temas de Interesse</h1>
+                                            Os trabalhos foram, necessariamente, submetidos para avaliação, seleção e divulgação em um dos temas descritos a seguir.<br>
+<br>
+<div class=\\\"alert alert-warning\\\" role=\\\"alert\\\">
+Para obter maiores informações sobre o tema desejado, clica sobre o mesmo para expandir sua descrição.
+</div>
+
+<div class=\\\"panel-group\\\" id=\\\"accordion\\\" role=\\\"tablist\\\" aria-multiselectable=\\\"true\\\">
+  
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading01\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse01\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse01\\\">
+          Tema 01 - Comportamento e Interações Sociais nas Organizações
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse01\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading01\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Marina Dantas de Fiqueiredo (UNIFOR)<br>
+        Rejane Prevot (Unigranrio)<br><br>
+
+        Estudos que aprofundem a reflexão sobre o comportamento de indivíduos e interação em grupo nas organizações compõem o escopo deste tema. Estudos que apresentem perspectivas instigantes para a compreensão de práticas de aprendizagem social, dignidade, relações intragrupais, estão contempladas. Pesquisas que avancem sobre a contribuição de percepções, emoções, desejo, afeto, valores, crenças e atitudes para compreender o comportamento. Temas de fronteira no âmbito dos estudos do comportamento e interações nas organizações são especialmente encorajados.
+        <br><br>
+        <b>Palavras-chave:</b> Interações Sociais, Relações intragrupais, Aprendizagem Social, Emoções, Comportamento de Indivíduos
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading02\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse02\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse02\\\">
+          Tema 02 - Ontologia, Epistemologias, Teorias e Metodologias nos Estudos Organizacionais
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse02\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading02\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Ariston Azevedo Mendes (UFRGS)<br>
+        Marcio Sá (UFPE)<br><br>
+
+        Congrega trabalhos de cunho epistemológico ou metodológico com foco nos estudos organizacionais. A concepção de epistemologia é contemporânea, crítica e reflexiva, ou seja, incorpora o desenvolvimento da interdisciplinaridade e da transdisciplinaridade. Portanto, o diálogo entre diversas formas de ciência e de saberes é reconhecido como contribuição aos estudos organizacionais. Acolhe-se, por exemplo, a sociologia da ciência envolvendo discussões sobre as dimensões e natureza do campo científico, problemática sociopolítica dos atores, processos de produção e difusão do conhecimento. São bem-vindas as contribuições da história, da antropologia, da psicanálise da ciência, da geopolítica do conhecimento (Norte/Sul). Visa-se a pluralidade hermenêutica dos saberes (locais/globais). Desenvolve-se uma paradigmatologia, uma ciência com consciência. Espera-se que os trabalhos voltados para a vertente metodológica promovam discussões sobre o rigor na produção científica, com destaque para a problemática que caracteriza o emprego das metodologias qualitativas nos estudos organizacionais, considerando tanto as clássicas quanto as novas estratégias de pesquisa.
+        <br><br>
+        <b>Palavras-chave:</b> Epistemologias, Ontologias, Teorias, Metodologias, Interdisciplinaridade
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading03\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse03\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse03\\\">
+          Tema 03 - Simbolismos, Culturas e Identidades em Organizações
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse03\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading03\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Letícia Dias Fantinel (UFES)<br>
+        Leonardo Tonon (UFTPR)<br><br>
+
+        Abriga estudos que tomem a organização como espaço privilegiado de criações e reproduções simbólicas a partir das seguintes abordagens: culturas em organizações; globalização e cultura de negócios; poder e simbolismo em organizações; identidade em organizações; espaço, tempo e territorialidade no trabalho; aspectos teóricos e metodológicos em estudos sobre simbolismo em organizações.
+        <br><br>
+        <b>Palavras-chave:</b> Simbolismo, Culturas em Organizações, Identidades em Organizações, Poder e Simbolismo
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading04\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse04\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse04\\\">
+          Tema 04 - Crítica da Economia Política e Organizações
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse04\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading04\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Deise Luiza da Silva Ferraz (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD - UFMG)<br>
+        Cláudio Roberto Marques Gurgel (Prog de Pós-Grad em Admin/Faculdade de Admin, Ciências Contábeis e Turismo - PPGAd/EST - UFF)<br>
+        Elcemir Paço Cunha (Progr de Pós-Grad em Admin/Fac de Admin e Ciências Contábeis/Curso de Mest Acadêmicod em Admin/PPGA/FACC/CMAA - UFJF)<br>
+        José Henrique de Faria (Centro de Pesq e Pós-Grad em Admin – CEPPAD - UFPR) <br>
+        Wescley Silva Xavier (Prog de Pós-Grad em Admin - PPG-ADM - UFV)<br><br>
+
+        O objetivo do tema é fomentar o debate sobre as organizações (Estado, unidades produtivas, bancos, organizações de classe, movimentos sociais, cidades etc.) com fundamentação na crítica da economia política. O estudo das organizações depende de uma base racional capaz de proporcionar elementos explicativos do fenômeno para além das identidades superficiais e das escolhas conceituais abstratas e arbitrárias. A crítica da economia política possibilita a ultrapassagem de aspectos epidérmicos e consequentemente o alcance das determinações fundamentais do modo de produção capitalista (modalidade específica de produção e apropriação da riqueza) e sua dinâmica historicamente determinada de reciprocidades entre continuidade e mudança. Nesse sentido, o tema propõe uma aproximação direta e consciente entre o estudo das organizações e a crítica da economia política, servindo de âncora para tal estudo e para a inquirição das formações ideais (formas de consciência teóricas e práticas) correspondentes, ao mesmo tempo que procura enfrentar as tendências apologéticas diretas e indiretas (irracionalismo) em favor da crítica radical, isto é, no entendimento de que “ser radical é agarrar as coisas pela raiz” (Marx). O tema é aberto às correntes clássicas e contemporâneas da ortodoxia e da heterodoxia dos marxismos, bem como às expressões sociológicas que flertam diretamente com os problemas da crítica da economia política e que emanam da sociabilidade regulada pelo capital. A crítica radical possui tradição na administração e nos estudos organizacionais no Brasil por meio de diferentes autores. Basta mencionar Maurício Tragtenberg e Fernando Prestes Motta que, em diferentes obras seminais, não abriram mão dos fundamentos marxistas e mobilizaram elementos da crítica da economia política como fatores explicativos para fenômenos tais como a burocracia, as alterações do processo de trabalho e as próprias teorias da administração e das organizações etc. Essa tradição é aberta ao pensamento social, inclusive latino-americano, que se debruçou sobre incontáveis aspectos que marcam a dinâmica econômica e política dos centros econômicos e das economias subordinadas. A proposta do tema é desenvolver a base racional aos estudos organizacionais na crítica da economia política e congregar pesquisadores e grupos de pesquisa ancorados no materialismo e na crítica radical. Por sua vez, a atualidade do tema é evocada não apenas por inúmeros pesquisadores brasileiros e estrangeiros que dedicam atenção aos mesmos fundamentos e elementos, mas também em razão do fato de que o contexto de crise econômica e suas notórias consequências sociais e políticas acionam incontornavelmente aquela tradição crítica do modo de produção capitalista. Tópicos:<br>
+        Capitalismo, organizações e desigualdades de classe, raça e gênero<br>
+        Estado e capital;<br>
+        Desenvolvimento desigual e associação subordinada entre economias nacionais;<br>
+        Acumulação de capital, capital fictício e crises;<br>
+        Produção capitalista do espaço;<br>
+        Processo de trabalho e tecnologia;<br>
+        Produção destrutiva e natureza;<br>
+        Processo de produção capitalista e processo de produção saúde-doença;<br>
+        Gestão, poder e controle nas organizações;<br>
+        Subjetividade na sociabilidade do capital;<br>
+        Movimentos sociais e organizações de resistência;<br>
+        Materialismo, ontologia e o problema do conhecimento;<br>
+        Marxologia, formações ideias e crítica ontológica;<br>
+        Ideologia e ideologias.
+        <br><br>
+        <b>Palavras-chave:</b> Poder e Controle, Modo de Produção Capitalista , Crítica da Economia Política, Materialismo , Crítica Radical
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading05\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse05\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse05\\\">
+          Tema 05 - Crime e Violência Organizacional
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse05\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading05\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Francis Kanashiro Meneghetti (Prog de Pós-Grad em Admin/Curso de Mestr Acadêmico em Admin/PPGA - UTFPR)<br>
+        Marcelo Almeida de Carvalho Silva (PPGCC - UFRJ)<br>
+        Valdir Machado Valadão Júnior (Prog de Pós-Grad em Admin e Controlad – PPAC - UFU)<br><br>
+
+        O interesse pelas práticas obscuras das organizações não pode ser considerado novidade. Há quase vinte anos, Vaughan (1999) em “The Dark Side of Organizations: mistake, misconduct, and disaster” já explicava que estudiosos se debruçavam sobre o tema, embora não o chamassem dessa forma. Desde então, é indiscutível o desenvolvimento que o tema passou nos últimos anos. Recentemente, uma relevante revista de Estudos Organizacionais (Organizational Studies) dedicou um número especial para debater a temática (Linstead, Maréchal e Griffin, 2010;2014).<br>
+        De maneira correlata, nos Estudos Organizacionais brasileiros as pesquisas dedicadas a analisar práticas obscuras das organizações tem encontrado espaço nos principais eventos da área como o Congresso Brasileiro de Estudos Organizacionais (CBEO) e vinculados a ANPAD.<br>
+        Dentro desta perspectiva, as pesquisas sobre algumas formas de violência e os crimes cometidos pelas organizações ganham importância na medida que utilizam este espaço com estudos que apontam a recorrência de práticas organizacionais voltadas para a atividade criminosa (Medeiros, 2013;  Borges, Medeiros, Biase & Valadão, 2015; Medeiros, Alcadipani & Oliveira, 2016), violência simbólica (Rosa & Brito, 2007; Bicalho & Paula, 2009), violência psicológica (Teixeira, Mesquita & Constanzi, 2018), violência moral (Siqueira, Carrieri, Lima & Andrade, 2008) ou que procuram teorizar a respeito do tema (Faria & Meneghetti, 2002; Bicalho, 2008; Meneghetti & Cicmanec, 2010). Sob uma ótica parcialmente diferente, a relação entre violência e organizações também tem sido objeto de análise para a compreensão de instituições constituídas para fins de violência e extermínio sejam elas formalizadas ou não (Meneghetti, 2011; Meneghetti, 2013; Meneghetti, 2017). Outros estudos enfatizam esta temática utilizando outras abordagens teóricas como pesquisas sobre assédio (Paixão et al, 2011; Rodrigues & Freitas, 2013) e Direitos Humanos (Costa & Silva, 2015).<br>
+        Desta maneira, este eixo temático propõe a continuidade das pertinentes discussões que tratam da temática da violência em todas as suas formas e dos crimes praticados pelas organizações. Assim, são bem-vindos trabalhos que procurem avançar no conhecimento sobre estes fenômenos para além da existência destas práticas nas organizações.<br>
+        Algumas possibilidades de pesquisa podem incluir, mas não se limitam a:<br>
+        - Diferentes formas de violência e crimes nas organizações como:<br>
+        Corrupção, fraude, subornos e sabotagens<br>
+        Vigilância, espionagem e monitoramento de trabalhadores e sociedade<br>
+        Assédio, abuso do poder, coações, intimidações<br>
+        Acidente, adoecimento e suicídio decorrente do trabalho<br>
+        Violência política<br>
+        Assassinatos<br>
+        Trabalho escravo e similaridades<br>
+        - Os níveis onde esses atos são cometidos (micro, meso ou macro), questionando se são cometidos por indivíduos ou empresas/organizações? <br>
+        - De que forma o crime e a violência são gerenciados pelas organizações. Como a “eficiência burocrática/empresarial” pode ser utilizada nas práticas violentas e/ou criminosas?<br>
+        - Identificar e analisar as práticas utilizadas pelas organizações para normalizar atividades violentas ou criminosas<br>
+        - Diferentes tipos de organizações que atuam com base na violência/crime: exércitos, organizações criminosas, organizações totalitárias<br>
+        - Aspectos teóricos a respeito da violência e crimes corporativos<br>
+        - Relação entre diversos atores (empresa x empresa; empresa x estado) na constituição desses atos.<br>
+        - Violação dos direitos humanos<br>
+        Serão aceitos trabalhos empíricos ou teóricos que utilizem qualquer abordagem epistemológica ou metodológica.
+        <br><br>
+        <b>Palavras-chave:</b> Violência Organizacional, Crime Corporativo, Organizações Totalitárias, Direitos Humanos, Assédio
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading06\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse06\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse06\\\">
+          Tema 06 - Diversidade Inter Organizacional e Redes Solidárias
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse06\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading06\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Ernesto Michelangelo Giglio (Prog de Mestr em Admin - UNIP)<br>
+        Duarcides Ferreira Mariosa (Prog de Mestr Prof em Admin - Gestão em Sistemas de Saúde - PMPA-GSS - UNINOVE)<br>
+        Sandro Benedito Sguarezi (Programa de Pós Graduação em Ciências Ambientais  - Universidade do Estado de Mato Grosso- UNEMAT)<br>
+        Enise Barth (Prog de Pós-Grad em Admin – PPGA - UFSC)<br><br>
+
+        As expressões “diversidade organizacional” e “redes solidárias” propõem um diálogo sobre as estrutura, práticas, normas, regras, valores e gestão de grupos de organizações, especialmente os casos da América Latina, englobando desde pequenas redes de empreendedores locais, como das comunidades ribeirinhas do rio Amazonas, até projetos sociais mais amplos, como o programa de resíduos sólidos que apoia a formação de redes de material reciclável.<br>
+        Entende-se por diversidade organizacional a configuração de grupos de trabalho, sejam de natureza comercial, ou outra, que apresentam características distintivas, tais estrutura de ligações e de papéis, alinhamento com valores éticos e simbólicos próprios do grupo, coerência com contexto político, social e econômico local, códigos de comunicação e modos específicos de constituição da governança.<br>
+        A seleção do campo de redes solidárias (mercado solidário, economia solidária, economia da comunhão, mercado justo, economia justa) resulta de três fontes:<br>
+        a. proliferação de exemplos, casos e discussões sobre redes, diversidade e governança; <br>
+        b. sua importância social, quando se consideram itens da agenda 2030, como Saúde e Bem-Estar, Trabalho Decente, Desenvolvimento Territorial e Redução de Desigualdades;<br>
+        c. Sua relevância acadêmica, conforme constataram os proponentes, sobre artigos apresentados nos congressos internacionais;<br>
+        d. Sua relevância gerencial, quando se considera governança na vertente conceitual de gestão.<br>
+        Desse contexto, em que a diversidade nas redes solidárias parece acenar para novos modos de ações coletivas, surgem alguns questionamentos e proposições de subtemas para submissões de artigos. <br>
+        - Contextos nos quais emergem a diversidade de redes solidárias – Existem características e condições específicas?<br>
+        - Diversidade no sentido de arranjos organizacionais distintos na estrutura, hierarquia, direção, metas, processos, ações coletivas. Valorizam-se as análises de redes solidárias. Inclui a dinâmica de relacionamento entre os atores e os processos decisórios do grupo.<br>
+        - Discussões sobre os fatores de desenvolvimento e de resultados de redes solidárias diversas. Pode-se aplicar os mesmos indicadores tradicionais de resultados comerciais e sociais, ou deve-se construir sobre outras bases? <br>
+        - Modelos de gestão que se mostram apropriados para essas redes. Análise e crítica dos modelos tradicionais de gestão.<br>
+        - Metodologias de investigação da diversidade em redes solidárias, considerando a dominância de formas de coleta que buscam a convergência e o padrão.<br>
+        - Exemplos de integração entre governo, ONGs e organizações privadas no desenvolvimento de redes solidárias<br>
+        - Importância social, econômica e política da existência de diversidade de redes solidárias na América Latina.<br>
+        - Casos de sucesso e de fracasso em redes solidárias, especialmente os que podem ser explicados a partir da diversidade.<br>
+        - Interfaces possíveis entre diversidade organizacional, redes solidárias e sustentabilidade.<br>
+        - Fronteiras e agenda de investigação na diversidade organizacional voltada para redes solidárias.<br>
+        - A formação, organização e estrutura das redes de identidade e das redes de contingência.
+        <br><br>
+        <b>Palavras-chave:</b> Diversidade Organizacional, Redes Solidárias, Arranjos Organizacionais, Modelos de Gestão
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading07\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse07\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse07\\\">
+          Tema 07 - Cidades e Estudos Organizacionais: História, Gestão e Prática Social
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse07\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading07\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Ana Sílvia Rocha Ipiranga (Prog de Pós-Grad em Admin - PPGA - UECE)<br>
+        Luiz Alex Silva Saraiva (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD - UFMG)<br>
+        Ulf Thoene (Escuela Internacional de Ciencias Económicas y Administrativas (EICEA) - Universidad de La Sabana - Colombia)<br><br>
+
+        As cidades têm se apresentado de modo cada vez mais profícuo no campo dos Estudos Organizacionais, ampliando a sólida produção acadêmica sobre o espaço urbano, já presente nos campos da Arquitetura e Urbanismo, da Geografia, da Sociologia Urbana, da Antropologia Urbana e, mais recentemente, no da Administração Pública. Neste último campo, são grandes as preocupações em torno da gestão da cidade em termos de governança, regulamentações, participação popular, organização de espaços coletivos etc. Todavia, enquanto uma junção de estruturas físicas espaciais, regras e direitos, atores, redes e saberes, culturas e diferenças, design e tecnologias, a cidade tem se constituído uma pauta crescentemente importante por pesquisadores de diversas áreas do conhecimento, entre as quais, os Estudos Organizacionais. No âmbito desta proposta, destacaremos três aspectos associados à relação entre Cidade e Estudos Organizacionais: a perspectiva histórica, que confere à cidade um referencial específico situado nos meandros da reflexão sobre o tempo e na construção de espaços urbanos de história e memória; a perspectiva criativa e econômica, na qual se destaca a gestão como um aspecto central; e a perspectiva social e política, que abrange considerar o espaço urbano um território diversificado, de produção e de direito, de conquista e disputa, apropriação e rupturas, de inclusão, resiliências e resistências.  <br>
+        <br>
+        Convidamos pesquisadores a apresentarem artigos empíricos e ou teóricos - conceituais para este grupo temático a partir de diferentes posicionamentos epistemológicos e metodológicos que tenham como eixos as Cidades e os Estudos Organizacionais, principalmente no que se refere às interfaces entre História, Gestão, Dinâmica e Prática Social. Os trabalhos enviados poderão ser norteados, mas não se limitam, pelos seguintes temas e tópicos:<br>
+        - Cidades, História, Memória e Patrimônio urbano.<br>
+        - Cidade e suas interfaces com a Gestão e com a Economia Criativa.<br>
+        - Dinâmicas sociourbanas: Experiências, Sociabilidades, Direito, Mobilidades e Territorialidades.<br>
+        - Práticas de Espaço Urbano: Atores, Corpos, Cultura, Estética, História e Organização.
+        <br><br>
+        <b>Palavras-chave:</b> Cidade, Gestão de Cidades, Dinâmicas Sócio-urbanas, Economia Criativa, Organização, Práticas e Dinâmica Social
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading08\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse08\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse08\\\">
+          Tema 08 - Modos de (r)existência: Outros Modos de Organizar
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse08\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading08\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Alexandre de Pádua Carrieri (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD - UFMG)<br>
+        Elisa Yoshie Ichikawa (Prog de Pós-Grad em Admin - PPA - UEM)<br><br>
+
+        O presente grupo de trabalho objetiva fomentar, visibilizar e articular pesquisas sobre práticas organizativas que rompem, desestabilizam ou abrem brechas e fissuras às lógicas de trabalho neoliberal, principalmente aquelas referentes ao universo do que é dito “popular”: negócios, comércio, artes, festas, economias informais, coisas do povo invisibilizadas que, de alguma forma, resistem ao sistema mundo globalizado.<br>
+        <br>
+        Propomos fomentar a reflexão sobre os processos de produção e de organização de diferentes espaços, saberes e poderes: a casa, a rua, a cidade, grupos, organizações populares, ou como nos fazem ver Deleuze e Guattari (1978), propomos conhecer e refletir a produção de uma literatura (gestão) menor. Assim o olhar deve se voltar para os outros modos de existir e organizar que frequentemente são ignorados ou ativamente invisibilizados dentro de um mainstream da administração e que constituem múltiplas possiblidades de romper com pensamentos e práticas totalizantes na área. <br>
+        <br>
+        Em um momento em que dispositivos e maquinários do poder buscam controlar e dar uma forma única à vida em meio a um capitalismo global, a resistência se intensifica justamente sobre a vida, na sobrevivência e criação de outros modos de ser e organizar que escapam, escorregam e invertem os jogos dados (FOUCAULT, 2017; LAZZARATO, 2014; 1998). Neste cenário, como indicado por Pelbart (2003, 2016), mapear outros modos de existir torna-se um projeto relevante, destacando multiplicidades que não permitem serem englobadas pelos maquinários totalizantes do poder. Na área de Estudos Organizacionais, outros modos de organizar que constantemente sobrevivem e se recriam num cotidiano formam um reservatório de saberes menores e potencialidades de superação de seu status quo.<br>
+        <br>
+        Embasados por construções teóricas múltiplas, elaboradas por autores como Benjamin, Foucault, Deleuze, Guattari, De Certeau, Lazaratto, Negri, Didi-Huberman, Pelbart, entre outros, ressaltamos os conceitos de experiência, heterotopias, resistência, popular e fazer cotidiano para visibilizar práticas populares de resistência histórica (DIDI-HUBERMAN, 2011) que possibilitam modos de existência (PELBART, 2016) dissonantes aos modelos de negócio segundo o mainstream administrativo, baseados no trinômio avaliação, planejamento e controle.<br>
+        <br>
+        Desse modo, propomos contribuir para uma possível “fenomenologia da dispersão anárquica do poder” (FOUCAULT, 2011, p. 48). Por meio de experiências de gestão menores, locais, cotidianas, populares, mesmo que específicas e singulares, por vezes também provisórias, pretendemos encontrar, mapear e partilhar pistas, desvios, caminhos de fuga e ampliar as possibilidades de fazer, saber e poder de nosso espaço e tempo organizacional, ampliar a potência de contestação e criação (BENJAMIN, 1984), que inauguram o novo diante das lógicas e dispositivos de poder inerentes ao neoliberalismo individualizante.<br>
+        <br>
+        Subgrupos/tópicos: modos de existência; relações de poder e resistência; economia popular; gestão ordinária; história e memória das práticas organizativas; práticas e táticas do cotidiano; metodologias do cotidiano e modos de existência; heterotopias; arte e gestão
+        <br><br>
+        <b>Palavras-chave:</b> Modos de Existência, Práticas Organizativas, Resistência, Gestão Ordinária, Cotidiano
+      </div>
+    </div>
+  </div>
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading10\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse10\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse10\\\">
+          Tema 09 - Trabalho Escravo Contemporâneo
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse10\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading10\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Fernando de Oliveira Vieira (Prog de Pós-Grad em Admin/Faculdade de Admin, Ciências Contábeis e Turismo - PPGAd/EST - UFF)<br>
+        Liliam Deisy Ghizoni (Pesquisadora vinculada individualmente a ANPAD - UFT)<br>
+        Anderson Araújo-Oliveira (Département de didactique Faculté des Sciences de l’éducation - UQUAM - Université du Québec à Montréal)<br>
+        Lêda Gonçalves de Freitas (UCB - Universidade Católica de Brasília)<br><br>
+
+        O tema “Trabalho Escravo Contemporâneo” abarca estudos que tratem de ideias e práticas de relações de trabalho, pautadas na exploração física e psicológica de trabalhadores, que atentem contra a dignidade da pessoa humana. Chama atenção para o papel da Administração no combate ao trabalho escravo, tanto na formação e prática de atuais e futuros gestores, quanto na atuação de professores e pesquisadores, na luta por uma sociedade menos desigual em direitos e oportunidades. Justifica-se a sugestão desse tema, na Administração, tendo em vista as estatísticas recentes de retrocessos de governos e sociedade civil no combate ao crime de escravidão. Em rápida pesquisa nos sites da ONU – Organização das Nações Unidas e da OIT – Organização Internacional do Trabalho, estima-se que cerca de 21 milhões de pessoas estejam em situação de escravidão moderna, atualmente. Além disso, por se tratar de um modelo de organização de trabalho e por envolver questões de poder nas e das Organizações, é imprescindível trazer o debate para essa área de conhecimento das Ciências Sociais Aplicadas, interagindo com outros ramos do saber, tais como o Direito, a Economia, o Serviço Social, a Psicologia, dentre outros.  Alguns exemplos de tópicos correlacionados ao tema: discurso da servidão voluntária; analogia à escravidão; escravidão contemporânea como modelo de gestão; lucratividade por meio do uso de trabalho escravo; programa de erradicação do trabalho escravo; o papel das empresas no combate ao trabalho escravo; os programas de responsabilidade social corporativos e promoção de empregos/trabalhos dignos; sustentabilidade social de empresas que aderem à escravidão moderna; políticas governamentais de combate ou manutenção da escravidão; OIT – Organização Internacional do Trabalho e indicadores de escravidão contemporânea, tais como: trabalho forçado, jornada exaustiva, condições degradantes, restrição de locomoção, servidão por dívida; políticas de Recursos Humanos análogas à escravidão; O uso das TIC – Tecnologias de Informação e Comunicação como recurso de controle psicológico dos trabalhadores; Administração Pública e Escravidão Contemporânea; precarização do trabalho; neoescravidão; escravidão no meio rural; escravidão na cidade; ocupações vulneráveis à escravidão; clínica do trabalho escravo; OIT – Organização Internacional do Trabalho e a noção de trabalho decente.
+        <br><br>
+        <b>Palavras-chave:</b> Trabalho Escravo Contemporâneo, Jornada Exaustiva, Condições Degradantes, Servidão, Trabalho Decente
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading11\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse11\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse11\\\">
+          Tema 10 - Diferenças e Desigualdades: Articulando Raça-Etnia, Gênero, Sexualidade e Classe no Mundo do Trabalho
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse11\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading11\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Juliana Cristina Teixeira (PROFIAP - Universidade Federal de São João Del-Rei)<br>
+        Josiane Silva de Oliveira (Prog de Pós-Grad em Admin - PPA - UEM)<br>
+        Ana Paula Rodrigues Diniz (Dout em Admin - FGV/EBAPE)<br>
+        Mariana Mazzini Marcondes (Dout em Admin - FGV/EBAPE)<br><br>
+
+        Este tema visa discutir as desigualdades sociais produzidas no mundo do trabalho e nas organizações, considerando principalmente os eixos de raça e etnia, gênero, sexualidade e classe social. Nesse processo, privilegiamos estudos que partam de uma perspectiva interseccional, considerando não só como as diferenças constituem-se em desigualdades sociais, mas também como essas se articulam no trabalho e nas organizações, gerando mecanismos de exclusão e discriminação específicos. Tais discussões têm ganhado destaque acadêmico e político, dada a crescente preocupação com a construção de um ambiente de trabalho, de gestão e de organizações mais democráticas e inclusivas. Ressaltamos, assim, o interesse por pesquisas que evidenciem as relações e dinâmicas de poder, enfatizando a dimensão política de tais diferenças em termos ideológicos, sócio-históricos e culturais. A visão de trabalho adotada parte de uma perspectiva ampla, incluindo discussões relacionadas ao mundo do trabalho produtivo e reprodutivo, às organizações, à gestão e à administração pública e privada. No mesmo sentido, a concepção de organização selecionada é abrangente, incluindo organizações públicas e privadas, não governamentais, associações, organizações de movimentos sociais, entre outras múltiplas dimensões organizativas da vida social. Convidamos estudos que abordem como as desigualdades sociais têm sido construídas e reproduzidas no trabalho, preferencialmente de modo articulado, enfocando tanto grupos historicamente constituídos como subalternos (p.ex. mulheres, negrxs, indígenas, LGBT, pessoas com deficiência, etc.), quanto aqueles que ocupam lugares de privilégio (p.ex. masculinidades, branquidades, etc.). Esse debate inclui análises sobre as desigualdades no mercado de trabalho em nível nacional e/ou internacional; sobre a atuação estatal, de movimentos sociais e de organismos intergovernamentais na denúncia ou combate às discriminações e exclusões; e sobre experiências organizacionais, em casos únicos ou comparados sobre os modos como as diferenças e desigualdades são vividas no trabalho, assim como sobre práticas de gestão direcionadas ao enfrentamento de tal cenário. Inclui, ainda, estudos sobre a divisão social, sexual e racial do trabalho, considerando a relação entre trabalhos produtivo e reprodutivo e enfocando temas como cuidado profissional e não profissional, cuidado de públicos específicos, care, políticas de articulação trabalho e família, entre outros. Alinhado a esse debate, convidamos também discussões sobre políticas públicas orientadas para grupos discriminados ou para a promoção da igualdade social. Destacamos, por fim, o interesse por trabalhos com foco em perspectivas epistemológicas, teóricas e metodológicas para estudos sobre os temas, além de incursões sobre novas agendas de pesquisa ou sobre outros eixos marcadores de diferenças não explicitados nesta proposta.
+        <br><br>
+        <b>Palavras-chave:</b> Diferenças, Desigualdades, Interseccionalidade, Organizações, Trabalho
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading12\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse12\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse12\\\">
+          Tema 11 - Universidade, Escolas de Negócios e Sociedade na Contemporaneidade
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse12\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading12\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Manolita Correia Lima (Prog de Mestr e Dout em Admin em Gestão Internacional/Dout e Mestr em Admin - PMDGI - ESPM)<br>
+        Maria Fernanda Cavalcanti (PUC - PUC Campinas)<br>
+        Angelo Brigato Ésther (Progr de Pós-Grad em Admin/Fac de Admin e Ciências Contábeis/Curso de Mest Acad em Admin/PPGA/FACC/CMAA - UFJF)<br><br>
+
+        Desde seu surgimento, as universidades sofrem constantes pressões para transformação. O contexto atual, de uma sociedade civil cada vez mais volátil, heterogênea e complexa, tem exigido das mesmas acelerada capacidade de reinvenção, com o desafio de preservar suas responsabilidades sociais e humanísticas originárias. A contemporaneidade crítica e complexa com a qual a mesma se depara inclui contingências em níveis macro-global (crises financeiras acentuadas, ascensão de governos neoliberais, decadência da noção de universidade republicana, etc.), meso-institucional (com a diminuição do corpo discente em grande parte das universidades, diminuição de verbas governamentais para o ensino, pesquisa e extensão, crescentes pressões para produtividade docente/discente, crescimento vertiginoso do ensino à distância, e suposta falência dos métodos expositivos), e em nível micro-individual (deterioração das condições de trabalho dos docentes, riscos relacionados à saúde de docentes/discentes etc.). Esse tema tem o intuito de fomentar diálogos nestes três níveis, abarcando também o caráter idiossincrático das Escolas de Negócios, a fim de discutir possíveis saídas, resistências e/ou a necessidade de organizar novas formas de atuação neste âmbito. Dentre as possíveis problemáticas que se pretende incentivar reflexões críticas, incluem-se: Quais são os novos arranjos institucionais e estratégicos da universidade para enfrentar questões vitais do mundo contemporâneo? Em sistemas educacionais altamente regulados, qual é a contribuição de uma universidade submetida a interferências exógenas? Todas as universidades deveriam perseguir o ideal da internacionalização, de qual internacionalização? Frente às limitações orçamentárias, como atingir padrões internacionais (World Class University) no que se refere a produção e difusão de conhecimento? Em que medida a internacionalização hegemônica reforça a geopolítica do conhecimento? Quais são as consequências do acirramento da competição entre as universidades, seja por estudantes, professores produtivos, redes de relacionamento, recursos financeiros? É possível proteger a universidade de mercantilismos, assistencialismos, partidarismos, fanatismos e corporativismos? Quais são as responsabilidades das universidades frente ao processo de inclusão social/redução das desigualdades? No que diz respeito a temáticas específicas, há expectativas de se acolher artigos e ensaios cujos temas abordem a viabilidade da adoção de pedagogias colaborativas nas práticas acadêmico-pedagógicas em nível de graduação e pós-graduação; decolonização do ensino e da pesquisa em gestão e organizações; vivências e experiências de engajamento e diálogo em universidades e escolas de negócios; abordagens críticas à “mercantilização” do ensino e da pesquisa em gestão e organizações; reflexões críticas sobre condições de trabalho, práticas docentes e o papel do pesquisador e das redes de pesquisadores na atual conjuntura; reflexões sobre métodos ativos de ensino e aprendizagem, sobre a aproximação escolas de negócios-empresas e novos modelos de cooperação; reflexões críticas sobre o ensino de gestão à distância.
+        <br><br>
+        <b>Palavras-chave:</b> Universidades, Escolas de Negócio, Sociedade, Contemporaneidade, Ensino e Pesquisa
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading13\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse13\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse13\\\">
+          Tema 12 - Análise de Redes Intra e Interorganizacionais
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse13\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading13\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Charles Kirschbaum (Prog de Mestr Prof em Admin - Insper)<br>
+        Cristina Espinheira Costa Pereira (Prog de Mestr em Admin - UNIP)<br>
+        Flávio Romero Macau (School of Business and Law - Edith Cowan University)<br><br>
+
+        O tema busca compreender as relações entre os indivíduos (atores) tanto em redes de empresas quanto em redes internas de uma dada organização. Nossos interesses variam entre organizações em todas as suas formas e manifestações: empresas, de microempresas a corporações multinacionais; instituições de aprendizagem formal, de escolas a universidades; agências do setor público; e organizações não governamentais e do setor comunitário. Nossa preocupação também se estende além das fronteiras das organizações para considerar a dinâmica das alianças organizacionais, redes, comunidades de prática e capacitação.<br>
+        Cada vez mais a criação de valor para uma empresa depende das redes nas quais ela está envolvida, por várias perspectivas: social, econômica, política, transacional. Os arranjos internos de uma instituição e sua potencial vantagem competitiva estão atrelados a como e em que medida seus colaboradores se engajam em redes internas e externas, nas quais compartilham informações e desenvolvem ações conjuntas. As redes podem ser locais ou internacionais, de aglomerações de empresas espontâneas ou direcionadas (clusters ou Arranjos Produtivos Locais), com ou sem governança, de aprendizagem ou inovação, dentre outras tipologias.<br>
+        A história organizacional pode ser diferente de situação para situação. No entanto, em todos esses contextos, persiste um enfoque de examinar a organização e o funcionamento desses grupos de pessoas ou atores e analisar o que contribui para o sucesso e a sustentabilidade.<br>
+        <br>
+        Principais tópicos incluem:<br>
+        - Redes e suas relações inter e intraorganizacionais;<br>
+        - Análise estrutural de redes;<br>
+        - Aglomerações territoriais, industriais e comerciais;<br>
+        - Tipologias e conceitos de redes horizontais e verticais;<br> 
+        - Ecossistemas empreendedores.<br>
+        - Alianças, Interação competitiva, colaborativa, reciprocidade, spill overs de conhecimento, inovação;<br>
+        - Processos interpessoais como confiança, justiça, poder;<br>
+        - Características da rede (tamanho, diversidade, coesão) e de seus processos (desenvolvimento, liderança, tomada de decisão, cooperação e conflito).
+        <br><br>
+        <b>Palavras-chave:</b> Análise Estrutural de Redes, Redes Intraorganizacionais, Redes Interorganizacionais, Comunidades de Prática
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading14\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse14\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse14\\\">
+          Tema 13 - A Dinâmica da Rotinas Organizacionais e a Aprendizagem nas Organizações
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse14\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading14\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Sandra Regina da Rocha Pinto (Mestr e Dout em Admin de Empresas/IAG-A Esc de Negócios da PUC-Rio – IAG - PUC-Rio)<br>
+        Maria Isabel Pereira Guimarães (Mestr e Dout em Admin de Empresas/IAG-A Esc de Negócios da PUC-Rio – IAG - PUC-Rio)<br><br>
+
+        Diante do atual cenário de volatilidade, incerteza, complexidade e ambiguidade, as rotinas organizacionais podem ser vistas como a unidade de análise que preponderantemente deve ser considerada no que diz respeito ao entendimento dos modos do fazer/pensar/compreender a organização de atividades nas organizações contemporâneas. Tradicionalmente vistas como estáveis e inflexíveis, as rotinas organizacionais passam a ser consideradas como fontes de estabilidade e mudança. A lente da Prática ilumina essa perspectiva, ajudando a configurar o campo de estudo da Dinâmica das Rotinas Organizacionais. Nessa perspectiva, estimulam-se estudos que contribuam para a abertura da caixa da preta das rotinas organizacionais, abordando seus microfundamentos e aspectos constituintes e influenciadores – aspectos ostensivos e performativos assim como os artefatos.  A lente da Prática permite, também, endereçar os modos por meio dos quais a Aprendizagem Organizacional se traduz e se constitui no lócus das Rotinas Organizacionais. Dessa forma, Prática e Aprendizagem se configuram, recursivamente, nas Rotinas Organizacionais. Estudos baseados nessa perspectiva podem contribuir para o campo que relaciona Aprendizagem Organizacional e Rotinas Organizacionais. Miner, Ciuchta e Gong (2008) apresentam quatro formas de abordar a relação entre AO e RO: (1) rotinas como repositório da memória organizacional – essa abordagem está relacionada à perspectiva das capacidades dinâmicas, não considera as dinâmicas internas das rotinas, e entende a aprendizagem a partir da epistemologia da posse, onde o conhecimento é “uma coisa”, um recurso – as rotinas, então, são vistas como repositório desse conhecimento, da experiência organizacional e representam códigos para ação; (2) organizações aprendem por meio de mudanças no mix de rotinas estáveis – essa abordagem presume que as organizações, a partir de um mix original de rotinas, que são modificadas devido à experiência, passam por um ciclo de aprendizagem organizacional que se dá pela criação da variação das rotinas, pela seleção, entre essas rotinas, de quais serão executadas no futuro, e pela retenção do novo mix de rotinas; (3) organizações aprendem pela transformação das rotinas – essa abordagem está relacionada à perspectiva da Prática, e entende que a aprendizagem acontece pela transformação ou variação das rotinas, que decorre de suas dinâmicas internas; e (4) rotinas para aprendizagem – essa abordagem parte do pressuposto de que algumas rotinas podem incorporar um processo de aprendizagem e desempenhar um papel de geradoras de mudanças sistemáticas no comportamento ou no conhecimento da organização.
+        <br><br>
+        <b>Palavras-chave:</b> Rotinas Organizacionais, Perspectiva da Prática, Aprendizagem Organizacional, Aspectos Ostensivos e Performativos, Artefatos
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=\\\"panel panel-default\\\">
+    <div class=\\\"panel-heading\\\" role=\\\"tab\\\" id=\\\"heading15\\\">
+      <h4 class=\\\"panel-title\\\">
+        <a role=\\\"button\\\" data-toggle=\\\"collapse\\\" data-parent=\\\"#accordion\\\" href=\\\"#collapse15\\\" aria-expanded=\\\"true\\\" aria-controls=\\\"collapse15\\\">
+          Tema 14 - Sujeitos, Organizações e Sociedades: (Re)Articulações entre Histórias e Memórias
+        </a>
+      </h4>
+    </div>
+    <div id=\\\"collapse15\\\" class=\\\"panel-collapse collapse\\\" role=\\\"tabpanel\\\" aria-labelledby=\\\"heading15\\\">
+      <div class=\\\"panel-body\\\">
+        <b>Líderes:</b><br>
+        Sergio Eduardo de Pinho Velho Wanderley (Mestr e Dout Acad em Admin/Prog de Pós-Grad em Admin/Esc de Ciências Sociais Aplicadas - PPGA/ECSA - UNIGRANRIO)<br>
+        Fernanda Tarabal Lopes (Escola de Administração EA/UFRGS e PPGA/CEFET-MG)<br>
+        Denise Franca Barros (Mestr e Dout Acad em Admin/Prog de Pós-Grad em Admin/Esc de Ciências Sociais Aplicadas - PPGA/ECSA - UNIGRANRIO)<br>
+        Amon Narciso de Barros (Mestr e Dout em Admin de Empresas  - FGV/EAESP)<br><br>
+
+        Esse tema tem como objetivo principal abarcar um amplo leque de pesquisas que explorem e problematizem as relações políticas, econômicas e psicossociais que se estabelecem entre sujeitos, organizações e sociedades, a partir de uma perspectiva histórica. A chamada é aberta a trabalhos empíricos e teóricos que contemplem tais relações em qualquer espaço geográfico-temporal com diferentes abordagens teóricas e metodológicas que promovam a interdisciplinaridade com diversos campos para além da própria história. <br>
+        Quanto às organizações, contamos com a ampliação desse conceito de forma que contemple movimentos sociais, de operários e comunitários, a gestão (extra)ordinária, memória e o cotidiano do trabalho nos pequenos e médios negócios, organizações familiares, educacionais, culturais, sem fins lucrativos, bem como movimentos sociais. Em suma, ampliando o conceito para além de ‘empresa/firma’, mas trazendo ao mesmo tempo reflexões sobre as especificidades de cada forma de organizar e/ou organização.<br>
+        Neste sentido, são bem-vindos estudos que: <br>
+        - Analisem como fontes e arquivos históricos contribuem para entender os fenômenos organizacionais e sua articulação com o social e o político;<br>
+        - Estimulem debates sobre como a pesquisa histórica em administração e estudos organizacionais permite um engajamento com o passado que vá além do superficial ou do meramente descritivo;<br>
+        - Discutam como as organizações instrumentalizam estrategicamente seu passado criando e gerindo seus acervos e arquivos documentais, construindo significados a partir de disputas entre memórias oficiais e memórias silenciadas;<br>
+        - Sejam baseados em fontes diversas tais como arquivos públicos, arquivos privados e/ou empresariais, arquivos da Comissão Nacional da Verdade; jornais de época; filmes; documentários e fontes baseadas em história oral, de vida e/ou temática;<br>
+        - Resgatem as relações entre políticas públicas de Educação, organizações de educação e disciplinas da Administração.<br>
+        Nesse sentido, também são considerados nessa linha temática, textos que versem sobre o método biográfico em suas diversas abordagens históricas e psicossociais. Sobre esse ponto, destacamos nossa consideração à experiência e à importância da compreensão das representações dos sujeitos/narradores sobre a história, de maneira mais ampla, e em relação à sua própria história de vida. Trata-se aqui do registro de memórias individuais e coletivas, de experiências e trajetórias, resgatadas com o intuito da transformação e emancipação de coletividades, e da visibilidade à história e experiência de sujeitos, grupos, organizações e movimentos. Assim, são igualmente valiosas as contribuições que privilegiem a história de vida, a preocupação com a compreensão do sujeito e de seu mundo.<br>
+        No que diz respeito à abordagem teórica, além de abordagens críticas tradicionais, esperamos o resgate de aportes teóricos do “pensamento social brasileiro” como Sergio Buarque de Holanda, Caio Prado Júnior, Celso Furtado e Guerreiro Ramos, entre outros. Textos que discutam conceitos-chave para a história ou a partir de um olhar histórico também serão bem recebidos. Consideramos igualmente contributivas as abordagens teóricas da Psicossociologia, dentre outras vertentes, que versem sobre biografias, história, história de vida e experiência.<br>
+        Assim, convidamos autores para a submissão de trabalhos teóricos e empíricos que enfoquem com base em novas fontes e objetos: contribuições ontológicas, epistemológicas e/ou metodológicas da perspectiva histórica para a área de estudos organizacionais.
+        <br><br>
+        <b>Palavras-chave:</b> História das Organizações, História de Vida, Memória, Virada Histórica
+      </div>
+    </div>
+  </div>
+
+</div>
+                                </div>
+                                                                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row endereco">
+            <div class="col-md-6">
+                <h1>Telefone ANPAD</h1>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pb-2">(44) 3354-8545</div>
+                        <div>(44) 98826-2467</div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>  <!-- ./class="col-md-offset-2 col-md-4" -->
+
+            <div class="col-md-6">
+                <h1>Endereço</h1>
+                <address>
+                    <div class="pb-2">Av. Pedro Taques, 294</div>
+                    <div class="pb-2">CEP 87030-008 - Maringá, PR</div>
+                    <div>Brasil</div>
+                </address>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center"><br>Associação Nacional de Pós Graduação e Pesquisa em Administração - CNPJ 42.595.652/0001-66</div>
+        </div>
+    </div>
+</footer><div class="modal" id="modalDelete" tabindex="-1" role="dialog" data-word="EXCLUIR">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title">CONFIRMAR EXCLUSÃO</span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Tem certeza de que deseja excluir $type $name?<br/>Esta ação não poderá ser desfeita!</p>
+        <p>Para confirmar a exclusão $type $name, digite a palavra $word abaixo e confirme.</p>
+        <div class="row form my-0">
+          <div class="col-12 form-group">
+            <input type="text" id="deleteInput" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-block btn-lg btn-grey-dark" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" id="deleteConfirm" class="btn btn-block btn-lg btn-danger" disabled>
+              CONFIRMAR
+              <span class="d-none fa fa-spinner fa-spin"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-success d-none" id="itemDeleted" role="alert">
+  <b class="message"></b>
+  <a class="close ml-3">
+    <span aria-hidden="true">&times;</span>
+  </a>
+</div>
+    <script src="/build/runtime.js"></script><script src="/build/vendors~activity~app~articleEvaluation~associate~certificate~cookieconsent~dashboard/admin~dashboard~780886de.js"></script><script src="/build/vendors~activity~app~associate~certificate~cookieconsent~dashboard/admin~dashboard/user~ensalement/g~8018043c.js"></script><script src="/build/vendors~activity~app~associate~cookieconsent~dashboard/user~ensalement/general~ensalement/priority~e~257752a3.js"></script><script src="/build/cookieconsent.js"></script>
+        <script src="/build/vendors~activity~app~associate~dashboard/admin~dashboard/user~ensalement/general~ensalement/sections~b3c04876.js"></script><script src="/build/vendors~app~certificate~gestorSpeakers~panelEvaluation~themeEvaluation.js"></script><script src="/build/vendors~activity~app~panels~user_articles.js"></script><script src="/build/vendors~app~certificate~panelEvaluation~themeEvaluation.js"></script><script src="/build/vendors~app.js"></script><script src="/build/app.js"></script>
+    <script src="/build/login.js"></script>
+
+    <script src="/build/vendors~events/show.js"></script><script src="/build/events/show.js"></script>
+
+<div id="sfwdtede62d" class="sf-toolbar sf-display-none"></div><script nonce="15387736f3e3581ac00b6e463ea08637">/*<![CDATA[*/        Sfjs = (function() {        "use strict";        if ('classList' in document.documentElement) {            var hasClass = function (el, cssClass) { return el.classList.contains(cssClass); };            var removeClass = function(el, cssClass) { el.classList.remove(cssClass); };            var addClass = function(el, cssClass) { el.classList.add(cssClass); };            var toggleClass = function(el, cssClass) { el.classList.toggle(cssClass); };        } else {            var hasClass = function (el, cssClass) { return el.className.match(new RegExp('\\b' + cssClass + '\\b')); };            var removeClass = function(el, cssClass) { el.className = el.className.replace(new RegExp('\\b' + cssClass + '\\b'), ' '); };            var addClass = function(el, cssClass) { if (!hasClass(el, cssClass)) { el.className += " " + cssClass; } };            var toggleClass = function(el, cssClass) { hasClass(el, cssClass) ? removeClass(el, cssClass) : addClass(el, cssClass); };        }        var noop = function() {};        var profilerStorageKey = 'symfony/profiler/';        var addEventListener;        var el = document.createElement('div');        if (!('addEventListener' in el)) {            addEventListener = function (element, eventName, callback) {                element.attachEvent('on' + eventName, callback);            };        } else {            addEventListener = function (element, eventName, callback) {                element.addEventListener(eventName, callback, false);            };        }        var request = function(url, onSuccess, onError, payload, options) {            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');            options = options || {};            options.maxTries = options.maxTries || 0;            xhr.open(options.method || 'GET', url, true);            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');            xhr.onreadystatechange = function(state) {                if (4 !== xhr.readyState) {                    return null;                }                if (xhr.status == 404 && options.maxTries > 1) {                    setTimeout(function(){                        options.maxTries--;                        request(url, onSuccess, onError, payload, options);                    }, 1000);                    return null;                }                if (200 === xhr.status) {                    (onSuccess || noop)(xhr);                } else {                    (onError || noop)(xhr);                }            };            xhr.send(payload || '');        };        var getPreference = function(name) {            if (!window.localStorage) {                return null;            }            return localStorage.getItem(profilerStorageKey + name);        };        var setPreference = function(name, value) {            if (!window.localStorage) {                return null;            }            localStorage.setItem(profilerStorageKey + name, value);        };        var requestStack = [];        var extractHeaders = function(xhr, stackElement) {            /* Here we avoid to call xhr.getResponseHeader in order to */            /* prevent polluting the console with CORS security errors */            var allHeaders = xhr.getAllResponseHeaders();            var ret;            if (ret = allHeaders.match(/^x-debug-token:\s+(.*)$/im)) {                stackElement.profile = ret[1];            }            if (ret = allHeaders.match(/^x-debug-token-link:\s+(.*)$/im)) {                stackElement.profilerUrl = ret[1];            }            if (ret = allHeaders.match(/^Symfony-Debug-Toolbar-Replace:\s+(.*)$/im)) {                stackElement.toolbarReplaceFinished = false;                stackElement.toolbarReplace = '1' === ret[1];            }        };        var successStreak = 4;        var pendingRequests = 0;        var renderAjaxRequests = function() {            var requestCounter = document.querySelector('.sf-toolbar-ajax-request-counter');            if (!requestCounter) {                return;            }            requestCounter.textContent = requestStack.length;            var infoSpan = document.querySelector(".sf-toolbar-ajax-info");            if (infoSpan) {                infoSpan.textContent = requestStack.length + ' AJAX request' + (requestStack.length !== 1 ? 's' : '');            }            var ajaxToolbarPanel = document.querySelector('.sf-toolbar-block-ajax');            if (requestStack.length) {                ajaxToolbarPanel.style.display = 'block';            } else {                ajaxToolbarPanel.style.display = 'none';            }            if (pendingRequests > 0) {                addClass(ajaxToolbarPanel, 'sf-ajax-request-loading');            } else if (successStreak < 4) {                addClass(ajaxToolbarPanel, 'sf-toolbar-status-red');                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');            } else {                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');                removeClass(ajaxToolbarPanel, 'sf-toolbar-status-red');            }        };        var startAjaxRequest = function(index) {            var tbody = document.querySelector('.sf-toolbar-ajax-request-list');            if (!tbody) {                return;            }            var nbOfAjaxRequest = tbody.rows.length;            if (nbOfAjaxRequest >= 100) {                tbody.deleteRow(0);            }            var request = requestStack[index];            pendingRequests++;            var row = document.createElement('tr');            request.DOMNode = row;            var requestNumberCell = document.createElement('td');            requestNumberCell.textContent = index + 1;            row.appendChild(requestNumberCell);            var profilerCell = document.createElement('td');            profilerCell.textContent = 'n/a';            row.appendChild(profilerCell);            var methodCell = document.createElement('td');            methodCell.textContent = request.method;            row.appendChild(methodCell);            var typeCell = document.createElement('td');            typeCell.textContent = request.type;            row.appendChild(typeCell);            var statusCodeCell = document.createElement('td');            var statusCode = document.createElement('span');            statusCode.textContent = 'n/a';            statusCodeCell.appendChild(statusCode);            row.appendChild(statusCodeCell);            var pathCell = document.createElement('td');            pathCell.className = 'sf-ajax-request-url';            if ('GET' === request.method) {                var pathLink = document.createElement('a');                pathLink.setAttribute('href', request.url);                pathLink.textContent = request.url;                pathCell.appendChild(pathLink);            } else {                pathCell.textContent = request.url;            }            pathCell.setAttribute('title', request.url);            row.appendChild(pathCell);            var durationCell = document.createElement('td');            durationCell.className = 'sf-ajax-request-duration';            durationCell.textContent = 'n/a';            row.appendChild(durationCell);            request.liveDurationHandle = setInterval(function() {                durationCell.textContent = (new Date() - request.start) + 'ms';            }, 100);            row.className = 'sf-ajax-request sf-ajax-request-loading';            tbody.insertBefore(row, null);            var toolbarInfo = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');            toolbarInfo.scrollTop = toolbarInfo.scrollHeight;            renderAjaxRequests();        };        var finishAjaxRequest = function(index) {            var request = requestStack[index];            clearInterval(request.liveDurationHandle);            if (!request.DOMNode) {                return;            }            if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {                /* Flag as complete because finishAjaxRequest can be called multiple times. */                request.toolbarReplaceFinished = true;                /* Search up through the DOM to find the toolbar's container ID. */                for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {                    if (elem.id.match(/^sfwdt/)) {                        Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);                        break;                    }                }            }            pendingRequests--;            var row = request.DOMNode;            /* Unpack the children from the row */            var profilerCell = row.children[1];            var methodCell = row.children[2];            var statusCodeCell = row.children[4];            var statusCodeElem = statusCodeCell.children[0];            var durationCell = row.children[6];            if (request.error) {                row.className = 'sf-ajax-request sf-ajax-request-error';                methodCell.className = 'sf-ajax-request-error';                successStreak = 0;            } else {                row.className = 'sf-ajax-request sf-ajax-request-ok';                successStreak++;            }            if (request.statusCode) {                if (request.statusCode < 300) {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status');                } else if (request.statusCode < 400) {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-yellow');                } else {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');                }                statusCodeElem.textContent = request.statusCode;            } else {                statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');            }            if (request.duration) {                durationCell.textContent = request.duration + 'ms';            }            if (request.profilerUrl) {                profilerCell.textContent = '';                var profilerLink = document.createElement('a');                profilerLink.setAttribute('href', request.profilerUrl);                profilerLink.textContent = request.profile;                profilerCell.appendChild(profilerLink);            }            renderAjaxRequests();        };                    if (window.fetch && window.fetch.polyfill === undefined) {                var oldFetch = window.fetch;                window.fetch = function () {                    var promise = oldFetch.apply(this, arguments);                    var url = arguments[0];                    var params = arguments[1];                    var paramType = Object.prototype.toString.call(arguments[0]);                    if (paramType === '[object Request]') {                        url = arguments[0].url;                        params = {                            method: arguments[0].method,                            credentials: arguments[0].credentials,                            headers: arguments[0].headers,                            mode: arguments[0].mode,                            redirect: arguments[0].redirect                        };                    } else {                        url = String(url);                    }                    if (!url.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var method = 'GET';                        if (params && params.method !== undefined) {                            method = params.method;                        }                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'fetch',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        promise.then(function (r) {                            stackElement.duration = new Date() - stackElement.start;                            stackElement.error = r.status < 200 || r.status >= 400;                            stackElement.statusCode = r.status;                            stackElement.profile = r.headers.get('x-debug-token');                            stackElement.profilerUrl = r.headers.get('x-debug-token-link');                            stackElement.toolbarReplaceFinished = false;                            stackElement.toolbarReplace = '1' === r.headers.get('Symfony-Debug-Toolbar-Replace');                            finishAjaxRequest(idx);                        }, function (e){                            stackElement.error = true;                            finishAjaxRequest(idx);                        });                        startAjaxRequest(idx);                    }                    return promise;                };            }            if (window.XMLHttpRequest && XMLHttpRequest.prototype.addEventListener) {                var proxied = XMLHttpRequest.prototype.open;                XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {                    var self = this;                    /* prevent logging AJAX calls to static and inline files, like templates */                    var path = url;                    if (url.substr(0, 1) === '/') {                        if (0 === url.indexOf('')) {                            path = url.substr(0);                        }                    }                    else if (0 === url.indexOf('http\u003A\/\/34.69.27.207')) {                        path = url.substr(19);                    }                    if (!path.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'xhr',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        this.addEventListener('readystatechange', function() {                            if (self.readyState == 4) {                                stackElement.duration = new Date() - stackElement.start;                                stackElement.error = self.status < 200 || self.status >= 400;                                stackElement.statusCode = self.status;                                extractHeaders(self, stackElement);                                finishAjaxRequest(idx);                            }                        }, false);                        startAjaxRequest(idx);                    }                    proxied.apply(this, Array.prototype.slice.call(arguments));                };            }                return {            hasClass: hasClass,            removeClass: removeClass,            addClass: addClass,            toggleClass: toggleClass,            getPreference: getPreference,            setPreference: setPreference,            addEventListener: addEventListener,            request: request,            renderAjaxRequests: renderAjaxRequests,            load: function(selector, url, onSuccess, onError, options) {                var el = document.getElementById(selector);                if (el && el.getAttribute('data-sfurl') !== url) {                    request(                        url,                        function(xhr) {                            el.innerHTML = xhr.responseText;                            el.setAttribute('data-sfurl', url);                            removeClass(el, 'loading');                            var pending = pendingRequests;                            for (var i = 0; i < requestStack.length; i++) {                                startAjaxRequest(i);                                if (requestStack[i].duration) {                                    finishAjaxRequest(i);                                }                            }                            /* Revert the pending state in case there was a start called without a finish above. */                            pendingRequests = pending;                            (onSuccess || noop)(xhr, el);                        },                        function(xhr) { (onError || noop)(xhr, el); },                        '',                        options                    );                }                return this;            },            loadToolbar: function(token, newToken) {                newToken = (newToken || token);                this.load(                    'sfwdt' + token,                    '\/_wdt\/xxxxxx'.replace(/xxxxxx/, newToken),                    function(xhr, el) {                        /* Evaluate in global scope scripts embedded inside the toolbar */                        var i, scripts = [].slice.call(el.querySelectorAll('script'));                        for (i = 0; i < scripts.length; ++i) {                            eval.call({}, scripts[i].firstChild.nodeValue);                        }                        el.style.display = -1 !== xhr.responseText.indexOf('sf-toolbarreset') ? 'block' : 'none';                        if (el.style.display == 'none') {                            return;                        }                        if (getPreference('toolbar/displayState') == 'none') {                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';                        } else {                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'none';                        }                        /* Handle toolbar-info position */                        var toolbarBlocks = [].slice.call(el.querySelectorAll('.sf-toolbar-block'));                        for (i = 0; i < toolbarBlocks.length; ++i) {                            toolbarBlocks[i].onmouseover = function () {                                var toolbarInfo = this.querySelectorAll('.sf-toolbar-info')[0];                                var pageWidth = document.body.clientWidth;                                var elementWidth = toolbarInfo.offsetWidth;                                var leftValue = (elementWidth + this.offsetLeft) - pageWidth;                                var rightValue = (elementWidth + (pageWidth - this.offsetLeft)) - pageWidth;                                /* Reset right and left value, useful on window resize */                                toolbarInfo.style.right = '';                                toolbarInfo.style.left = '';                                if (elementWidth > pageWidth) {                                    toolbarInfo.style.left = 0;                                }                                else if (leftValue > 0 && rightValue > 0) {                                    toolbarInfo.style.right = (rightValue * -1) + 'px';                                } else if (leftValue < 0) {                                    toolbarInfo.style.left = 0;                                } else {                                    toolbarInfo.style.right = '0px';                                }                            };                        }                        addEventListener(document.getElementById('sfToolbarHideButton-' + newToken), 'click', function (event) {                            event.preventDefault();                            var p = this.parentNode;                            p.style.display = 'none';                            (p.previousElementSibling || p.previousSibling).style.display = 'none';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';                            setPreference('toolbar/displayState', 'none');                        });                        addEventListener(document.getElementById('sfToolbarMiniToggler-' + newToken), 'click', function (event) {                            event.preventDefault();                            var elem = this.parentNode;                            if (elem.style.display == 'none') {                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';                                elem.style.display = 'block';                            } else {                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';                                elem.style.display = 'none'                            }                            setPreference('toolbar/displayState', 'block');                        });                        renderAjaxRequests();                        addEventListener(document.querySelector('.sf-toolbar-ajax-clear'), 'click', function() {                            requestStack = [];                            renderAjaxRequests();                            successStreak = 4;                            document.querySelector('.sf-toolbar-ajax-request-list').innerHTML = '';                        });                        addEventListener(document.querySelector('.sf-toolbar-block-ajax'), 'mouseenter', function (event) {                            var elem = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');                            elem.scrollTop = elem.scrollHeight;                        });                        addEventListener(document.querySelector('.sf-toolbar-block-ajax > .sf-toolbar-icon'), 'click', function (event) {                            event.preventDefault();                            toggleClass(this.parentNode, 'hover');                        });                        var dumpInfo = document.querySelector('.sf-toolbar-block-dump .sf-toolbar-info');                        if (null !== dumpInfo) {                            addEventListener(dumpInfo, 'sfbeforedumpcollapse', function () {                                dumpInfo.style.minHeight = dumpInfo.getBoundingClientRect().height+'px';                            });                            addEventListener(dumpInfo, 'mouseleave', function () {                                dumpInfo.style.minHeight = '';                            });                        }                    },                    function(xhr) {                        if (xhr.status !== 0) {                            var sfwdt = document.getElementById('sfwdt' + token);                            sfwdt.innerHTML = '\                                <div class="sf-toolbarreset">\                                    <div class="sf-toolbar-icon"><svg width="26" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 28" enable-background="new 0 0 26 28" xml:space="preserve"><path fill="#FFFFFF" d="M13 0C5.8 0 0 5.8 0 13c0 7.2 5.8 13 13 13c7.2 0 13-5.8 13-13C26 5.8 20.2 0 13 0z M20 7.5 c-0.6 0-1-0.3-1-0.9c0-0.2 0-0.4 0.2-0.6c0.1-0.3 0.2-0.3 0.2-0.4c0-0.3-0.5-0.4-0.7-0.4c-2 0.1-2.5 2.7-2.9 4.8l-0.2 1.1 c1.1 0.2 1.9 0 2.4-0.3c0.6-0.4-0.2-0.8-0.1-1.3C18 9.2 18.4 9 18.7 8.9c0.5 0 0.8 0.5 0.8 1c0 0.8-1.1 2-3.3 1.9 c-0.3 0-0.5 0-0.7-0.1L15 14.1c-0.4 1.7-0.9 4.1-2.6 6.2c-1.5 1.8-3.1 2.1-3.8 2.1c-1.3 0-2.1-0.6-2.2-1.6c0-0.9 0.8-1.4 1.3-1.4 c0.7 0 1.2 0.5 1.2 1.1c0 0.5-0.2 0.6-0.4 0.7c-0.1 0.1-0.3 0.2-0.3 0.4c0 0.1 0.1 0.3 0.4 0.3c0.5 0 0.9-0.3 1.2-0.5 c1.3-1 1.7-2.9 2.4-6.2l0.1-0.8c0.2-1.1 0.5-2.3 0.8-3.5c-0.9-0.7-1.4-1.5-2.6-1.8c-0.8-0.2-1.3 0-1.7 0.4C8.4 10 8.6 10.7 9 11.1 l0.7 0.7c0.8 0.9 1.3 1.7 1.1 2.7c-0.3 1.6-2.1 2.8-4.3 2.1c-1.9-0.6-2.2-1.9-2-2.7c0.2-0.6 0.7-0.8 1.2-0.6 c0.5 0.2 0.7 0.8 0.6 1.3c0 0.1 0 0.1-0.1 0.3C6 15 5.9 15.2 5.9 15.3c-0.1 0.4 0.4 0.7 0.8 0.8c0.8 0.3 1.7-0.2 1.9-0.9 c0.2-0.6-0.2-1.1-0.4-1.2l-0.8-0.9c-0.4-0.4-1.2-1.5-0.8-2.8c0.2-0.5 0.5-1 0.9-1.4c1-0.7 2-0.8 3-0.6c1.3 0.4 1.9 1.2 2.8 1.9 c0.5-1.3 1.1-2.6 2-3.8c0.9-1 2-1.7 3.3-1.8C20 4.8 21 5.4 21 6.3C21 6.7 20.8 7.5 20 7.5z"/></svg></div>\                                    An error occurred while loading the web debug toolbar. <a href="\/_profiler\/' + newToken + '>Open the web profiler.</a>\                                </div>\                            ';                            sfwdt.setAttribute('class', 'sf-toolbar sf-error-toolbar');                        }                    },                    { maxTries: 5 }                );                return this;            },            toggle: function(selector, elOn, elOff) {                var tmp = elOn.style.display,                    el = document.getElementById(selector);                elOn.style.display = elOff.style.display;                elOff.style.display = tmp;                if (el) {                    el.style.display = 'none' === tmp ? 'none' : 'block';                }                return this;            },            createTabs: function() {                var tabGroups = document.querySelectorAll('.sf-tabs:not([data-processed=true])');                /* create the tab navigation for each group of tabs */                for (var i = 0; i < tabGroups.length; i++) {                    var tabs = tabGroups[i].querySelectorAll(':scope > .tab');                    var tabNavigation = document.createElement('ul');                    tabNavigation.className = 'tab-navigation';                    var selectedTabId = 'tab-' + i + '-0'; /* select the first tab by default */                    for (var j = 0; j < tabs.length; j++) {                        var tabId = 'tab-' + i + '-' + j;                        var tabTitle = tabs[j].querySelector('.tab-title').innerHTML;                        var tabNavigationItem = document.createElement('li');                        tabNavigationItem.setAttribute('data-tab-id', tabId);                        if (hasClass(tabs[j], 'active')) { selectedTabId = tabId; }                        if (hasClass(tabs[j], 'disabled')) { addClass(tabNavigationItem, 'disabled'); }                        tabNavigationItem.innerHTML = tabTitle;                        tabNavigation.appendChild(tabNavigationItem);                        var tabContent = tabs[j].querySelector('.tab-content');                        tabContent.parentElement.setAttribute('id', tabId);                    }                    tabGroups[i].insertBefore(tabNavigation, tabGroups[i].firstChild);                    addClass(document.querySelector('[data-tab-id="' + selectedTabId + '"]'), 'active');                }                /* display the active tab and add the 'click' event listeners */                for (i = 0; i < tabGroups.length; i++) {                    tabNavigation = tabGroups[i].querySelectorAll(':scope > .tab-navigation li');                    for (j = 0; j < tabNavigation.length; j++) {                        tabId = tabNavigation[j].getAttribute('data-tab-id');                        document.getElementById(tabId).querySelector('.tab-title').className = 'hidden';                        if (hasClass(tabNavigation[j], 'active')) {                            document.getElementById(tabId).className = 'block';                        } else {                            document.getElementById(tabId).className = 'hidden';                        }                        tabNavigation[j].addEventListener('click', function(e) {                            var activeTab = e.target || e.srcElement;                            /* needed because when the tab contains HTML contents, user can click */                            /* on any of those elements instead of their parent '<li>' element */                            while (activeTab.tagName.toLowerCase() !== 'li') {                                activeTab = activeTab.parentNode;                            }                            /* get the full list of tabs through the parent of the active tab element */                            var tabNavigation = activeTab.parentNode.children;                            for (var k = 0; k < tabNavigation.length; k++) {                                var tabId = tabNavigation[k].getAttribute('data-tab-id');                                document.getElementById(tabId).className = 'hidden';                                removeClass(tabNavigation[k], 'active');                            }                            addClass(activeTab, 'active');                            var activeTabId = activeTab.getAttribute('data-tab-id');                            document.getElementById(activeTabId).className = 'block';                        });                    }                    tabGroups[i].setAttribute('data-processed', 'true');                }            },            createToggles: function() {                var toggles = document.querySelectorAll('.sf-toggle:not([data-processed=true])');                for (var i = 0; i < toggles.length; i++) {                    var elementSelector = toggles[i].getAttribute('data-toggle-selector');                    var element = document.querySelector(elementSelector);                    addClass(element, 'sf-toggle-content');                    if (toggles[i].hasAttribute('data-toggle-initial') && toggles[i].getAttribute('data-toggle-initial') == 'display') {                        addClass(toggles[i], 'sf-toggle-on');                        addClass(element, 'sf-toggle-visible');                    } else {                        addClass(toggles[i], 'sf-toggle-off');                        addClass(element, 'sf-toggle-hidden');                    }                    addEventListener(toggles[i], 'click', function(e) {                        e.preventDefault();                        if ('' !== window.getSelection().toString()) {                            /* Don't do anything on text selection */                            return;                        }                        var toggle = e.target || e.srcElement;                        /* needed because when the toggle contains HTML contents, user can click */                        /* on any of those elements instead of their parent '.sf-toggle' element */                        while (!hasClass(toggle, 'sf-toggle')) {                            toggle = toggle.parentNode;                        }                        var element = document.querySelector(toggle.getAttribute('data-toggle-selector'));                        toggleClass(toggle, 'sf-toggle-on');                        toggleClass(toggle, 'sf-toggle-off');                        toggleClass(element, 'sf-toggle-hidden');                        toggleClass(element, 'sf-toggle-visible');                        /* the toggle doesn't change its contents when clicking on it */                        if (!toggle.hasAttribute('data-toggle-alt-content')) {                            return;                        }                        if (!toggle.hasAttribute('data-toggle-original-content')) {                            toggle.setAttribute('data-toggle-original-content', toggle.innerHTML);                        }                        var currentContent = toggle.innerHTML;                        var originalContent = toggle.getAttribute('data-toggle-original-content');                        var altContent = toggle.getAttribute('data-toggle-alt-content');                        toggle.innerHTML = currentContent !== altContent ? altContent : originalContent;                    });                    /* Prevents from disallowing clicks on links inside toggles */                    var toggleLinks = toggles[i].querySelectorAll('a');                    for (var j = 0; j < toggleLinks.length; j++) {                        addEventListener(toggleLinks[j], 'click', function(e) {                            e.stopPropagation();                        });                    }                    toggles[i].setAttribute('data-processed', 'true');                }            },            createFilters: function() {                document.querySelectorAll('[data-filters] [data-filter]').forEach(function (filter) {                    var filters = filter.closest('[data-filters]'),                        type = 'choice',                        name = filter.dataset.filter,                        ucName = name.charAt(0).toUpperCase()+name.slice(1),                        list = document.createElement('ul'),                        values = filters.dataset['filter'+ucName] || filters.querySelectorAll('[data-filter-'+name+']'),                        labels = {},                        defaults = null,                        indexed = {},                        processed = {};                    if (typeof values === 'string') {                        type = 'level';                        labels = values.split(',');                        values = values.toLowerCase().split(',');                        defaults = values.length - 1;                    }                    addClass(list, 'filter-list');                    addClass(list, 'filter-list-'+type);                    values.forEach(function (value, i) {                        if (value instanceof HTMLElement) {                            value = value.dataset['filter'+ucName];                        }                        if (value in processed) {                            return;                        }                        var option = document.createElement('li'),                            label = i in labels ? labels[i] : value,                            active = false,                            matches;                        if ('' === label) {                            option.innerHTML = '<em>(none)</em>';                        } else {                            option.innerText = label;                        }                        option.dataset.filter = value;                        option.setAttribute('title', 1 === (matches = filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').length) ? 'Matches 1 row' : 'Matches '+matches+' rows');                        indexed[value] = i;                        list.appendChild(option);                        addEventListener(option, 'click', function () {                            if ('choice' === type) {                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {                                    if (option.dataset.filter === row.dataset['filter'+ucName]) {                                        toggleClass(row, 'filter-hidden-'+name);                                    }                                });                                toggleClass(option, 'active');                            } else if ('level' === type) {                                if (i === this.parentNode.querySelectorAll('.active').length - 1) {                                    return;                                }                                this.parentNode.querySelectorAll('li').forEach(function (currentOption, j) {                                    if (j <= i) {                                        addClass(currentOption, 'active');                                        if (i === j) {                                            addClass(currentOption, 'last-active');                                        } else {                                            removeClass(currentOption, 'last-active');                                        }                                    } else {                                        removeClass(currentOption, 'active');                                        removeClass(currentOption, 'last-active');                                    }                                });                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {                                    if (i < indexed[row.dataset['filter'+ucName]]) {                                        addClass(row, 'filter-hidden-'+name);                                    } else {                                        removeClass(row, 'filter-hidden-'+name);                                    }                                });                            }                        });                        if ('choice' === type) {                            active = null === defaults || 0 <= defaults.indexOf(value);                        } else if ('level' === type) {                            active = i <= defaults;                            if (active && i === defaults) {                                addClass(option, 'last-active');                            }                        }                        if (active) {                            addClass(option, 'active');                        } else {                            filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').forEach(function (row) {                                toggleClass(row, 'filter-hidden-'+name);                            });                        }                        processed[value] = true;                    });                    if (1 < list.childNodes.length) {                        filter.appendChild(list);                        filter.dataset.filtered = '';                    }                });            }        };    })();    Sfjs.addEventListener(document, 'DOMContentLoaded', function() {        Sfjs.createTabs();        Sfjs.createToggles();    });/*]]>*/</script><style nonce="c82fcaa3b1d63f5f6be52e86a26f65b3">    .sf-minitoolbar {    background-color: #222;    border-top-left-radius: 4px;    bottom: 0;    box-sizing: border-box;    display: none;    height: 36px;    padding: 6px;    position: fixed;    right: 0;    z-index: 99999;}.sf-minitoolbar a {    display: block;}.sf-minitoolbar svg,.sf-minitoolbar img {    max-height: 24px;    max-width: 24px;    display: inline;}.sf-toolbar-clearer {    clear: both;    height: 36px;}.sf-display-none {    display: none;}.sf-toolbarreset * {    box-sizing: content-box;    vertical-align: baseline;    letter-spacing: normal;    width: auto;}.sf-toolbarreset {    background-color: #222;    bottom: 0;    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);    color: #EEE;    font: 11px Arial, sans-serif;    left: 0;    margin: 0;    padding: 0 36px 0 0;    position: fixed;    right: 0;    text-align: left;    text-transform: none;    z-index: 99999;    direction: ltr;    /* neutralize the aliasing defined by external CSS styles */    -webkit-font-smoothing: subpixel-antialiased;    -moz-osx-font-smoothing: auto;}.sf-toolbarreset abbr {    border: dashed #777;    border-width: 0 0 1px;}.sf-toolbarreset svg,.sf-toolbarreset img {    height: 20px;    width: 20px;    display: inline-block;}.sf-toolbarreset .hide-button {    background: #444;    display: block;    position: absolute;    top: 0;    right: 0;    width: 36px;    height: 36px;    cursor: pointer;    text-align: center;}.sf-toolbarreset .hide-button svg {    max-height: 18px;    margin-top: 10px;}.sf-toolbar-block {    cursor: default;    display: block;    float: left;    height: 36px;    margin-right: 0;    white-space: nowrap;    max-width: 15%;}.sf-toolbar-block > a,.sf-toolbar-block > a:hover {    display: block;    text-decoration: none;    color: inherit;}.sf-toolbar-block span {    display: inline-block;}.sf-toolbar-block .sf-toolbar-value {    color: #F5F5F5;    font-size: 13px;    line-height: 36px;    padding: 0;}.sf-toolbar-block .sf-toolbar-label,.sf-toolbar-block .sf-toolbar-class-separator {    color: #AAA;    font-size: 12px;}.sf-toolbar-block .sf-toolbar-info {    border-collapse: collapse;    display: table;    z-index: 100000;}.sf-toolbar-block hr {    border-top: 1px solid #777;    margin: 4px 0;    padding-top: 4px;}.sf-toolbar-block .sf-toolbar-info-piece {    /* this 'border-bottom' trick is needed because 'margin-bottom' doesn't work for table rows */    border-bottom: solid transparent 3px;    display: table-row;}.sf-toolbar-block .sf-toolbar-info-piece-additional,.sf-toolbar-block .sf-toolbar-info-piece-additional-detail {    display: none;}.sf-toolbar-block .sf-toolbar-info-group {    margin-bottom: 4px;    padding-bottom: 2px;    border-bottom: 1px solid #333333;}.sf-toolbar-block .sf-toolbar-info-group:last-child {    margin-bottom: 0;    padding-bottom: 0;    border-bottom: none;}.sf-toolbar-block .sf-toolbar-info-piece .sf-toolbar-status {    padding: 2px 5px;    margin-bottom: 0;}.sf-toolbar-block .sf-toolbar-info-piece .sf-toolbar-status + .sf-toolbar-status {    margin-left: 4px;}.sf-toolbar-block .sf-toolbar-info-piece:last-child {    margin-bottom: 0;}div.sf-toolbar .sf-toolbar-block .sf-toolbar-info-piece a {    color: #99CDD8;    text-decoration: underline;}div.sf-toolbar .sf-toolbar-block a:hover {    text-decoration: none;}.sf-toolbar-block .sf-toolbar-info-piece b {    color: #AAA;    display: table-cell;    font-size: 11px;    padding: 4px 8px 4px 0;}.sf-toolbar-block:not(.sf-toolbar-block-dump) .sf-toolbar-info-piece span {    color: #F5F5F5;}.sf-toolbar-block .sf-toolbar-info-piece span {    font-size: 12px;}.sf-toolbar-block .sf-toolbar-info {    background-color: #444;    bottom: 36px;    color: #F5F5F5;    display: none;    padding: 9px 0;    position: absolute;}.sf-toolbar-block .sf-toolbar-info:empty {    visibility: hidden;}.sf-toolbar-block .sf-toolbar-status {    display: inline-block;    color: #FFF;    background-color: #666;    padding: 3px 6px;    margin-bottom: 2px;    vertical-align: middle;    min-width: 15px;    min-height: 13px;    text-align: center;}.sf-toolbar-block .sf-toolbar-status-green {    background-color: #4F805D;}.sf-toolbar-block .sf-toolbar-status-red {    background-color: #B0413E;}.sf-toolbar-block .sf-toolbar-status-yellow {    background-color: #A46A1F;}.sf-toolbar-block.sf-toolbar-status-green {    background-color: #4F805D;    color: #FFF;}.sf-toolbar-block.sf-toolbar-status-red {    background-color: #B0413E;    color: #FFF;}.sf-toolbar-block.sf-toolbar-status-yellow {    background-color: #A46A1F;    color: #FFF;}.sf-toolbar-block-request .sf-toolbar-status {    color: #FFF;    display: inline-block;    font-size: 14px;    height: 36px;    line-height: 36px;    padding: 0 10px;}.sf-toolbar-block-request .sf-toolbar-info-piece a {    text-decoration: none;}.sf-toolbar-block-request .sf-toolbar-info-piece a:hover {    text-decoration: underline;}.sf-toolbar-block-request .sf-toolbar-redirection-status {    font-weight: normal;    padding: 2px 4px;    line-height: 18px;}.sf-toolbar-block-request .sf-toolbar-info-piece span.sf-toolbar-redirection-method {    font-size: 12px;    height: 17px;    line-height: 17px;    margin-right: 5px;}.sf-toolbar-block-ajax .sf-toolbar-icon {    cursor: pointer;}.sf-toolbar-status-green .sf-toolbar-label,.sf-toolbar-status-yellow .sf-toolbar-label,.sf-toolbar-status-red .sf-toolbar-label {    color: #FFF;}.sf-toolbar-status-green svg path,.sf-toolbar-status-green svg .sf-svg-path,.sf-toolbar-status-red svg path,.sf-toolbar-status-red svg .sf-svg-path,.sf-toolbar-status-yellow svg path,.sf-toolbar-status-yellow svg .sf-svg-path {    fill: #FFF;}.sf-toolbar-block-config svg path,.sf-toolbar-block-config svg .sf-svg-path {    fill: #FFF;}.sf-toolbar-block .sf-toolbar-icon {    display: block;    height: 36px;    padding: 0 7px;    overflow: hidden;    text-overflow: ellipsis;}.sf-toolbar-block-request .sf-toolbar-icon {    padding-left: 0;    padding-right: 0;}.sf-toolbar-block .sf-toolbar-icon img,.sf-toolbar-block .sf-toolbar-icon svg {    border-width: 0;    position: relative;    top: 8px;    vertical-align: baseline;}.sf-toolbar-block .sf-toolbar-icon img + span,.sf-toolbar-block .sf-toolbar-icon svg + span {    margin-left: 4px;}.sf-toolbar-block-config .sf-toolbar-icon .sf-toolbar-value {    margin-left: 4px;}.sf-toolbar-block:hover,.sf-toolbar-block.hover {    position: relative;}.sf-toolbar-block:hover .sf-toolbar-icon,.sf-toolbar-block.hover .sf-toolbar-icon {    background-color: #444;    position: relative;    z-index: 10002;}.sf-toolbar-block-ajax.hover .sf-toolbar-info {    z-index: 10001;}.sf-toolbar-block:hover .sf-toolbar-info,.sf-toolbar-block.hover .sf-toolbar-info {    display: block;    padding: 10px;    max-width: 480px;    max-height: 480px;    word-wrap: break-word;    overflow: hidden;    overflow-y: auto;}.sf-toolbar-info-piece b.sf-toolbar-ajax-info {    color: #F5F5F5;}.sf-toolbar-ajax-requests {    table-layout: auto;    width: 100%;}.sf-toolbar-ajax-requests td {    background-color: #444;    border-bottom: 1px solid #777;    color: #F5F5F5;    font-size: 12px;    padding: 4px;}.sf-toolbar-ajax-requests tr:last-child td {    border-bottom: 0;}.sf-toolbar-ajax-requests th {    background-color: #222;    border-bottom: 0;    color: #AAA;    font-size: 11px;    padding: 4px;}.sf-ajax-request-url {    max-width: 250px;    line-height: 9px;    overflow: hidden;    text-overflow: ellipsis;}.sf-toolbar-ajax-requests .sf-ajax-request-url a {    text-decoration: none;}.sf-toolbar-ajax-requests .sf-ajax-request-url a:hover {    text-decoration: underline;}.sf-ajax-request-duration {    text-align: right;}.sf-ajax-request-loading {    animation: sf-blink .5s ease-in-out infinite;}@keyframes sf-blink {    0% { background: #222; }    50% { background: #444; }    100% { background: #222; }}.sf-toolbar-block.sf-toolbar-block-dump .sf-toolbar-info {    max-width: none;    width: 100%;    position: fixed;    box-sizing: border-box;    left: 0;}.sf-toolbar-block-dump pre.sf-dump {    background-color: #222;    border-color: #777;    border-radius: 0;    margin: 6px 0 12px 0;}.sf-toolbar-block-dump pre.sf-dump:last-child {    margin-bottom: 0;}.sf-toolbar-block-dump pre.sf-dump .sf-dump-search-wrapper {    margin-bottom: 5px;}.sf-toolbar-block-dump pre.sf-dump span.sf-dump-search-count {    color: #333;    font-size: 12px;}.sf-toolbar-block-dump .sf-toolbar-info-piece {    display: block;}.sf-toolbar-block-dump .sf-toolbar-info-piece .sf-toolbar-file-line {    color: #AAA;    margin-left: 4px;}.sf-toolbar-block-dump .sf-toolbar-info img {    display: none;}/* Responsive Design */.sf-toolbar-icon .sf-toolbar-label,.sf-toolbar-icon .sf-toolbar-value {    display: none;}.sf-toolbar-block-config .sf-toolbar-icon .sf-toolbar-label {    display: inline-block;}/* Legacy Design - these styles are maintained to make old panels look   a bit better on the new toolbar */.sf-toolbar-block .sf-toolbar-info-piece-additional-detail {    color: #AAA;    font-size: 12px;}.sf-toolbar-status-green .sf-toolbar-info-piece-additional-detail,.sf-toolbar-status-yellow .sf-toolbar-info-piece-additional-detail,.sf-toolbar-status-red .sf-toolbar-info-piece-additional-detail {    color: #FFF;}@media (min-width: 768px) {    .sf-toolbar-icon .sf-toolbar-label,    .sf-toolbar-icon .sf-toolbar-value {        display: inline;    }    .sf-toolbar-block .sf-toolbar-icon img,    .sf-toolbar-block .sf-toolbar-icon svg {        top: 6px;    }    .sf-toolbar-block-time .sf-toolbar-icon svg,    .sf-toolbar-block-memory .sf-toolbar-icon svg {        display: none;    }    .sf-toolbar-block-time .sf-toolbar-icon svg + span,    .sf-toolbar-block-memory .sf-toolbar-icon svg + span {        margin-left: 0;    }    .sf-toolbar-block .sf-toolbar-icon {        padding: 0 10px;    }    .sf-toolbar-block-time .sf-toolbar-icon {        padding-right: 5px;    }    .sf-toolbar-block-memory .sf-toolbar-icon {        padding-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-icon {        padding-left: 0;        padding-right: 0;    }    .sf-toolbar-block-request .sf-toolbar-label {        margin-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-status + svg {        margin-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-icon svg + .sf-toolbar-label {        margin-left: 0;     }    .sf-toolbar-block-request .sf-toolbar-label + .sf-toolbar-value {        margin-right: 10px;    }    .sf-toolbar-block-request:hover .sf-toolbar-info {        max-width: none;    }    .sf-toolbar-block .sf-toolbar-info-piece b {        font-size: 12px;    }    .sf-toolbar-block .sf-toolbar-info-piece span {        font-size: 13px;    }    .sf-toolbar-block-right {        float: right;        margin-left: 0;        margin-right: 0;    }}@media (min-width: 1024px) {    .sf-toolbar-block .sf-toolbar-info-piece-additional,    .sf-toolbar-block .sf-toolbar-info-piece-additional-detail {        display: inline;    }    .sf-toolbar-block .sf-toolbar-info-piece-additional:empty,    .sf-toolbar-block .sf-toolbar-info-piece-additional-detail:empty {        display: none;    }}/***** Error Toolbar *****/.sf-error-toolbar .sf-toolbarreset {    background: #222;    color: #f5f5f5;    font: 13px/36px Arial, sans-serif;    height: 36px;    padding: 0 15px;    text-align: left;}.sf-error-toolbar .sf-toolbarreset svg {    height: auto;}.sf-error-toolbar .sf-toolbarreset a {    color: #99cdd8;    margin-left: 5px;    text-decoration: underline;}.sf-error-toolbar .sf-toolbarreset a:hover {    text-decoration: none;}.sf-error-toolbar .sf-toolbarreset .sf-toolbar-icon {    float: left;    padding: 5px 0;    margin-right: 10px;}/***** Media query print: Do not print the Toolbar. *****/@media print {    .sf-toolbar {        display: none;    }}</style><script nonce="15387736f3e3581ac00b6e463ea08637">/*<![CDATA[*/    (function () {        Sfjs.loadToolbar('ede62d');    })();/*]]>*/</script>
+</body>
+</html>

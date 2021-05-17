@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ANPAD</title>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900" rel="stylesheet">
+        <link rel="stylesheet" href="/build/vendors~app.css"><link rel="stylesheet" href="/build/app.css">
+    </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary static-top">
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="/build/images/logo//anpad.png" alt="ANPAD logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto menuTop">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pt_br/associate/">Associe-se</a>
+                </li>
+                                    <li class="nav-item">
+                        <a class="nav-link" href="/pt_br/sign_up/">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle login active" data-toggle="dropdown">Entrar</a>
+                        <div class="dropdown-menu dropdown-menu-right login">
+                            <div id="login-container">
+                                <form action="/pt_br/login" id="formLoginLogin"  class="row" method="POST">
+	<div class="col-12 form-group">
+		<input id="inputIdentifier" type="text" class="form-control" name="identifier" required autofocus placeholder="CPF / Passaport"/>
+	</div>
+	<div class="col-12 form-group">
+		<input id="inputPassword" type="password" class="form-control" name="password" required placeholder="Senha"/>
+    	</div>
+
+			<div class="col-6 links">
+			<a href="/pt_br/sign_up/">Quero me cadastrar</a><br/>
+			Lembrar Senha
+		</div>
+		<div class="col-6">
+			<a class="btn btn-sm btn-primary btn-block follow" id="BtFormLogin">Entrar
+				<i id="btnLoginLoad" style="margin-left:10px;" class="fa fa-spinner fa-spin d-none"></i>
+			</a>
+		</div>
+        <input type="hidden" id="login" name="_csrf_token" value="--PB5i0SW-XDunTtLWeMwfL8BLtUFhKXbebABD83KCE"/>
+	
+</form>
+
+                            </div>
+                        </div>
+                    </li>
+                                <li class="nav-item" id="buscaHeader">
+                    <form action="/busca">
+                        <input type="text" name="busca" required>
+                    </form>
+                    <a class="nav-link icon"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-language="pt_br" class="btnLanguage nav-link icon float-left px-1 language active"><img src="/build/images//br.png"></a>
+                    <a href="#" data-language="en" class="btnLanguage nav-link icon float-left px-1 language"><img src="/build/images//us.png"></a>
+                    <a href="#" data-language="es" class="btnLanguage nav-link icon float-left px-1 language"><img src="/build/images//es.png"></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto menuBottom">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pt_br/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Periódicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informativo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content hasBreadcumb">
+        <div class="container">
+  <div id="breadcumb" class="pb-md-5">
+    <div class="route">
+      <span>::</span>
+          <a href="/pt_br/" ><span>
+                            ANPAD                        </span></a><meta itemprop="position" content="1"/><span class='separator'>/</span><span>
+                            Eventos                        </span><meta itemprop="position" content="2"/>
+    </div>
+
+    <div class="title">
+                  Detalhes do Evento
+        
+
+    </div>
+      
+    
+        <div class="label">EnGPR 2020</div>
+          </div>
+</div>
+            <nav id="sidebar" class="active">
+        <h1>EnGPR 2020</h1>
+        <ul class="nav list-unstyled" id="sidebarnav">
+            <li class="active"><a href="#navsidebar-0" data-toggle="tab" role="tab" class="active" aria-selected="true">Apresentação</a></li>
+
+                                                <li><a href="#navsidebar-1687" data-toggle="tab" role="tab">Palestrante Internacional</a></li>
+                                    <li><a href="#navsidebar-1674" data-toggle="tab" role="tab">Coordenação e Comitê / Temas de Interesse</a></li>
+                                    <li><a href="#navsidebar-1703" data-toggle="tab" role="tab">Programação Detalhada</a></li>
+                                    <li><a href="#navsidebar-1709" data-toggle="tab" role="tab">Trabalhos Apresentados</a></li>
+                                    <li><a href="#navsidebar-1706" data-toggle="tab" role="tab">Prêmios e Menções Honrosas</a></li>
+                                    </ul>
+    </nav>
+    <div class="container nobc">
+        <div class="fieldset">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <ul class="nav flex-column navsidebar" role="tablist">
+                        <li class="active"><a href="#navsidebar-0" data-toggle="tab" role="tab" class="active" aria-selected="true">Apresentação</a></li>
+
+                                                                                    <li><a href="#navsidebar-1687" data-toggle="tab" role="tab">Palestrante Internacional</a></li>
+                                                            <li><a href="#navsidebar-1674" data-toggle="tab" role="tab">Coordenação e Comitê / Temas de Interesse</a></li>
+                                                            <li><a href="#navsidebar-1703" data-toggle="tab" role="tab">Programação Detalhada</a></li>
+                                                            <li><a href="#navsidebar-1709" data-toggle="tab" role="tab">Trabalhos Apresentados</a></li>
+                                                            <li><a href="#navsidebar-1706" data-toggle="tab" role="tab">Prêmios e Menções Honrosas</a></li>
+                                                                        </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="badge badge-warning d-md-none mb-3">EnGPR 2020</div>
+                    <h2 class="d-md-none">Detalhes do Evento</h2>
+                    <button class="btn btn-block btn-primary sidebarCollapse d-lg-none">MENU EVENTO</button>
+                    <div class="tab-content" id="navsidebar">
+                        <div class="tab-pane fade show active" id="navsidebar-0" role="tabpanel">
+
+<div class="fs-90">
+    <h1 class="mb-0">Apresentação</h1>
+    <p class="pb primary">EnGPR 2020</p>
+    <p class="pb danger mb-0">Evento On-line</p>
+    <p class="pb danger">Data:         
+                    
+                
+                
+                                                        6 - 10 de dez de 2019
+                                        </p>
+    VII ENCONTRO DE GESTÃO DE PESSOAS E RELAÇÕES DE TRABALHO - EnGPRISSN Principal: 2177-2614 - versão onlineEvento On-lineData: 27 e 28 de agosto de 2020DATAS IMPORTANTES18/11/2019 - Divulgação das Chamadas de Trabalho; 09/12/2019 - Abertura do endereço eletrônico para receber as submissões; 03/03/2020 - Data limite para submissão de trabalhos, até 18h (horário de Brasília); 09/04/2020 - Divulgação dos resultados; 24/04/2020 - Data limite para inscrição de autores com trabalhos selecionados;27 e 28/08/2020 - Realização do Evento on-lineAPRESENTAÇÃOO VII Encontro de Gestão de Pessoas e Relações de Trabalho - EnGPR será realizado nos dias 27 e 28 de agosto de 2020, de forma on-line, sob promoção daAssociação Nacional de Pós-Graduação e Pesquisa em Administração/ANPAD e de responsabilidadeda Divisão Acadêmica de Gestão de Pessoas e Relações de Trabalho - GPR.O EnGPR é um espaço de discussão de temas científicos no âmbito da Divisão. Esta Chamada deTrabalhos é um convite aos pesquisadores e professores de quaisquer instituições do país e doexterior. O objetivo do evento é fomentar o desenvolvimento da área de estudos em Gestão de Pessoase Relações de Trabalho, considerando os diferentes subsistemas e dimensões de análise, observando,preferencialmente, os Temas de Interesse destacados, por meio de artigos teórico-empíricos, ensaiosteóricos e artigos tecnológicos.DocumentosData de Publicação[%%FILE_28%%]18/11/2019[%%FILE_31%%]06/04/2020[%%FILE_50%%]26/08/2020SUBMISSÕES ENCERRADAS
+
+    </div>
+</div>
+
+                                                                                    <div class="tab-pane fade" id="navsidebar-1687" role="tabpanel">
+                                    <h1>Palestrante Internacional</h1>
+                                            [%%PALESTRANTE_10%%]	
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1674" role="tabpanel">
+                                    <h1>Coordenação e Comitê / Temas de Interesse</h1>
+                                            <div class='well'>
+                    <b>GPR - Gestão de Pessoas e Relações de Trabalho</b><br>
+                    <br>
+                    <b>Coordenador:</b> Ana Heloisa Da Costa Lemos  (Mestr e Dout em Admin de Empresas/IAG-A Esc de Negócios da PUC-Rio – IAG/PUC-Rio - Pontifícia Universidade Católica do Rio de Janeiro)<br>
+                    <br>
+                    <b>Comitê Científico:</b><br>
+                    Sidinei Rocha-de-oliveira (Prog de Pós-Grad em Admin/Esc de Admin – PPGA/EA/UFRGS - Universidade Federal do Rio Grande do Sul)<br>Tereza Cristina Batista De Lima (Prog de Pós-Grad em Admin e Controlad – PPAC/UFC - Universidade Federal do Ceará)<br>Wilson Aparecido Costa De Amorim (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)
+                  </div>
+
+<div role='tabpanel' class='tab-pane active' id='GPR'>
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading1'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse1' aria-expanded='true' aria-controls='GPRcollapse1'>
+                         Tema 1 - Liderança: Teoria, Prática e Formas de Desenvolvimento
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading1'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Anderson de Souza Sant'Anna (Mestr e Dout em Admin de Empresas /FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+Flávia de Souza Costa Neves Cavazotte (Mestr e Dout em Admin de Empresas/IAG-A Esc de Negócios da PUC-Rio – IAG/PUC-Rio - Pontifícia Universidade Católica do Rio de Janeiro)<br>
+PAULA SOUSA BRANT E MELO (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Juliana Mansur (Mestr Prof em Admin Pública/FGV/EBAPE - Fundação Getulio Vargas/Esc Brasileira de Admin Pública e de Empresas - Mest Executivo em Gestão Empresarial/FGV/EBAPE - Fundação Getulio Vargas/Esc Brasileira de Admin Pública e de Empresas)<br>
+                  <br>
+                      O tema se direciona a fomentar a produção e o compartilhamento de estudos, pesquisas e discussões em torno fenômeno da Liderança, tendo por base as dimensões societal, organizacional e individual. O escopo compreende análise de abordagens tradicionais, críticas e contemporâneas sobre o tema, em particular de abordagens, estilos de liderança e formas de seu desenvolvimento em contextos marcados por transformações demográficas, geopolíticas, tecnológicas, comportamentais e organizacionais. Compreende também estudos que busquem a produção de teorias e abordagens considerando características e especificidades da realidade brasileira, bem como pesquisas empíricas que a enfatizem, bem como proponham comparações com outros contextos socioeconômicos e culturais. Envolve, ainda, espaço para a discussão de abordagens teórico-metodológicas e conceituais que compreendam ou extrapolem o mainstream dos estudos sobre o tema, com destaque para permanências, mudanças, paradoxos e dilemas em torno da produção teórica em torno do constructo, e suas articulações com a realidade nacional. Dentre o conjunto de tópicos e subtópicos incluem-se estudos teóricos e empíricos abrangendo abordagens clássicas e emergentes, liderança e perspectivas críticas, relações entre liderança e poder, liderança e cultura, liderança e gestão, liderança e revolução 4.0, liderança e identidade, liderança e gênero, liderança e sustentabilidade, liderança e equipes, liderança e demais elementos do comportamento humano e organizacional, assim como liderança e terceiro setor, liderança e administração pública, desenvolvimento de liderança, competências em liderança, liderança e novas configurações organizacionais, liderança e complexidade, liderança e economia digital.
+                      <br><br>
+                      <b>Palavras-chave:</b> Liderança ; Desenvolvimento de Liderança ; Competências em Liderança ; Estilos de Liderança ; Liderança 4.0
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading2'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse2' aria-expanded='true' aria-controls='GPRcollapse2'>
+                         Tema 2 - Gerações, Ageismo e Trabalho
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading2'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Kely Cesar Martins de Paiva (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD/UFMG - Universidade Federal de Minas Gerais)<br>
+Diogo Henrique Helal (Diretoria de Pesquisas Sociais/Fundação Joaquim Nabuco - FUNDAJ - Curso de Mestr Prof em Gestão Empresarial - MPGE/FBV - Faculdade Boa Viagem)<br>
+Diego Costa Mendes (Departamento de Administração e Contabilidade (DAD/UFV)/UFV - Universidade Federal de Viçosa - Prog de Pós-Grad em Admin/Dep de Ciênc Administrativas/Cent de Ciênc Soc Aplic – PROPAD/DCA/CCSA/UFPE - Universidade Federal de Pernambuco)<br>
+                  <br>
+                      Não é novidade afirmar que o mundo do trabalho apresenta composição cada vez mais diversa. A heterogeneidade da força de trabalho apresenta para os campos do trabalho, do comportamento humano e da gestão de pessoas vastos enfoques de investigação, incluindo-se estudos que relacionem e interseccionem o fator idade e/ou geracional com outros construtos nas relações sociais no trabalho. Uma geração pode ser compreendida como um grupo que compartilha — além do período de nascimento e de idades próximas — eventos históricos, políticos e sociais significativos em suas existências e que podem ser associados ao desenvolvimento humano e à existência de alguns padrões de referência. A literatura aponta que indivíduos de faixas etárias diversas tendem a se comportar de modos peculiares, demarcando distintas formas para adentrar, permanecer e/ou sair do mundo do trabalho, espelhando particularidades nos comportamentos de jovens, adultos e idosos nos espaços laborais. Assim como as juventudes são diversas, as experiências de idosos em processo de aposentadoria também demarcam vivências que precisam ser melhor investigadas, compreendidas e gerenciadas. Levando-se em conta, também, outras interseccionalidades — como gênero, cor de pele, orientação sexual, orientação religiosa, orientação estética —, tais particularidades tendem a aumentar e a se constituir fatores complicadores do ponto de vista social e, assim, de gestão. Tais questões demandam, seguramente, um papel mais ativo das organizações e da gestão de pessoas, no sentido de uma maior participação e responsabilização no que se refere aos desafios compreendidos nos processos de inserção e de saída do mercado de trabalho. <br>
+Assim sendo, este tema busca estimular debates, desenvolvimento de pesquisas e aprofundamento dos conhecimentos a respeito da diversidade etária da força de trabalho e das múltiplas gerações no ambiente laboral, bem como discussões que relacionem tais temáticas com: <br>
+Ageismo e aspectos demográficos, comportamentais e sociais; <br>
+Cotidiano de jovens trabalhadores, trabalhadores adultos e idosos; <br>
+Gerações e poder nas organizações; <br>
+Gerações, trajetórias e carreiras; <br>
+Gerações e políticas e práticas de gestão de pessoas; <br>
+Inserção e longevidade no mercado de trabalho; <br>
+Juventudes e profissionalização; <br>
+Gerações e políticas públicas;<br>
+Programa Jovem Aprendiz; <br>
+Envelhecimento ativo nas organizações; <br>
+Gerações, cibercultura e ciberespaço;<br>
+Ageismo e desemprego; <br>
+Estigmas, estereótipos, preconceitos, discriminações e marginalidade etários. <br>
+Portanto, pesquisas que focalizem tais grupos, individual ou comparativamente, nas mais diferentes nuanças do mundo do trabalho, bem como com os mais diversos aportes epistemológicos e metodológicos, são bem-vindas.
+                      <br><br>
+                      <b>Palavras-chave:</b> Gerações e trabalho ; Ageismo nas organizações ; Etarismo e trabalho ; Juventudes e trabalho ; Envelhecimento e relações de trabalho
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading3'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse3' aria-expanded='true' aria-controls='GPRcollapse3'>
+                         Tema 3 - Trabalho e questões de gênero: desafios contemporâneos
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading3'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Heliani Berlato  (Prog de Pós-Grad em Admin/Esc Sup de Agricultura “Luiz de Queiroz” - PPGA/ESALQ/USP - Universidade de São Paulo)<br>
+Carolina Maria Mota Santos (Prog de Pós-Grad em Admin – PPGA/PUC Minas - Pontifícia Universidade Católica de Minas Gerais)<br>
+Angela Christina Lucas (FCA-Unicamp/FCA-Unicamp)<br>
+Fernanda Versiani de Rezende (Prog de Pós-Grad em Admin – PPGA/PUC Minas - Pontifícia Universidade Católica de Minas Gerais)<br>
+                  <br>
+                      A proposta é discutir a situação atual dos estudos em torno de conquistas e desafios vivenciados por mulheres e homens quando se equaciona carreira e vida pessoal. Dado que a temática de gênero faz luz a essa discussão, o grupo de trabalho também pretende ampliar o olhar para as interseccionalidades que tocam a mulher e chamar à discussão os conceitos de feminilidade e masculinidade.<br>
+<br>
+A participação da mulher no mercado de trabalho é cada vez mais estudada. Na área da administração encontramos diversos estudos sobre mulheres que chegaram aos primeiros escalões, discussões sobre o fenômeno Glass Ceiling em relação a esta categoria profissional (Mota-Santos, Tanure, Carvalho Neto, 2014), e em relação às empreendedoras (Mota-Santos, Carvalho Neto, Versiani, Caeiro e Martins, 2016), além de aspectos que tratam a perspectiva de profissionais mais maduras e em processo de envelhecimento.  <br>
+<br>
+Logo, o interesse desta proposta é aglutinar pesquisas e práticas, de caráter transdisciplinar, que problematizam as questões relacionadas ao trabalho e a vida pessoal de mulheres e também de homens. Espera-se reunir pesquisadores e pesquisadoras que tratam destas discussões com enfoque também nas questões de gênero levando em conta antigos e atuais impasses e desafios. <br>
+<br>
+Entender o gênero como elo de duas partes permite refletir a respeito do quebra-cabeça social que constrói posições e papéis nos quais os homens, como categoria universal são vistos com determinados comportamentos (Carmo, 2010) e as mulheres com comportamentos geralmente opostos aos dos homens (Medrado &amp; Lyra, 2008).<br>
+<br>
+Ao falar de gênero, é comum referirmos ao feminino e ao masculino. Infelizmente aprendemos a agir de acordo com as prescrições de cada sexo e ainda encontramos padrões estereotipados em que o feminino se relaciona apenas às mulheres e o masculino apenas aos homens. <br>
+<br>
+Não podemos esquecer a fluidez que existe ao falarmos de gênero. Souza et al (2015, p. 283), por exemplo, ressaltam que “O masculino possui muito mais conteúdos femininos nos dias de hoje do que em épocas passadas”. É neste contexto que consideramos que o marcador de gênero se constitui como categoria e também um termo relacional. O que é ser homem depende do que é ser mulher e vice-versa. As mudanças no feminino impactam o que venha a ser masculino (Nascimento et al, 2009; Araújo, 2005). <br>
+<br>
+Além disso, outras propostas que não tratam do debate a partir da categoria gênero, mas que contribuem com discussões relacionadas ao mercado de trabalho e carreira também fazem parte desta discussão. <br>
+<br>
+Sendo assim, espera-se trabalhos que estejam enquadrados nos seguintes tópicos:<br>
+<br>
+1.	Relação trabalho e família sob a perspectiva do casal<br>
+2.	Desenvolvimento de carreira da mulher e suas interseccionalidades (mulher negra, lésbica, em situação vulnerável)<br>
+3.	O fenômeno opt out.<br>
+4.	Dual career.<br>
+5.	Perfil da mulher no mercado de trabalho<br>
+6.	Maternidade e Paternidade na construção e desenvolvimento da carreira<br>
+7.	Mulheres e envelhecimento no mercado de trabalho<br>
+8.	Mulheres na ciência<br>
+9.	Mulheres imigrantes<br>
+10.	Barreiras para igualdade e equidade de gênero<br>
+11.	Classe social, carreira e mulher<br>
+12.	Novas marcas do feminino <br>
+13.	Novas marcas da masculinidade <br>
+<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Trabalho e Família ; Dual career ; Gênero ; Maternidade/Paternidade ; Feminino/Masculino
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading4'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse4' aria-expanded='true' aria-controls='GPRcollapse4'>
+                         Tema 4 - Modos de Saber, Aprender  e (Re) Existir Com e Para as Pessoas nas Organizações
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading4'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      MARCIO PASCOAL CASSANDRE (Prog de Pós-Grad em Admin - PPA/UEM - Universidade Estadual de Maringá)<br>
+Cláudia Simone Antonello  (Prog de Pós-Grad em Admin/Esc de Admin – PPGA/EA/UFRGS - Universidade Federal do Rio Grande do Sul)<br>
+Maria Beatriz Rodrigues (Prog de Pós-Grad em Admin/Esc de Admin – PPGA/EA/UFRGS - Universidade Federal do Rio Grande do Sul)<br>
+                  <br>
+                      Nossa proposta visa contribuir com a comunidade científica de pesquisadores da temática Aprendizagem e Conhecimento, principalmente a que se refere às organizações.Temos interesse na compreensão dos processos de aprendizagem por meio do diálogo transdisciplinar de áreas do conhecimento como Sociologia, Antropologia, Psicologia e Educação. Essa intersecção amplia a compreensão sobre a aprendizagem nas organizações, seus atores, movimentos metodológicos, dimensão política, bem como saberes que se constituem pelos e nos processos organizativos. <br>
+Ocorre a ampliação do lócus da ocorrência da aprendizagem em outros espaços socialmente organizados, revelando-se imprescendível conhecer e reconhecer atores que interagem com e nessas organizações. Pretende-se refletir sobre os saberes em distintos contextos de exclusão e de desigualdades socioeconômicas.<br>
+Na ampliação proposta, considerar a natureza das organizações enquanto processos organizativos é ir além da compreensão hegemônica da organização produtiva como espaço único da ocorrência da aprendizagem, considerando os movimentos e organizações sociais; populares, públicas, não governamentais; os coletivos; as redes físicas e virtuais, como lugares de expressão de aprendizagens.A natureza dos atores, os diferentes pertencimentos territoriais, as distintas urbanidades e ruralidades, as distintas bandeiras étnico-raciais e indígenas, de gênero e diversidade sexual, pertencimento religioso, cultural e de linguagens, revelam-se formas de considerarmos a lacuna política dos estudos da aprendizagem nas organizações. Busca-se dar visibilidade, crítica e espaços de manifestação dos atores coletivos, habitualmente invisíveis. Isto também implica em discutir alternativas metodológicas para desenvolver tais estudos. <br>
+Tópicos que gostaríamos de discutir (mas não limitados a):<br>
+•	Como se constituem os saberes pelos e nos processos organizativos? <br>
+•	Qual a implicação da dimensão política das práticas na construção de saberes? <br>
+•	Como as novas formas organizacionais e os arranjos de emprego (trabalho temporário e contingente, intermediários, empresas baseadas em rede etc.) influenciam a distribuição de poder e as desigualdades nos mercados e local de trabalho?<br>
+•	Como se estabelecem as relações (mutáveis) entre a participação social e a segregação? E como isto repercute nas dimensões trabalho, profissões e aprendizagem? <br>
+•	Como os saberes da ciência, da política, da história natural e dos povos originários nos auxiliam a pensar e criar modos coletivos de resistência. <br>
+•	Como as informações emergentes e tecnologias (plataformas on-line, algoritmos, aprendizado de máquina, análise preditiva etc.) moldam a triagem, a contratação, a alocação de tarefas e, consequentemente, a aprendizagem no local de trabalho?<br>
+•	Como as novas tecnologias redefinem a natureza do trabalho criando novas identidades, profissões e comunidades? E neste contexto, quais e como são gerados novos discursos que limitam as profissões, o trabalho e a constituição de saberes?<br>
+•	 Quais são as consequências (não)pretendidas das práticas e das rotinas organizacionais antigas e novas, em particular porque elas beneficiam alguns indivíduos ou grupos enquanto restringem as oportunidades para outros dentro e fora das organizações de trabalho?<br>
+•	Onde os métodos de pesquisa social estão sendo inventados? Quais são os possíveis espaços alternativos aos sistemas de conhecimento hegemônico de conhecimento? <br>
+•	Qual é o potencial crítico e transformador dos métodos de pesquisa acerca do tema aprendizagem e conhecimento? <br>
+•	Quais saberes e práticas envolvem a constituição do sujeito que reflete, transforma e codifica o trabalho científico e de pesquisa? 
+                      <br><br>
+                      <b>Palavras-chave:</b> Aprendizagem ; Conhecimento ; Processos Organizativos ;  Métodos ;  Saberes
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading5'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse5' aria-expanded='true' aria-controls='GPRcollapse5'>
+                         Tema 5 - Admirável mundo (do trabalho) novo? carreiras em tempos de capitalismo flexível 
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading5'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Lucia Barbosa de Oliveira (Mest Executivo em Gestão Empresarial/FGV/EBAPE - Fundação Getulio Vargas/Esc Brasileira de Admin Pública e de Empresas)<br>
+Andrea Poleto Oltramari (Prog de Pós-Grad em Admin/Esc de Admin – PPGA/EA/UFRGS - Universidade Federal do Rio Grande do Sul)<br>
+Bruno Felix Von Borell de Araujo (Prog de Admin de Empresas/FUCAPE Business School/FUCAPE - Fund Instituto Capixaba de Pesquisas em Contab, Economia e Finanças)<br>
+Filipe Augusto Silveira de Souza (Graduação/FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+                  <br>
+                      Os estudos de carreira sob a perspectiva organizacional datam da década de 1970. Ao longo de sua existência, tal abordagem foi dominada por um conjunto de metáforas ou discursos, tais como carreira organizacional e, mais recentemente, carreiras sem fronteiras e proteana (Arthur &amp; Rousseau, 1996; Hall, 1976). Nas últimas décadas, o foco recaiu sobre aspectos subjetivos como autonomia, proatividade, bem-estar e autorrealização. Em contraposição, há quem proponha o conceito de carreiras flexíveis, com vistas a capturar as múltiplas influências contextuais que ora habilitam e ora constrangem os indivíduos (Mayrhofer, Meyer, &amp; Steyrer, 2007). Coloca-se em questão a demasiada ênfase sobre a agência individual, ao mesmo tempo em que se destaca o papel central da posição social, da dinâmica organizacional e do ambiente institucional mais amplo (Tomlinson et al., 2018). Nesse sentido, as carreiras devem ser pensadas levando-se em conta as dimensões espacial, temporal e relacional, em linha com a tradição histórica dos estudos de carreira, bem como com as recentes propostas baseadas em teorias sociológicas de longo prazo, sobretudo as pautadas nas obras de Bourdieu e Giddens. <br>
+No âmbito de um quadro contextual mais amplo, a emergência da Quarta Revolução Industrial trouxe consigo um conjunto de transformações estruturais no mundo do trabalho, com destaque para o aumento do número de modalidades atípicas de trabalho (Hirschi, 2018). Diante deste cenário pouco alentador, correspondente a um quadro de crescente desigualdade social, torna-se pouco palatável a insistência na reprodução dos estudos de carreira em torno de discursos restritos a uma abordagem otimista das carreiras gerenciais, profissionais e hierárquicas. Como propõem Baruch e Vardi (2016, p. 355), “não há como se compreender a real natureza das carreiras através do emprego de construtos e medidas que presumam positividade, sem ao menos considerar, na mesma análise, noções como fracasso, insegurança no trabalho, tratamento injusto, assédio e incivilidade”. <br>
+Visando estimular a continuidade das pesquisas e promover a integração dos pesquisadores da área, convidamos a submissão de trabalhos que busquem o avanço teórico-empírico deste campo do conhecimento. A partir do reconhecimento de que todos que trabalham têm uma carreira, propomos as seguintes vias de pesquisa: <br>
+- Novas ocupações e modos de trabalhar: gig work, uberização, mercado de trabalho digital (MTD). <br>
+- Influência das mudanças socioeconômicas, demográficas, culturais, territoriais e individuais sobre o processo de precarização objetiva e subjetiva das carreiras. <br>
+- Carreiras no contexto dos vínculos de trabalho flexíveis: trabalho temporário e intermitente, microempreendedor individual, trabalhador “PJ”. <br>
+- Flexibilidade espacial do trabalho: teletrabalho, trajetórias de imigrantes, exilados e refugiados. <br>
+- Trabalho, carreira e a interseção com marcadores sociais (classe, gênero e raça). <br>
+- Carreira e classe social: classe, trajetória educacional e trajetória profissional. <br>
+- Carreiras de outsiders: trajetórias de grupos ocupacionais ou sociais considerados marginais ou desviantes (Becker, 2008). <br>
+- Identidades e identificação social (como indivíduos se definem por meio de seu trabalho) e transições de papel. <br>
+- Chamados ocupacionais (callings). <br>
+- Carreiras em contexto . <br>
+- Carreiras sustentáveis <br>
+- Análise crítica dos discursos relativos às novas carreiras. <br>
+- O lado sombrio (dark-side) das carreiras contemporâneas.<br>
+<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Carreiras ; Trajetórias profissionais ; Ocupações ; Flexibilidade ; Classe social
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading6'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse6' aria-expanded='true' aria-controls='GPRcollapse6'>
+                         Tema 6 - Trabalho, Organizações e Subjetividade
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading6'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Ludmila de Vasconcelos Machado Guimaraes (Prog de Pós-Grad em Admin - PPGA/CEFET-MG - Centro Federal de Educação Tecnológica de Minas Gerais)<br>
+Jefferson Lopes La Falce (Prog de Mestr e Dout em Admin da FACE/FUMEC - Universidade FUMEC)<br>
+LEONARDO TONON (Prog de Pós-Grad em Admin/Curso de Mestr Acadêmico em Admin/PPGA/UTFPR - Universidade Tecnológica Federal do Paraná)<br>
+Raquel de Oliveira Barreto (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD/UFMG - Universidade Federal de Minas Gerais)<br>
+Renato Koch Colomby (Prog de Pós-Grad em Admin/Esc de Admin – PPGA/EA/UFRGS - Universidade Federal do Rio Grande do Sul)<br>
+                  <br>
+                      Baseado em três eixos principais (Trabalho, Organização e Subjetividade), a proposta deste GT é avançar nas discussões sobre o trabalho e suas articulações com a dinâmica micro (sujeito) e macro (social). Para além de uma ocupação, o trabalho possui um papel fundamental na estruturação da identidade, subjetividade e saúde do trabalhador, sendo necessário fomentar constantemente discussões centradas nos seus múltiplos impactos, inclusive em termos de prazer e sofrimento. Compreendendo o trabalho como elemento central em nossas vidas, é fundamental também resgatá-lo enquanto eixo organizador da sociedade, desafiando-nos a manter um olhar atento para a complexidade trazida pelas diferentes perspectivas ideológicas, sociológicas, psicológicas, políticas, legais e econômicas existentes.  <br>
+Partindo desse entendimento que privilegia aspectos provenientes de leituras sobre as psicopatologias do trabalho, bem como sobre as diferentes formas de construção de subjetividades no contexto laboral contemporâneo, convidamos a todos os interessados em dialogar trazendo discussões que transitem pelas temáticas: Prazer e Sofrimento no trabalho. Clínicas do trabalho. Saúde e adoecimento mental no trabalho: estresse, burnout e suicídio. Alcoolismo e outras drogas. Modos de trabalhar e suas consequências no ser e no viver. Afetos e Trabalho. Contratos psicológicos. Relações de poder e o trabalhador. Controle e resistência no trabalho. Dimensões da subjetividade e trabalho. Métodos e metodologias de intervenção no trabalho.
+                      <br><br>
+                      <b>Palavras-chave:</b> Psicopatologias do trabalho ; Prazer e Sofrimento ; Subjetividade ; Clinicas do trabalho
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading7'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse7' aria-expanded='true' aria-controls='GPRcollapse7'>
+                         Tema 7 - Desafios para os Sistemas de Relações de Trabalho: mudanças e permanências 
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading7'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Arnaldo José França Mazzei Nogueira (Prog de Estudos Pós-Graduados em Admin/PUC-SP - Pontifícia Universidade Católica de São Paulo - Mestr Prof em Empreendedorismo/Facul de Economia, Admin e Contab - MPE/FEA/USP - Universidade de São Paulo)<br>
+Liliana Vasconcellos (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+ROBERTA GUASTI PORTO (Prog de Pós-Grad em Admin – PPGA/PUC Minas - Pontifícia Universidade Católica de Minas Gerais)<br>
+                  <br>
+                      Desde 1945, o modelo tradicional dos Sistemas de Relações de Trabalho (SRTs) se firmou, baseado nas negociações entre três atores sociais coletivos: trabalhadores, empregadores e governos (Dunlop, 1993). O Estado regulando mais (modelo regulador de SRT) ou menos (modelo voluntarista de SRT), e os trabalhadores e empregadores relacionando-se através de negociações coletivas mais ou menos centralizadas por região ou país. A crise deste modelo tradicional dunlopiano de SRT na Europa e EUA a partir dos anos 1980 veio com a reestruturação produtiva tecnológico-organizacional e a tendência crescente de liberalização das economias nacionais desde então. As estratégias dos atores sociais coletivos passaram a ser o foco dos estudos e de novo modelo de SRTs (Kochan, Katz &amp; McKersie, 1986). Recentemente, a necessidade de se repensar os dois modelos tem sido salientada por estudiosos de SRTs comparados, como Marginson (2016), Wright, Wailes, Bamber e Lansbury (2017). Isto por que tais modelos não dão conta de explicar a dinâmica contemporânea, impactada: pela indústria 4.0; pelo consequente movimento de flexibilização da legislação trabalhista em vários países; pelo impacto dos fluxos cada vez maiores de imigrantes. Autores como Kaufman (2012), Carvalho Neto, Amorim e Fischer (2016), Ferraz, Oltramari e Ponchirolli (2011) defendem também a necessidade de abordar os impactos destas mudanças nos SRTs sobre as políticas de Recursos Humanos (RH) das empresas. Boundarouk, Parry e Furtmueller (2016) destacam o avanço da informatização de práticas de RH (E-HRM) e seus efeitos sobre as RTs. Estes temas têm demandado que a pesquisa avance para além dos estudos clássicos (entendidos aqui como aqueles sobre condições de trabalho, negociação coletiva sindicatos-empresas, flexibilização, desregulamentação). Tais temas clássicos permanecem atuais e necessários, mas devem coexistir com os temas emergentes supramencionados, com abertura para estudos teóricos e empíricos, qualitativos e quantitativos. Num momento em que o SRT brasileiro já experimenta os impactos de profunda reforma na legislação trabalhista, esta proposta não poderia ser mais oportuna. Convidamos autores para submeter artigos segundo tópicos que podem estar imbricados e não necessariamente estanques, mas que considerem ações e estratégias dos atores sociais coletivos e também o impacto nas políticas de RH, a saber:<br>
+- SRTs comparados de diferentes países (voluntaristas, reguladores, mistos, outros modelos);<br>
+- impactos nos SRTs nacionais dos novos parâmetros de integração às cadeias internacionais de produção movidos por atitudes protecionistas de países com maior poder de definir regras comerciais;<br>
+- impactos das reformas trabalhistas nos SRTs do Brasil e de outros países (legislação, perfil do mercado de trabalho, qualificação, classe social, políticas e práticas de RH); <br>
+- RTs na indústria 4.0;<br>
+- RTs e imigrantes;<br>
+- novos e tradicionais atores sociais coletivos; individualização das RTs;<br>
+- negociações sindicais e acordos coletivos sobre todos estes temas;<br>
+- novas configurações das áreas de RH, bem como estratégias, políticas e práticas de RH nas organizações frente às novas configurações do trabalho;<br>
+- transformações digitais, gestão de pessoas e relações de trabalho;<br>
+- relações de trabalho e empreendedorismo. <br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Sistemas de Relações de Trabalho Comparados ; Relações de Trabalho e impactos em Recursos Humanos ; Relações de Trabalho e imigração ; Relações de Trabalho, transformação digital e indústria 4.0 ; Flexibilização e precarização do trabalho
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading8'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse8' aria-expanded='true' aria-controls='GPRcollapse8'>
+                         Tema 8 - Competências: avanços, desafios e caminhos a trilhar
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading8'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Francielle Molon da Silva (Faculdade de Administração e Turismo/UNIVERSIDADE FEDERAL DE PELOTAS - Prog de Pós-Grad em Admin/Inst de Ciênc Econômicas, Administrativas e Contábeis - PPGA/ICEAC/FURG - Universidade Federal do Rio Grande)<br>
+Simone Costa Nunes (Prog de Pós-Grad em Admin – PPGA/PUC Minas - Pontifícia Universidade Católica de Minas Gerais)<br>
+Tatiana Ghedine (Prog de Pós-Grad em Admin/Cursos de Mestr Acad em Admin e Dout em Admin e Turismo/UNIVALI - Universidade do Vale do Itajaí)<br>
+                  <br>
+                      O tema competências apareceu de forma mais expressiva na década de 1980, sendo que a discussão sobre sua aplicação, tanto no meio acadêmico quanto empresarial, suscitou reflexões e questões sobre sua aplicabilidade e resultados. Essa discussão gira em torno do fato de que a implementação do gerenciamento por competência não está atingindo efetivamente os níveis organizacional e individual. Diante disso, propomos o tema 'Competência: avanços, desafios e caminhos a seguir'. A intenção é promover uma discussão sobre como a abordagem competência está sendo apropriada, tanto na esfera acadêmica quanto empresarial, bem como suscitar discussões sobre a necessidade ou não de uma ressignificação sobre o assunto. Portanto, esperamos que as pesquisas apresentadas reflitam os impasses e desafios atualmente enfrentados pela noção de competência, em organizações públicas, privadas e do terceiro setor, considerando a relação entre os aspectos estratégico, coletivo e individual. Diante disso, esperamos receber artigos que se enquadrem nos seguintes tópicos:<br>
+1)	Difusão da abordagem competência nas organizações. <br>
+2)	Gestão por Competências. <br>
+3)	A relação entre competências organizacionais e competências coletivas (funcional ou de equipes). <br>
+4)	Relações e desdobramentos entre competências organizacionais, coletivas (funcionais e de equipes) e individuais. <br>
+5)	Contextos organizacionais de inovação e as competências organizacionais e coletivas (funcionais e de equipes). <br>
+6)	Competências organizacionais e a relação como o desempenho organizacional. <br>
+7)	Mapeamento de competências organizacionais, coletivas (funcionais e equipes) e individuais. <br>
+8)	Repensando a noção de competências e sua aplicabilidade nas organizações.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Competências ; Gestão por Competências ; Gestão Estratégica de Pessoas por competências ; Competências coletivas ; Mapeamento de competências
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading9'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse9' aria-expanded='true' aria-controls='GPRcollapse9'>
+                         Tema 9 - Gestão de Pesoas no Setor Público
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading9'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Ivan Beck Ckagnazaroff (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD/UFMG - Universidade Federal de Minas Gerais)<br>
+Lilian Bambirra de Assis (Prog de Pós-Grad em Admin - PPGA/CEFET-MG - Centro Federal de Educação Tecnológica de Minas Gerais)<br>
+Carolina Riente de Andrade Paula (Prog de Pós-Grad em Admin - PPGA/CEFET-MG - Centro Federal de Educação Tecnológica de Minas Gerais)<br>
+Kamila Pagel de Oliveira (Mestr em Admin Pública/FJP - Fundação João Pinheiro)<br>
+                  <br>
+                      A gestão de pessoas no setor público pode ser compreendida como a definição de políticas e diretrizes em relação ao capital humano para aumentar a eficiência dos servidores e, por consequência, do próprio órgão público (MARCONI, 2005). Ao recuperar a história da formação da Gestão de Pessoas no setor público no contexto da formação da administração pública brasileira, percebe-se que a herança da formação do Estado, que vem desde a colonização portuguesa, refletiu-se em políticas de gestão de pessoas no Brasil, considerando desde o processo de alocar servidores públicos, até as ações de retenção. <br>
+Segundo Longo (2007), por mais importantes que sejam as mudanças legais, as reestruturações organizacionais e a modernização tecnológica não são suficientes para alterar significativamente o funcionamento das organizações públicas. Assim, ao compreender que o investimento nas pessoas que atuam na máquina pública é um processo de resultados no médio e no longo prazo, nem sempre com visibilidade para a sociedade, muitos governantes optaram no decorrer da história por não fazê-lo. Segundo Gaetani (1998), apesar do discurso reformista reivindicar profissionalização da gestão pública, com mudanças no sistema de recrutamento e seleção, nas políticas de cargos e salários, formação e desenvolvimento, promoção e benefícios, na formatação do concurso público, etc, a preocupação primordial sempre foi diminuir a folha de pagamentos e o downsizing.<br>
+O serviço público atualmente convive com os dois extremos em gestão de pessoas. Em uma mesma organização é possível encontrar processos ultrapassados e também práticas modernas de gestão de pessoas. Araújo Júnior e Martins (2014) apontam que no Brasil, por exemplo, a gestão por competências foi consolidada como um dos modelos a ser seguido pela administração pública, a partir do Decreto no 5.707 de 2006. Este aspecto pode ser justificado pela descontinuidade das políticas de gestão pessoas na administração pública e dificuldades de estruturação dos sistemas de gestão. Portanto, a presença de vários modelos de gestão e traços de modelos ultrapassados, podem existir nas instituições até hoje, ao considerar que a implementação dos modelos de administração pública normalmente não estão consolidados. (MATIAS-PEREIRA, 2007)<br>
+Skorková (2016) aponta que as funções gerenciais podem ser similares e genéricas entre os setores público e privado, porém as condições nesses dois ambientes são bem distintas. Adicionalmente, desafios ainda maiores se colocam para a gestão de pessoas no setor público, quando observado o contexto da área, a instabilidade política, a rotatividade dos dirigentes máximos e a existência mútua dos modelos “patrimonialista”, burocrático, gerencial e governança em rede. Discutir as políticas e práticas e debater como as organizações públicas vêm se organizando em sua gestão de pessoas, torna-se fundamental para contribuir com a sociedade e com as práticas e desafios diários que a área vem enfrentando.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Gestão de Pessoas    ; Políticas e Práticas na Gestão de Pessoas   ; Setor Público   ; Burocracia ; Gerencialismo
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading10'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse10' aria-expanded='true' aria-controls='GPRcollapse10'>
+                         Tema 10 - Diversidade e In(ex)clusão nas Organizações: Avançando na discussão
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading10'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Jair Nascimento Santos (Prog de Pós-Grad em Admin/Mestr em Admin  – PPGA /UNIFACS - Universidade Salvador - Administração/UNEB)<br>
+Helio Arthur Reis Irigaray (Mest Executivo em Gestão Empresarial/FGV/EBAPE - Fundação Getulio Vargas/Esc Brasileira de Admin Pública e de Empresas)<br>
+Darcy Mitiko Mori Hanashiro (Prog de Pós-Grad em Admin de Empresas - PPGA /Mackenzie - Universidade Presbiteriana Mackenzie)<br>
+Maria Nivalda de Carvalho-Freitas (Programa de Pós-Graduação em Psicologia/UNIVERSIDADE FEDERAL DE SÃO JOÃO DEL-REI)<br>
+                  <br>
+                      A coexistência de múltiplas identidades nos ambientes social e organizacionais impõem desafios para a gestão e para a compreensão dos processos que envolvem a diversidade. Frequentemente observamos ideologias críticas da diferença e sentimentos que culminam na atribuição de 'diferença cultural' ou “funcional” que excluem certos grupos, em função de gênero, raça, etnia, cor de pele, cultura, religião, idade, porte estético, deficiência físico-mental, orientações afetivo-sexuais, país ou região de origem, classe social ou profissão e cargo ocupado nas organizações. Esta exclusão, não raramente, se manifesta em atos de violência explicita ou simbólica, que resulta em sofrimento para as vítimas.<br>
+<br>
+O objetivo deste GT é promover o debate sobre todas as formas de desigualdades nas relações de trabalho e nas políticas públicas para as diferentes dimensões da diversidade, bem como numa economia política global. Visamos abordar como as medidas políticas e práticas podem ser elaboradas para promover a inclusão de grupos minoritários e vozes marginalizadas, para que trabalhemos em prol da justiça social e o bem-estar de todos os indivíduos e comunidades. Neste sentido, entendemos ser fundamental que se discuta o quanto as políticas públicas e das empresas estão alinhadas com as pautas dos movimentos sociais (feminista, negro, LGBTQIA+, por exemplo). <br>
+<br>
+Neste GT aceitamos trabalhos que partam de qualquer premissa ontológica e se valha de qualquer escolha epistemológica. Assim, convidamos acadêmicos e acadêmicas a enviar trabalhos empíricos ou ensaios teóricos, que discutam como enfrentar os desafios da inclusão nos grupos minorizados, como valorizar a diversidade e promover a justiça social ou organizacional, ou ainda, trabalhos que identifiquem novas identidades, demandas e desejos emergentes no contexto organizacional e social contemporâneo, os desafios impostos pela (re)configuração da sociedade brasileira frente a uma onda neoconservadora.
+                      <br><br>
+                      <b>Palavras-chave:</b> Diversidade ; Inclusão ; Exclusão ;  LGBTQIA+ ; Raça e  etnia 
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading11'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse11' aria-expanded='true' aria-controls='GPRcollapse11'>
+                         Tema 11 - Modelos, Políticas e Práticas para a Gestão de Pessoas
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading11'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Mario Teixeira Reis Neto (Prog de Mestr e Dout em Admin da FACE/FUMEC - Universidade FUMEC)<br>
+Bruno Henrique Rocha Fernandes (Prog de Pós-Grad em Admin – PPAD/PUCPR - Pontifícia Universidade Católica do Paraná - Prog de MestrProf em Admin: Gestão Contemporânea das Organizações/FDC - Fundação Dom Cabral)<br>
+Jorge Filipe da Silva Gomes (Other/ISEG, Universidade de Lisboa)<br>
+                  <br>
+                      As organizações que são capazes de gerir os seus recursos humanos de forma mais eficiente e eficaz são aquelas que não apenas se adaptam aos ambientes envolventes em permanente mudança, mas também as que conseguem criar as condições para um crescimento sustentado e continuado no tempo. Mais recentemente, a gestão de pessoas tem sido confrontada com novos desafios: o advento da economia digital, a internacionalização e a gestão verde de recursos humanos.<br>
+<br>
+No que concerne a economia digital, a forma de criar valor está sendo afetada pelas novas tecnologias. A rapidez com que as mudanças estão ocorrendo ultrapassa em muitos casos a capacidade de adaptação das organizações. Falar de adaptação é falar da criação de novas competências individuais e organizacionais, pelo que a gestão de pessoas deverá estar no centro desta adaptação à nova realidade.<br>
+<br>
+É crescente o número de organizações que passam a competir nos mercados globais, oferecendo produtos e serviços para clientes e consumidores em vários mercados.  Trata-se da internacionalização da gestão de pessoas, já conhecida das corporações globais, mas de crescente importância para empresas locais, economias e sociedades. <br>
+<br>
+O meio ambiente e a sustentabilidade trazem desafios à gestão de pessoas, com responsabilidades na mudança de hábitos e comportamentos dos empregados, com impacto não apenas nos resultados da empresa, mas também nos resultados em outros stakeholders, como a sociedade e o ambiente.<br>
+<br>
+As mudanças têm acontecido em uma velocidade crescente o que torna o processo competitivo cada vez mais desafiador e complexo. Isso exige que as organizações redobrem a atenção sobre o ambiente externo e interno. Como o meio sócio cultural também tem mudado, as políticas e práticas de gestão de pessoas sofrem tensões e podem se tornar ineficazes na mesma velocidade das mudanças na tecnologia e no mercado. Como consequência, os desempenhos individuais e organizacionais estão sobe intenso questionamento, porque os parâmetros de bom e ruim estão sempre mudando. <br>
+<br>
+A gestão de pessoas de baixa renda e baixa qualificação se apresenta como um grande desafio para os gestores e a comunidade acadêmica. Se por um lado o mundo organizacional vive em um ambiente de exigências e desafios crescentes, existe no Brasil um contingente muito grande de pessoas com características e qualificações típicas de uma economia de baixa tecnologia e baixa produtividade. <br>
+<br>
+Diante do contexto apresentado, o presente tema se propõe a acolher estudos que contemplem:<br>
+•	Modelos de gestão de pessoas que sinalizem novos caminhos no campo;<br>
+•	Políticas e práticas de gestão de pessoas frente aos desafios de cada contexto;<br>
+•	Mensuração de resultados de gestão de pessoas;<br>
+•	Gestão internacional de pessoas;<br>
+•	Gestão de pessoas e seus efeitos no clima organizacional, na cultura e na sustentabilidade ambiental;<br>
+•	As relações entre as mudanças organizacionais e a gestão de pessoas;<br>
+•	Os efeitos da economia digital na gestão de pessoas: modelos, politicas e práticas;<br>
+•	Gestão de pessoas de baixa qualificação: modelos, políticas e práticas que contemplem elementos do comportamento organizacional;<br>
+•	Consultoria em gestão de pessoas.<br>
+<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Modelos de gestão de pessoas  ; Políticas de gestão de pessoas ; Mudanças e gestão de pessoas  ; Gestão internacional de pessoas  ; Gestão de pessoas de baixa qualificação 
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading12'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse12' aria-expanded='true' aria-controls='GPRcollapse12'>
+                         Tema 12 - Elementos e Medidas do Comportamento Organizacional
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading12'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Daniela Campos Bahia Moscon (Núcleo de Pós-Grad em Admin – NPGA/UFBA - Universidade Federal da Bahia - Núcleo de Pós-Grad em Admin – NPGA/UFBA - Universidade Federal da Bahia)<br>
+Ana Carolina de Aguiar Rodrigues (Prog de Pós-Grad em Admin/Faculdade de Economia, Admin e Contab – PPGA/FEA/USP - Universidade de São Paulo)<br>
+Vânia Medianeira Flores Costa (Prog de Pós-Grad em Admin/Centro de Ciências Sociais Humanas – PPGA/CCSH/UFSM - Universidade Federal de Santa Maria)<br>
+Vania de Fátima Barros Estivalete  (Prog de Pós-Grad em Admin/Centro de Ciências Sociais Humanas – PPGA/CCSH/UFSM - Universidade Federal de Santa Maria)<br>
+                  <br>
+                      O objetivo proposto para esse tema é favorecer o contato com discussões atuais no campo dos estudos organizacionais nas dimensões que abarcam o indivíduo, o grupo e a organização. Diante de um campo tão vasto, diversificado e fragmentado, vários recortes são possíveis. Desse modo, propõe-se discutir e refletir sobre alguns fenômenos e processos organizacionais que constituem objeto de intenso interesse acadêmico e profissional no atual contexto de mudanças no mundo do trabalho e analisar como a diversidade individual impacta na construção da qualidade do relacionamento entre trabalhadores e organizações. Entender o que é comportamento organizacional é fundamental para a avaliação do ambiente e para a adoção de práticas efetivas de gestão de pessoas. Além disso, ajuda nortear a atuação dos gestores e líderes a fim de criar condições favoráveis para um melhor desempenho individual e coletivo. Tal entendimento envolve o uso de novas ferramentas de diagnóstico, sobretudo aquelas envolvem métodos mais robustos, tais como modelagens aplicadas ao estudo do comportamento organizacional.  <br>
+Assim, a partir da temática do comportamento organizacional, são propostos alguns subtemas mais comuns e que ainda são objeto de interesse dos pesquisadores: a) Motivação e satisfação; b) Percepção e Tomada de decisão; c) Comunicação; d) Poder (autoridade e autonomia); e) Conflitos no trabalho; f) Cultura Organizacional; g) Valores (pessoais, profissionais, no trabalho, organizacionais); h) Comprometimento, vínculos no trabalho, entrincheiramento; i) Justiça organizacional; j) Ética; l) Equipes de trabalho; m) Novas ferramentas de diagnóstico do comportamento organizacional; n) modelagem multinível aplicada ao estudo do comportamento organizacional.   <br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> Comportamento organizacional.  ; Vínculos no trabalho.  ; Valores organizacionais. ; Cultura Organizacional ; Motivação e satisfação
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading13'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse13' aria-expanded='true' aria-controls='GPRcollapse13'>
+                         Tema 13 - Violência, Saúde e Fatores Psicossociais nas Organizações
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse13' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading13'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Thiago Soares Nunes (Mestrado Profissional em Administração/Centro Universitário UNA)<br>
+Alice de Freitas Oleto (Mestr e Dout em Admin de Empresas /FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+Suzana da Rosa Tolfo (Programa de Pós-Graduação em Psicologia/UFSC - Universidade Federal de Santa Catarina)<br>
+Jose Vitor Palhares (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD/UFMG - Universidade Federal de Minas Gerais - outro/IFFar - Instituto Federal Farroupilha)<br>
+                  <br>
+                      A discussão sobre violência e saúde dentro das organizações vêm se intensificando cada vez mais, e a academia aparece na vanguarda para expor, auxiliar e intervir no desenvolvimento de práticas mais saudáveis e positivas. Nesta perspectiva, os fatores psicossociais relacionados ao trabalho podem auxiliar na identificação de elementos que facilitam e/ou inibem os fatores favoráveis/positivos (como promoção da saúde, confiança e respeito, engajamento, suporte e proteção aos trabalhadores) e desfavoráveis/negativos (proporcionam riscos e ameaças, violência, assédio moral e/ou sexual, intimidações e outras hostilidades) que afetam o desenvolvimento e desempenho no trabalho, as relações interpessoais e a organização por completo (ZANELLI; KANAN, 2018). Observa-se que existe um abismo entre o discurso e a prática de ações e políticas dos fatores favoráveis/positivos, assim como um tabu ao debater sobre os fatores desfavoráveis/negativos. Portanto, este eixo temático propõe trazer à tona discussões pertinentes que tratem sobre a violência e a saúde manifestadas de todas as suas formas nas organizações. Dessa maneira, são bem-vindos trabalhos empíricos ou teóricos de diferentes abordagens epistemológicas e metodológicas que procurem expor a existência destes fenômenos nas organizações e busquem avançar no conhecimento da área. Algumas possibilidades de estudo podem incluir, mas não se limitam a:<br>
+- Violência no trabalho.<br>
+- Assédio moral;<br>
+- Assédio sexual;<br>
+- Condições e organização do trabalho, saúde e doença;<br>
+- Políticas, estratégias de intervenções em organizações;<br>
+- Saúde e segurança no trabalho;<br>
+- Saúde e adoecimento;<br>
+- Capacidade/incapacidade para o trabalho;<br>
+- Doenças ocupacionais;<br>
+- Qualidade de vida no trabalho (QVT)<br>
+- Condições e organização de trabalho;<br>
+- Suporte organizacional.
+                      <br><br>
+                      <b>Palavras-chave:</b> Violência no trabalho ; Assédio moral e/ou sexual ; Saúde e segurança no trabalho ; Políticas, estratégias de e intervenções em organizações ; Qualidade de vida no trabalho
+                    </div>
+                  </div>
+                </div>
+            
+
+              <div class='panel panel-default'>
+                  <div class='panel-heading' role='tab' id='GPRheading14'>
+                    <h4 class='panel-title'>
+                      <a role='button' data-toggle='collapse' data-parent='#GPRaccordion' href='#GPRcollapse14' aria-expanded='true' aria-controls='GPRcollapse14'>
+                         Tema 14 - Sentidos e significados do trabalho na contemporaneidade: desafios locais e globais 
+                      </a>
+                    </h4>
+                  </div>
+                  <div id='GPRcollapse14' class='panel-collapse collapse' role='tabpanel' aria-labelledby='GPRheading14'>
+                    <div class='panel-body'>
+                      <b>Líderes:</b><br>
+                      Andrea Leite Rodrigues (Prog de Pós-Grad em Gestão de Políticas Públicas/Escola de Artes, Ciências e Humanidades - EACH/USP - Universidade de São Paulo)<br>
+Alcides Barrichello (CCSA pós-lato/Universidade Presbiteriana Mackenzie - PEC - Programas de Educação Continuada/FGV/EAESP - Fundação Getulio Vargas/Esc de Admin de Empresas de São Paulo)<br>
+JESUINA MARIA PEREIRA FERREIRA (Centro de Pós-Grad e Pesquisas em Admin – CEPEAD/UFMG - Universidade Federal de Minas Gerais - MESTRADO PROFISSIONAL EM GESTÃO EMPRESARIAL (MPGE)/CENTRO UNIVERSITÁRIO UNIFBV)<br>
+Pedro Bendassolli (Pos-Graduacao em Psicologia /UFRN - Universidade Federal do Rio Grande do Norte)<br>
+                  <br>
+                      Considerado uma atividade central que estrutura a vida dos indivíduos, o trabalho passou adquirir diferentes sentidos ainda mais em tempos de intensificação da flexibilização e terceirização sustentadas pelo discurso da empregabilidade e gestão da própria carreira. Por isso, sentido do trabalho tem sido, reiteradamente, objeto de pesquisa. As pesquisas têm englobado larga gama de opções teóricas e metodológicas. Trata-se de um conceito central em teorias emergentes como a psicologia positiva, mas também em abordagens críticas e  interpretativistas.  Mais recentemente, a discussão sobre o tema também abarcou os novos formatos de regulação do trabalho, os contratos temporários, horários flexíveis, trabalho, redução de jornada e teletrabalho, entre outros recortes. Congratulamo-nos com artigos sobre uma ampla gama de abordagens teóricas e metodológicas, incluindo artigos oriundos da psicologia, sociologia, política e gestão. Abaixo destacamos alguns temas apenas para incentivar a criatividade de autores interessados neste convite.<br>
+<br>
+•	Sentido do trabalho e a sociedade brasileira. Proposições teóricas, empíricas e metodológicas que avancem na discussão das características locais e globais. Para além das terríveis misturas entre Morin e Antunes!<br>
+•	Estudos empíricos com foco em experiências locais, regionais e interculturais. Comparações entre categorias profissionais distintas ou ambientes diferentes (por exemplo, público versus privado) ou quaisquer outras categorias de análise;<br>
+•	Estudos utilizando escalas, modelagem e outros métodos que permitam avaliar, validar e discutir antecedentes e desdobramentos do significado do trabalho;<br>
+•	Estudos que relacionem os sentidos do trabalho e as gerações;<br>
+•	Estudos que relacionem os sentidos do trabalho e gênero;<br>
+•	Métodos de pesquisa inovadores sobre os sentidos do trabalho (desafios, perspectivas, tendências, análises multi-nível);<br>
+•	Gestão dos sentidos do trabalho e outros constructos importantes na gestão: comprometimento, envolvimento, motivação, bem-estar e sofrimento no trabalho, estresse, afetos e emoções;<br>
+•	A perda do sentido e a experiência de alienação;<br>
+•	O futuro dos estudos sobre sentidos do trabalho.<br>
+
+                      <br><br>
+                      <b>Palavras-chave:</b> sentido do trabalho ; significado do trabalho ; centralidade do trabalho ; alienação no trabalho ; identidade social e trabalho
+                    </div>
+                  </div>
+                </div>
+            
+</div>
+                                </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1703" role="tabpanel">
+                                    <h1>Programação Detalhada</h1>
+                                                                        </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1709" role="tabpanel">
+                                    <h1>Trabalhos Apresentados</h1>
+                                        
+
+                                    </div>
+                                                            <div class="tab-pane fade" id="navsidebar-1706" role="tabpanel">
+                                    <h1>Prêmios e Menções Honrosas</h1>
+                                            <p></p><p class='MsoNoSpacing'><span style='background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-size: 18px;'><u><b>MELHOR TRABALHO DA DIVISÃO DE GPR</b></u></span></p><blockquote><b>PRÊMIO</b></blockquote><p class='MsoNoSpacing'><b>EnGPR189 – Tema 12<br>A Influência da Qualidade de Vida no
+Trabalho no Comprometimento Organizacional e no Entrincheiramento
+Organizacional no Contexto do Serviço Público</b><br>Maria Dajuda Costa Passos (NPGA/UFBA)<br>Diva Ester Okazaki Rowe (NPGA/UFBA)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNoSpacing'><o:p>&nbsp;</o:p></p><blockquote><o:p><b>MENÇÃO HONROSA</b></o:p></blockquote><p class='MsoNoSpacing'><o:p><span style='font-weight: 700;'>EnGPR23 – Tema 6<br>'É boa para quem fica e ruim para quem sai': representações sociais dos trabalhadores da mecanização agrícola sobre o processo de modernização ocorrido nos canaviais alagoanos</span><br>Jose Rodolfo Tenório Lima (UFAL e PPGS/UFSCAR)<br>Milka Alves Correia Barbosa (PROFIAP/UFAL)</o:p></p><p class='MsoNoSpacing'><br></p><p class='MsoNoSpacing'><b>EnGPR208 - Tema 4<br>As Ferramentas da Teoria da Atividade e
+da Netnografia para a análise de contradições de uma atividade bancária</b><br>Rafael Jonatas Vizentin (PMDA/UP)<br>Yara Lucia Mazziotti Bulgacov (PMDA/UP
+e CEPPAD/UFPR)</p><p class='MsoNoSpacing'><o:p></o:p></p><p class='MsoNormal' style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><o:p>&nbsp;</o:p></p><p class='MsoNormal' style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><o:p>&nbsp;</o:p></p><p class='MsoNormal'><span style='line-height: 107%; font-size: 18px;'><b><u>MELHOR TRABALHO DECORRENTE DE UMA TESE
+DE DOUTORADO</u></b></span></p><blockquote><span style='line-height: 107%;'><b><u>PRÊMIO</u></b></span></blockquote><p class='MsoNoSpacing'><b>EnGPR192
+- Tema 5&nbsp; &nbsp; &nbsp; </b><br><b>Empreendendo a si e a origem:
+trajetórias de vida e trabalho de refugiados sírios no Brasil<br></b>Laura Alves Scherer (PPGA/EA/UFRGS e
+UNIPAMPA)<br>Vanessa Amaral Prestes (PPGA/EA/UFRGS)<br>Carmem Ligia Iochins Grisci
+(PPGA/EA/UFRGS)</p><blockquote><b>MENÇÃO HONROSA</b></blockquote><p class='MsoNoSpacing'><o:p></o:p></p><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class='MsoNormal' style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><span style='font-weight: 700;'>ENGPR7 - Tema 1</span></p><span style='font-weight: 700;'>Papeis e estilos de liderança em missão da ONU no Haiti: O que pensam as lideranças do exército brasileiro?</span><br>Paolo Rosi d Avila (UnB e FGV/EBAPE)<br>Fátima Bayma de Oliveira (FGV/ EBAPE)<br>Daniela Martins Diniz (UFSJ)<br>Anderson de Souza Sant'Anna (FGV/EAESP)<p></p><p><br></p><p class='MsoNormal'><b><span style='font-size: 18px;'>PRÊMIO JOVEM PESQUISADOR</span><br></b>Ludmila de Vasconcelos Machado
+Guimarães (PPGA/CEFET-MG)</p><p class='MsoNormal'><span style='background-color: rgb(255, 255, 255);'><span style='background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;'><br></span></span></p><p class='MsoNormal'><b><span style='font-size: 18px;'>PRÊMIO DE TRAJETÓRIA ACADÊMICA</span><br></b>Antônio
+Moreira de Carvalho Neto (PPGA/PUC Minas)</p><p class='MsoNormal'><o:p></o:p></p><p class='MsoNormal'><b><o:p></o:p></b></p>
+                                </div>
+                                                                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row endereco">
+            <div class="col-md-6">
+                <h1>Telefone ANPAD</h1>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pb-2">(44) 3354-8545</div>
+                        <div>(44) 98826-2467</div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>  <!-- ./class="col-md-offset-2 col-md-4" -->
+
+            <div class="col-md-6">
+                <h1>Endereço</h1>
+                <address>
+                    <div class="pb-2">Av. Pedro Taques, 294</div>
+                    <div class="pb-2">CEP 87030-008 - Maringá, PR</div>
+                    <div>Brasil</div>
+                </address>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center"><br>Associação Nacional de Pós Graduação e Pesquisa em Administração - CNPJ 42.595.652/0001-66</div>
+        </div>
+    </div>
+</footer><div class="modal" id="modalDelete" tabindex="-1" role="dialog" data-word="EXCLUIR">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title">CONFIRMAR EXCLUSÃO</span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Tem certeza de que deseja excluir $type $name?<br/>Esta ação não poderá ser desfeita!</p>
+        <p>Para confirmar a exclusão $type $name, digite a palavra $word abaixo e confirme.</p>
+        <div class="row form my-0">
+          <div class="col-12 form-group">
+            <input type="text" id="deleteInput" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-block btn-lg btn-grey-dark" data-dismiss="modal" aria-label="Close">CANCELAR</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" id="deleteConfirm" class="btn btn-block btn-lg btn-danger" disabled>
+              CONFIRMAR
+              <span class="d-none fa fa-spinner fa-spin"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-success d-none" id="itemDeleted" role="alert">
+  <b class="message"></b>
+  <a class="close ml-3">
+    <span aria-hidden="true">&times;</span>
+  </a>
+</div>    <div role="dialog" id="cookieconsent_modal" class="p-3" style="display: none; position: fixed; bottom: 15px; right: 30px; max-width: 300px; background: white;">
+        <!--googleoff: all-->
+        <div class="osano-cm-dialog__content osano-cm-content">
+            <p id="" class="">
+                ANPAD - Associação Nacional de Pós-Graduação e Pesquisa em Administração utiliza cookies em seu portal para controle de navegação no site e geração de informações estatísticas, os quais são armazenados apenas em caráter temporário para melhorar a experiência do usuário. Ao utilizar nossos serviços, você concorda com esse monitoramento.
+            </p>
+            <p>
+                <a href="/pt_br/legal/cookies?choice=deny" target="_blank" class="" rel="noopener noreferrer nofollow"><!---->Data Storage Policy<!----></a>
+            </p>
+        </div>
+        <div class="text-center">
+            <a id="cookieconsent_accept" class="btn btn-success" href="/pt_br/legal/cookieconsent/1">
+                <i class="activity-indicator"></i> Aceitar
+            </a>
+            <a id="cookieconsent_deny" class="btn btn-danger" href="/pt_br/legal/cookieconsent">
+                <i class="activity-indicator"></i> Negar
+            </a>
+        </div>
+        <!--googleon: all-->
+    </div>
+
+    <script src="/build/runtime.js"></script><script src="/build/vendors~activity~app~articleEvaluation~associate~certificate~cookieconsent~dashboard/admin~dashboard~780886de.js"></script><script src="/build/vendors~activity~app~associate~certificate~cookieconsent~dashboard/admin~dashboard/user~ensalement/g~8018043c.js"></script><script src="/build/vendors~activity~app~associate~cookieconsent~dashboard/user~ensalement/general~ensalement/priority~e~257752a3.js"></script><script src="/build/cookieconsent.js"></script>
+        <script src="/build/vendors~activity~app~associate~dashboard/admin~dashboard/user~ensalement/general~ensalement/sections~b3c04876.js"></script><script src="/build/vendors~app~certificate~gestorSpeakers~panelEvaluation~themeEvaluation.js"></script><script src="/build/vendors~activity~app~panels~user_articles.js"></script><script src="/build/vendors~app~certificate~panelEvaluation~themeEvaluation.js"></script><script src="/build/vendors~app.js"></script><script src="/build/app.js"></script>
+    <script src="/build/login.js"></script>
+
+    <script src="/build/vendors~events/show.js"></script><script src="/build/events/show.js"></script>
+
+<div id="sfwdt17001f" class="sf-toolbar sf-display-none"></div><script nonce="0aead5633ee5d53eecf9ceb066f9fd12">/*<![CDATA[*/        Sfjs = (function() {        "use strict";        if ('classList' in document.documentElement) {            var hasClass = function (el, cssClass) { return el.classList.contains(cssClass); };            var removeClass = function(el, cssClass) { el.classList.remove(cssClass); };            var addClass = function(el, cssClass) { el.classList.add(cssClass); };            var toggleClass = function(el, cssClass) { el.classList.toggle(cssClass); };        } else {            var hasClass = function (el, cssClass) { return el.className.match(new RegExp('\\b' + cssClass + '\\b')); };            var removeClass = function(el, cssClass) { el.className = el.className.replace(new RegExp('\\b' + cssClass + '\\b'), ' '); };            var addClass = function(el, cssClass) { if (!hasClass(el, cssClass)) { el.className += " " + cssClass; } };            var toggleClass = function(el, cssClass) { hasClass(el, cssClass) ? removeClass(el, cssClass) : addClass(el, cssClass); };        }        var noop = function() {};        var profilerStorageKey = 'symfony/profiler/';        var addEventListener;        var el = document.createElement('div');        if (!('addEventListener' in el)) {            addEventListener = function (element, eventName, callback) {                element.attachEvent('on' + eventName, callback);            };        } else {            addEventListener = function (element, eventName, callback) {                element.addEventListener(eventName, callback, false);            };        }        var request = function(url, onSuccess, onError, payload, options) {            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');            options = options || {};            options.maxTries = options.maxTries || 0;            xhr.open(options.method || 'GET', url, true);            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');            xhr.onreadystatechange = function(state) {                if (4 !== xhr.readyState) {                    return null;                }                if (xhr.status == 404 && options.maxTries > 1) {                    setTimeout(function(){                        options.maxTries--;                        request(url, onSuccess, onError, payload, options);                    }, 1000);                    return null;                }                if (200 === xhr.status) {                    (onSuccess || noop)(xhr);                } else {                    (onError || noop)(xhr);                }            };            xhr.send(payload || '');        };        var getPreference = function(name) {            if (!window.localStorage) {                return null;            }            return localStorage.getItem(profilerStorageKey + name);        };        var setPreference = function(name, value) {            if (!window.localStorage) {                return null;            }            localStorage.setItem(profilerStorageKey + name, value);        };        var requestStack = [];        var extractHeaders = function(xhr, stackElement) {            /* Here we avoid to call xhr.getResponseHeader in order to */            /* prevent polluting the console with CORS security errors */            var allHeaders = xhr.getAllResponseHeaders();            var ret;            if (ret = allHeaders.match(/^x-debug-token:\s+(.*)$/im)) {                stackElement.profile = ret[1];            }            if (ret = allHeaders.match(/^x-debug-token-link:\s+(.*)$/im)) {                stackElement.profilerUrl = ret[1];            }            if (ret = allHeaders.match(/^Symfony-Debug-Toolbar-Replace:\s+(.*)$/im)) {                stackElement.toolbarReplaceFinished = false;                stackElement.toolbarReplace = '1' === ret[1];            }        };        var successStreak = 4;        var pendingRequests = 0;        var renderAjaxRequests = function() {            var requestCounter = document.querySelector('.sf-toolbar-ajax-request-counter');            if (!requestCounter) {                return;            }            requestCounter.textContent = requestStack.length;            var infoSpan = document.querySelector(".sf-toolbar-ajax-info");            if (infoSpan) {                infoSpan.textContent = requestStack.length + ' AJAX request' + (requestStack.length !== 1 ? 's' : '');            }            var ajaxToolbarPanel = document.querySelector('.sf-toolbar-block-ajax');            if (requestStack.length) {                ajaxToolbarPanel.style.display = 'block';            } else {                ajaxToolbarPanel.style.display = 'none';            }            if (pendingRequests > 0) {                addClass(ajaxToolbarPanel, 'sf-ajax-request-loading');            } else if (successStreak < 4) {                addClass(ajaxToolbarPanel, 'sf-toolbar-status-red');                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');            } else {                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');                removeClass(ajaxToolbarPanel, 'sf-toolbar-status-red');            }        };        var startAjaxRequest = function(index) {            var tbody = document.querySelector('.sf-toolbar-ajax-request-list');            if (!tbody) {                return;            }            var nbOfAjaxRequest = tbody.rows.length;            if (nbOfAjaxRequest >= 100) {                tbody.deleteRow(0);            }            var request = requestStack[index];            pendingRequests++;            var row = document.createElement('tr');            request.DOMNode = row;            var requestNumberCell = document.createElement('td');            requestNumberCell.textContent = index + 1;            row.appendChild(requestNumberCell);            var profilerCell = document.createElement('td');            profilerCell.textContent = 'n/a';            row.appendChild(profilerCell);            var methodCell = document.createElement('td');            methodCell.textContent = request.method;            row.appendChild(methodCell);            var typeCell = document.createElement('td');            typeCell.textContent = request.type;            row.appendChild(typeCell);            var statusCodeCell = document.createElement('td');            var statusCode = document.createElement('span');            statusCode.textContent = 'n/a';            statusCodeCell.appendChild(statusCode);            row.appendChild(statusCodeCell);            var pathCell = document.createElement('td');            pathCell.className = 'sf-ajax-request-url';            if ('GET' === request.method) {                var pathLink = document.createElement('a');                pathLink.setAttribute('href', request.url);                pathLink.textContent = request.url;                pathCell.appendChild(pathLink);            } else {                pathCell.textContent = request.url;            }            pathCell.setAttribute('title', request.url);            row.appendChild(pathCell);            var durationCell = document.createElement('td');            durationCell.className = 'sf-ajax-request-duration';            durationCell.textContent = 'n/a';            row.appendChild(durationCell);            request.liveDurationHandle = setInterval(function() {                durationCell.textContent = (new Date() - request.start) + 'ms';            }, 100);            row.className = 'sf-ajax-request sf-ajax-request-loading';            tbody.insertBefore(row, null);            var toolbarInfo = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');            toolbarInfo.scrollTop = toolbarInfo.scrollHeight;            renderAjaxRequests();        };        var finishAjaxRequest = function(index) {            var request = requestStack[index];            clearInterval(request.liveDurationHandle);            if (!request.DOMNode) {                return;            }            if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {                /* Flag as complete because finishAjaxRequest can be called multiple times. */                request.toolbarReplaceFinished = true;                /* Search up through the DOM to find the toolbar's container ID. */                for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {                    if (elem.id.match(/^sfwdt/)) {                        Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);                        break;                    }                }            }            pendingRequests--;            var row = request.DOMNode;            /* Unpack the children from the row */            var profilerCell = row.children[1];            var methodCell = row.children[2];            var statusCodeCell = row.children[4];            var statusCodeElem = statusCodeCell.children[0];            var durationCell = row.children[6];            if (request.error) {                row.className = 'sf-ajax-request sf-ajax-request-error';                methodCell.className = 'sf-ajax-request-error';                successStreak = 0;            } else {                row.className = 'sf-ajax-request sf-ajax-request-ok';                successStreak++;            }            if (request.statusCode) {                if (request.statusCode < 300) {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status');                } else if (request.statusCode < 400) {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-yellow');                } else {                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');                }                statusCodeElem.textContent = request.statusCode;            } else {                statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');            }            if (request.duration) {                durationCell.textContent = request.duration + 'ms';            }            if (request.profilerUrl) {                profilerCell.textContent = '';                var profilerLink = document.createElement('a');                profilerLink.setAttribute('href', request.profilerUrl);                profilerLink.textContent = request.profile;                profilerCell.appendChild(profilerLink);            }            renderAjaxRequests();        };                    if (window.fetch && window.fetch.polyfill === undefined) {                var oldFetch = window.fetch;                window.fetch = function () {                    var promise = oldFetch.apply(this, arguments);                    var url = arguments[0];                    var params = arguments[1];                    var paramType = Object.prototype.toString.call(arguments[0]);                    if (paramType === '[object Request]') {                        url = arguments[0].url;                        params = {                            method: arguments[0].method,                            credentials: arguments[0].credentials,                            headers: arguments[0].headers,                            mode: arguments[0].mode,                            redirect: arguments[0].redirect                        };                    } else {                        url = String(url);                    }                    if (!url.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var method = 'GET';                        if (params && params.method !== undefined) {                            method = params.method;                        }                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'fetch',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        promise.then(function (r) {                            stackElement.duration = new Date() - stackElement.start;                            stackElement.error = r.status < 200 || r.status >= 400;                            stackElement.statusCode = r.status;                            stackElement.profile = r.headers.get('x-debug-token');                            stackElement.profilerUrl = r.headers.get('x-debug-token-link');                            stackElement.toolbarReplaceFinished = false;                            stackElement.toolbarReplace = '1' === r.headers.get('Symfony-Debug-Toolbar-Replace');                            finishAjaxRequest(idx);                        }, function (e){                            stackElement.error = true;                            finishAjaxRequest(idx);                        });                        startAjaxRequest(idx);                    }                    return promise;                };            }            if (window.XMLHttpRequest && XMLHttpRequest.prototype.addEventListener) {                var proxied = XMLHttpRequest.prototype.open;                XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {                    var self = this;                    /* prevent logging AJAX calls to static and inline files, like templates */                    var path = url;                    if (url.substr(0, 1) === '/') {                        if (0 === url.indexOf('')) {                            path = url.substr(0);                        }                    }                    else if (0 === url.indexOf('http\u003A\/\/52.254.21.60')) {                        path = url.substr(19);                    }                    if (!path.match(new RegExp("^\/((index|app(_[\\w]+)?)\\.php\/)?_wdt"))) {                        var stackElement = {                            error: false,                            url: url,                            method: method,                            type: 'xhr',                            start: new Date()                        };                        var idx = requestStack.push(stackElement) - 1;                        this.addEventListener('readystatechange', function() {                            if (self.readyState == 4) {                                stackElement.duration = new Date() - stackElement.start;                                stackElement.error = self.status < 200 || self.status >= 400;                                stackElement.statusCode = self.status;                                extractHeaders(self, stackElement);                                finishAjaxRequest(idx);                            }                        }, false);                        startAjaxRequest(idx);                    }                    proxied.apply(this, Array.prototype.slice.call(arguments));                };            }                return {            hasClass: hasClass,            removeClass: removeClass,            addClass: addClass,            toggleClass: toggleClass,            getPreference: getPreference,            setPreference: setPreference,            addEventListener: addEventListener,            request: request,            renderAjaxRequests: renderAjaxRequests,            load: function(selector, url, onSuccess, onError, options) {                var el = document.getElementById(selector);                if (el && el.getAttribute('data-sfurl') !== url) {                    request(                        url,                        function(xhr) {                            el.innerHTML = xhr.responseText;                            el.setAttribute('data-sfurl', url);                            removeClass(el, 'loading');                            var pending = pendingRequests;                            for (var i = 0; i < requestStack.length; i++) {                                startAjaxRequest(i);                                if (requestStack[i].duration) {                                    finishAjaxRequest(i);                                }                            }                            /* Revert the pending state in case there was a start called without a finish above. */                            pendingRequests = pending;                            (onSuccess || noop)(xhr, el);                        },                        function(xhr) { (onError || noop)(xhr, el); },                        '',                        options                    );                }                return this;            },            loadToolbar: function(token, newToken) {                newToken = (newToken || token);                this.load(                    'sfwdt' + token,                    '\/_wdt\/xxxxxx'.replace(/xxxxxx/, newToken),                    function(xhr, el) {                        /* Evaluate in global scope scripts embedded inside the toolbar */                        var i, scripts = [].slice.call(el.querySelectorAll('script'));                        for (i = 0; i < scripts.length; ++i) {                            eval.call({}, scripts[i].firstChild.nodeValue);                        }                        el.style.display = -1 !== xhr.responseText.indexOf('sf-toolbarreset') ? 'block' : 'none';                        if (el.style.display == 'none') {                            return;                        }                        if (getPreference('toolbar/displayState') == 'none') {                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';                        } else {                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'none';                        }                        /* Handle toolbar-info position */                        var toolbarBlocks = [].slice.call(el.querySelectorAll('.sf-toolbar-block'));                        for (i = 0; i < toolbarBlocks.length; ++i) {                            toolbarBlocks[i].onmouseover = function () {                                var toolbarInfo = this.querySelectorAll('.sf-toolbar-info')[0];                                var pageWidth = document.body.clientWidth;                                var elementWidth = toolbarInfo.offsetWidth;                                var leftValue = (elementWidth + this.offsetLeft) - pageWidth;                                var rightValue = (elementWidth + (pageWidth - this.offsetLeft)) - pageWidth;                                /* Reset right and left value, useful on window resize */                                toolbarInfo.style.right = '';                                toolbarInfo.style.left = '';                                if (elementWidth > pageWidth) {                                    toolbarInfo.style.left = 0;                                }                                else if (leftValue > 0 && rightValue > 0) {                                    toolbarInfo.style.right = (rightValue * -1) + 'px';                                } else if (leftValue < 0) {                                    toolbarInfo.style.left = 0;                                } else {                                    toolbarInfo.style.right = '0px';                                }                            };                        }                        addEventListener(document.getElementById('sfToolbarHideButton-' + newToken), 'click', function (event) {                            event.preventDefault();                            var p = this.parentNode;                            p.style.display = 'none';                            (p.previousElementSibling || p.previousSibling).style.display = 'none';                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';                            setPreference('toolbar/displayState', 'none');                        });                        addEventListener(document.getElementById('sfToolbarMiniToggler-' + newToken), 'click', function (event) {                            event.preventDefault();                            var elem = this.parentNode;                            if (elem.style.display == 'none') {                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';                                elem.style.display = 'block';                            } else {                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';                                elem.style.display = 'none'                            }                            setPreference('toolbar/displayState', 'block');                        });                        renderAjaxRequests();                        addEventListener(document.querySelector('.sf-toolbar-ajax-clear'), 'click', function() {                            requestStack = [];                            renderAjaxRequests();                            successStreak = 4;                            document.querySelector('.sf-toolbar-ajax-request-list').innerHTML = '';                        });                        addEventListener(document.querySelector('.sf-toolbar-block-ajax'), 'mouseenter', function (event) {                            var elem = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');                            elem.scrollTop = elem.scrollHeight;                        });                        addEventListener(document.querySelector('.sf-toolbar-block-ajax > .sf-toolbar-icon'), 'click', function (event) {                            event.preventDefault();                            toggleClass(this.parentNode, 'hover');                        });                        var dumpInfo = document.querySelector('.sf-toolbar-block-dump .sf-toolbar-info');                        if (null !== dumpInfo) {                            addEventListener(dumpInfo, 'sfbeforedumpcollapse', function () {                                dumpInfo.style.minHeight = dumpInfo.getBoundingClientRect().height+'px';                            });                            addEventListener(dumpInfo, 'mouseleave', function () {                                dumpInfo.style.minHeight = '';                            });                        }                    },                    function(xhr) {                        if (xhr.status !== 0) {                            var sfwdt = document.getElementById('sfwdt' + token);                            sfwdt.innerHTML = '\                                <div class="sf-toolbarreset">\                                    <div class="sf-toolbar-icon"><svg width="26" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 28" enable-background="new 0 0 26 28" xml:space="preserve"><path fill="#FFFFFF" d="M13 0C5.8 0 0 5.8 0 13c0 7.2 5.8 13 13 13c7.2 0 13-5.8 13-13C26 5.8 20.2 0 13 0z M20 7.5 c-0.6 0-1-0.3-1-0.9c0-0.2 0-0.4 0.2-0.6c0.1-0.3 0.2-0.3 0.2-0.4c0-0.3-0.5-0.4-0.7-0.4c-2 0.1-2.5 2.7-2.9 4.8l-0.2 1.1 c1.1 0.2 1.9 0 2.4-0.3c0.6-0.4-0.2-0.8-0.1-1.3C18 9.2 18.4 9 18.7 8.9c0.5 0 0.8 0.5 0.8 1c0 0.8-1.1 2-3.3 1.9 c-0.3 0-0.5 0-0.7-0.1L15 14.1c-0.4 1.7-0.9 4.1-2.6 6.2c-1.5 1.8-3.1 2.1-3.8 2.1c-1.3 0-2.1-0.6-2.2-1.6c0-0.9 0.8-1.4 1.3-1.4 c0.7 0 1.2 0.5 1.2 1.1c0 0.5-0.2 0.6-0.4 0.7c-0.1 0.1-0.3 0.2-0.3 0.4c0 0.1 0.1 0.3 0.4 0.3c0.5 0 0.9-0.3 1.2-0.5 c1.3-1 1.7-2.9 2.4-6.2l0.1-0.8c0.2-1.1 0.5-2.3 0.8-3.5c-0.9-0.7-1.4-1.5-2.6-1.8c-0.8-0.2-1.3 0-1.7 0.4C8.4 10 8.6 10.7 9 11.1 l0.7 0.7c0.8 0.9 1.3 1.7 1.1 2.7c-0.3 1.6-2.1 2.8-4.3 2.1c-1.9-0.6-2.2-1.9-2-2.7c0.2-0.6 0.7-0.8 1.2-0.6 c0.5 0.2 0.7 0.8 0.6 1.3c0 0.1 0 0.1-0.1 0.3C6 15 5.9 15.2 5.9 15.3c-0.1 0.4 0.4 0.7 0.8 0.8c0.8 0.3 1.7-0.2 1.9-0.9 c0.2-0.6-0.2-1.1-0.4-1.2l-0.8-0.9c-0.4-0.4-1.2-1.5-0.8-2.8c0.2-0.5 0.5-1 0.9-1.4c1-0.7 2-0.8 3-0.6c1.3 0.4 1.9 1.2 2.8 1.9 c0.5-1.3 1.1-2.6 2-3.8c0.9-1 2-1.7 3.3-1.8C20 4.8 21 5.4 21 6.3C21 6.7 20.8 7.5 20 7.5z"/></svg></div>\                                    An error occurred while loading the web debug toolbar. <a href="\/_profiler\/' + newToken + '>Open the web profiler.</a>\                                </div>\                            ';                            sfwdt.setAttribute('class', 'sf-toolbar sf-error-toolbar');                        }                    },                    { maxTries: 5 }                );                return this;            },            toggle: function(selector, elOn, elOff) {                var tmp = elOn.style.display,                    el = document.getElementById(selector);                elOn.style.display = elOff.style.display;                elOff.style.display = tmp;                if (el) {                    el.style.display = 'none' === tmp ? 'none' : 'block';                }                return this;            },            createTabs: function() {                var tabGroups = document.querySelectorAll('.sf-tabs:not([data-processed=true])');                /* create the tab navigation for each group of tabs */                for (var i = 0; i < tabGroups.length; i++) {                    var tabs = tabGroups[i].querySelectorAll(':scope > .tab');                    var tabNavigation = document.createElement('ul');                    tabNavigation.className = 'tab-navigation';                    var selectedTabId = 'tab-' + i + '-0'; /* select the first tab by default */                    for (var j = 0; j < tabs.length; j++) {                        var tabId = 'tab-' + i + '-' + j;                        var tabTitle = tabs[j].querySelector('.tab-title').innerHTML;                        var tabNavigationItem = document.createElement('li');                        tabNavigationItem.setAttribute('data-tab-id', tabId);                        if (hasClass(tabs[j], 'active')) { selectedTabId = tabId; }                        if (hasClass(tabs[j], 'disabled')) { addClass(tabNavigationItem, 'disabled'); }                        tabNavigationItem.innerHTML = tabTitle;                        tabNavigation.appendChild(tabNavigationItem);                        var tabContent = tabs[j].querySelector('.tab-content');                        tabContent.parentElement.setAttribute('id', tabId);                    }                    tabGroups[i].insertBefore(tabNavigation, tabGroups[i].firstChild);                    addClass(document.querySelector('[data-tab-id="' + selectedTabId + '"]'), 'active');                }                /* display the active tab and add the 'click' event listeners */                for (i = 0; i < tabGroups.length; i++) {                    tabNavigation = tabGroups[i].querySelectorAll(':scope > .tab-navigation li');                    for (j = 0; j < tabNavigation.length; j++) {                        tabId = tabNavigation[j].getAttribute('data-tab-id');                        document.getElementById(tabId).querySelector('.tab-title').className = 'hidden';                        if (hasClass(tabNavigation[j], 'active')) {                            document.getElementById(tabId).className = 'block';                        } else {                            document.getElementById(tabId).className = 'hidden';                        }                        tabNavigation[j].addEventListener('click', function(e) {                            var activeTab = e.target || e.srcElement;                            /* needed because when the tab contains HTML contents, user can click */                            /* on any of those elements instead of their parent '<li>' element */                            while (activeTab.tagName.toLowerCase() !== 'li') {                                activeTab = activeTab.parentNode;                            }                            /* get the full list of tabs through the parent of the active tab element */                            var tabNavigation = activeTab.parentNode.children;                            for (var k = 0; k < tabNavigation.length; k++) {                                var tabId = tabNavigation[k].getAttribute('data-tab-id');                                document.getElementById(tabId).className = 'hidden';                                removeClass(tabNavigation[k], 'active');                            }                            addClass(activeTab, 'active');                            var activeTabId = activeTab.getAttribute('data-tab-id');                            document.getElementById(activeTabId).className = 'block';                        });                    }                    tabGroups[i].setAttribute('data-processed', 'true');                }            },            createToggles: function() {                var toggles = document.querySelectorAll('.sf-toggle:not([data-processed=true])');                for (var i = 0; i < toggles.length; i++) {                    var elementSelector = toggles[i].getAttribute('data-toggle-selector');                    var element = document.querySelector(elementSelector);                    addClass(element, 'sf-toggle-content');                    if (toggles[i].hasAttribute('data-toggle-initial') && toggles[i].getAttribute('data-toggle-initial') == 'display') {                        addClass(toggles[i], 'sf-toggle-on');                        addClass(element, 'sf-toggle-visible');                    } else {                        addClass(toggles[i], 'sf-toggle-off');                        addClass(element, 'sf-toggle-hidden');                    }                    addEventListener(toggles[i], 'click', function(e) {                        e.preventDefault();                        if ('' !== window.getSelection().toString()) {                            /* Don't do anything on text selection */                            return;                        }                        var toggle = e.target || e.srcElement;                        /* needed because when the toggle contains HTML contents, user can click */                        /* on any of those elements instead of their parent '.sf-toggle' element */                        while (!hasClass(toggle, 'sf-toggle')) {                            toggle = toggle.parentNode;                        }                        var element = document.querySelector(toggle.getAttribute('data-toggle-selector'));                        toggleClass(toggle, 'sf-toggle-on');                        toggleClass(toggle, 'sf-toggle-off');                        toggleClass(element, 'sf-toggle-hidden');                        toggleClass(element, 'sf-toggle-visible');                        /* the toggle doesn't change its contents when clicking on it */                        if (!toggle.hasAttribute('data-toggle-alt-content')) {                            return;                        }                        if (!toggle.hasAttribute('data-toggle-original-content')) {                            toggle.setAttribute('data-toggle-original-content', toggle.innerHTML);                        }                        var currentContent = toggle.innerHTML;                        var originalContent = toggle.getAttribute('data-toggle-original-content');                        var altContent = toggle.getAttribute('data-toggle-alt-content');                        toggle.innerHTML = currentContent !== altContent ? altContent : originalContent;                    });                    /* Prevents from disallowing clicks on links inside toggles */                    var toggleLinks = toggles[i].querySelectorAll('a');                    for (var j = 0; j < toggleLinks.length; j++) {                        addEventListener(toggleLinks[j], 'click', function(e) {                            e.stopPropagation();                        });                    }                    toggles[i].setAttribute('data-processed', 'true');                }            },            createFilters: function() {                document.querySelectorAll('[data-filters] [data-filter]').forEach(function (filter) {                    var filters = filter.closest('[data-filters]'),                        type = 'choice',                        name = filter.dataset.filter,                        ucName = name.charAt(0).toUpperCase()+name.slice(1),                        list = document.createElement('ul'),                        values = filters.dataset['filter'+ucName] || filters.querySelectorAll('[data-filter-'+name+']'),                        labels = {},                        defaults = null,                        indexed = {},                        processed = {};                    if (typeof values === 'string') {                        type = 'level';                        labels = values.split(',');                        values = values.toLowerCase().split(',');                        defaults = values.length - 1;                    }                    addClass(list, 'filter-list');                    addClass(list, 'filter-list-'+type);                    values.forEach(function (value, i) {                        if (value instanceof HTMLElement) {                            value = value.dataset['filter'+ucName];                        }                        if (value in processed) {                            return;                        }                        var option = document.createElement('li'),                            label = i in labels ? labels[i] : value,                            active = false,                            matches;                        if ('' === label) {                            option.innerHTML = '<em>(none)</em>';                        } else {                            option.innerText = label;                        }                        option.dataset.filter = value;                        option.setAttribute('title', 1 === (matches = filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').length) ? 'Matches 1 row' : 'Matches '+matches+' rows');                        indexed[value] = i;                        list.appendChild(option);                        addEventListener(option, 'click', function () {                            if ('choice' === type) {                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {                                    if (option.dataset.filter === row.dataset['filter'+ucName]) {                                        toggleClass(row, 'filter-hidden-'+name);                                    }                                });                                toggleClass(option, 'active');                            } else if ('level' === type) {                                if (i === this.parentNode.querySelectorAll('.active').length - 1) {                                    return;                                }                                this.parentNode.querySelectorAll('li').forEach(function (currentOption, j) {                                    if (j <= i) {                                        addClass(currentOption, 'active');                                        if (i === j) {                                            addClass(currentOption, 'last-active');                                        } else {                                            removeClass(currentOption, 'last-active');                                        }                                    } else {                                        removeClass(currentOption, 'active');                                        removeClass(currentOption, 'last-active');                                    }                                });                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {                                    if (i < indexed[row.dataset['filter'+ucName]]) {                                        addClass(row, 'filter-hidden-'+name);                                    } else {                                        removeClass(row, 'filter-hidden-'+name);                                    }                                });                            }                        });                        if ('choice' === type) {                            active = null === defaults || 0 <= defaults.indexOf(value);                        } else if ('level' === type) {                            active = i <= defaults;                            if (active && i === defaults) {                                addClass(option, 'last-active');                            }                        }                        if (active) {                            addClass(option, 'active');                        } else {                            filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').forEach(function (row) {                                toggleClass(row, 'filter-hidden-'+name);                            });                        }                        processed[value] = true;                    });                    if (1 < list.childNodes.length) {                        filter.appendChild(list);                        filter.dataset.filtered = '';                    }                });            }        };    })();    Sfjs.addEventListener(document, 'DOMContentLoaded', function() {        Sfjs.createTabs();        Sfjs.createToggles();    });/*]]>*/</script><style nonce="ed4c5ca96402cd99ed513b462e3e9174">    .sf-minitoolbar {    background-color: #222;    border-top-left-radius: 4px;    bottom: 0;    box-sizing: border-box;    display: none;    height: 36px;    padding: 6px;    position: fixed;    right: 0;    z-index: 99999;}.sf-minitoolbar a {    display: block;}.sf-minitoolbar svg,.sf-minitoolbar img {    max-height: 24px;    max-width: 24px;    display: inline;}.sf-toolbar-clearer {    clear: both;    height: 36px;}.sf-display-none {    display: none;}.sf-toolbarreset * {    box-sizing: content-box;    vertical-align: baseline;    letter-spacing: normal;    width: auto;}.sf-toolbarreset {    background-color: #222;    bottom: 0;    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);    color: #EEE;    font: 11px Arial, sans-serif;    left: 0;    margin: 0;    padding: 0 36px 0 0;    position: fixed;    right: 0;    text-align: left;    text-transform: none;    z-index: 99999;    direction: ltr;    /* neutralize the aliasing defined by external CSS styles */    -webkit-font-smoothing: subpixel-antialiased;    -moz-osx-font-smoothing: auto;}.sf-toolbarreset abbr {    border: dashed #777;    border-width: 0 0 1px;}.sf-toolbarreset svg,.sf-toolbarreset img {    height: 20px;    width: 20px;    display: inline-block;}.sf-toolbarreset .hide-button {    background: #444;    display: block;    position: absolute;    top: 0;    right: 0;    width: 36px;    height: 36px;    cursor: pointer;    text-align: center;}.sf-toolbarreset .hide-button svg {    max-height: 18px;    margin-top: 10px;}.sf-toolbar-block {    cursor: default;    display: block;    float: left;    height: 36px;    margin-right: 0;    white-space: nowrap;    max-width: 15%;}.sf-toolbar-block > a,.sf-toolbar-block > a:hover {    display: block;    text-decoration: none;    color: inherit;}.sf-toolbar-block span {    display: inline-block;}.sf-toolbar-block .sf-toolbar-value {    color: #F5F5F5;    font-size: 13px;    line-height: 36px;    padding: 0;}.sf-toolbar-block .sf-toolbar-label,.sf-toolbar-block .sf-toolbar-class-separator {    color: #AAA;    font-size: 12px;}.sf-toolbar-block .sf-toolbar-info {    border-collapse: collapse;    display: table;    z-index: 100000;}.sf-toolbar-block hr {    border-top: 1px solid #777;    margin: 4px 0;    padding-top: 4px;}.sf-toolbar-block .sf-toolbar-info-piece {    /* this 'border-bottom' trick is needed because 'margin-bottom' doesn't work for table rows */    border-bottom: solid transparent 3px;    display: table-row;}.sf-toolbar-block .sf-toolbar-info-piece-additional,.sf-toolbar-block .sf-toolbar-info-piece-additional-detail {    display: none;}.sf-toolbar-block .sf-toolbar-info-group {    margin-bottom: 4px;    padding-bottom: 2px;    border-bottom: 1px solid #333333;}.sf-toolbar-block .sf-toolbar-info-group:last-child {    margin-bottom: 0;    padding-bottom: 0;    border-bottom: none;}.sf-toolbar-block .sf-toolbar-info-piece .sf-toolbar-status {    padding: 2px 5px;    margin-bottom: 0;}.sf-toolbar-block .sf-toolbar-info-piece .sf-toolbar-status + .sf-toolbar-status {    margin-left: 4px;}.sf-toolbar-block .sf-toolbar-info-piece:last-child {    margin-bottom: 0;}div.sf-toolbar .sf-toolbar-block .sf-toolbar-info-piece a {    color: #99CDD8;    text-decoration: underline;}div.sf-toolbar .sf-toolbar-block a:hover {    text-decoration: none;}.sf-toolbar-block .sf-toolbar-info-piece b {    color: #AAA;    display: table-cell;    font-size: 11px;    padding: 4px 8px 4px 0;}.sf-toolbar-block:not(.sf-toolbar-block-dump) .sf-toolbar-info-piece span {    color: #F5F5F5;}.sf-toolbar-block .sf-toolbar-info-piece span {    font-size: 12px;}.sf-toolbar-block .sf-toolbar-info {    background-color: #444;    bottom: 36px;    color: #F5F5F5;    display: none;    padding: 9px 0;    position: absolute;}.sf-toolbar-block .sf-toolbar-info:empty {    visibility: hidden;}.sf-toolbar-block .sf-toolbar-status {    display: inline-block;    color: #FFF;    background-color: #666;    padding: 3px 6px;    margin-bottom: 2px;    vertical-align: middle;    min-width: 15px;    min-height: 13px;    text-align: center;}.sf-toolbar-block .sf-toolbar-status-green {    background-color: #4F805D;}.sf-toolbar-block .sf-toolbar-status-red {    background-color: #B0413E;}.sf-toolbar-block .sf-toolbar-status-yellow {    background-color: #A46A1F;}.sf-toolbar-block.sf-toolbar-status-green {    background-color: #4F805D;    color: #FFF;}.sf-toolbar-block.sf-toolbar-status-red {    background-color: #B0413E;    color: #FFF;}.sf-toolbar-block.sf-toolbar-status-yellow {    background-color: #A46A1F;    color: #FFF;}.sf-toolbar-block-request .sf-toolbar-status {    color: #FFF;    display: inline-block;    font-size: 14px;    height: 36px;    line-height: 36px;    padding: 0 10px;}.sf-toolbar-block-request .sf-toolbar-info-piece a {    text-decoration: none;}.sf-toolbar-block-request .sf-toolbar-info-piece a:hover {    text-decoration: underline;}.sf-toolbar-block-request .sf-toolbar-redirection-status {    font-weight: normal;    padding: 2px 4px;    line-height: 18px;}.sf-toolbar-block-request .sf-toolbar-info-piece span.sf-toolbar-redirection-method {    font-size: 12px;    height: 17px;    line-height: 17px;    margin-right: 5px;}.sf-toolbar-block-ajax .sf-toolbar-icon {    cursor: pointer;}.sf-toolbar-status-green .sf-toolbar-label,.sf-toolbar-status-yellow .sf-toolbar-label,.sf-toolbar-status-red .sf-toolbar-label {    color: #FFF;}.sf-toolbar-status-green svg path,.sf-toolbar-status-green svg .sf-svg-path,.sf-toolbar-status-red svg path,.sf-toolbar-status-red svg .sf-svg-path,.sf-toolbar-status-yellow svg path,.sf-toolbar-status-yellow svg .sf-svg-path {    fill: #FFF;}.sf-toolbar-block-config svg path,.sf-toolbar-block-config svg .sf-svg-path {    fill: #FFF;}.sf-toolbar-block .sf-toolbar-icon {    display: block;    height: 36px;    padding: 0 7px;    overflow: hidden;    text-overflow: ellipsis;}.sf-toolbar-block-request .sf-toolbar-icon {    padding-left: 0;    padding-right: 0;}.sf-toolbar-block .sf-toolbar-icon img,.sf-toolbar-block .sf-toolbar-icon svg {    border-width: 0;    position: relative;    top: 8px;    vertical-align: baseline;}.sf-toolbar-block .sf-toolbar-icon img + span,.sf-toolbar-block .sf-toolbar-icon svg + span {    margin-left: 4px;}.sf-toolbar-block-config .sf-toolbar-icon .sf-toolbar-value {    margin-left: 4px;}.sf-toolbar-block:hover,.sf-toolbar-block.hover {    position: relative;}.sf-toolbar-block:hover .sf-toolbar-icon,.sf-toolbar-block.hover .sf-toolbar-icon {    background-color: #444;    position: relative;    z-index: 10002;}.sf-toolbar-block-ajax.hover .sf-toolbar-info {    z-index: 10001;}.sf-toolbar-block:hover .sf-toolbar-info,.sf-toolbar-block.hover .sf-toolbar-info {    display: block;    padding: 10px;    max-width: 480px;    max-height: 480px;    word-wrap: break-word;    overflow: hidden;    overflow-y: auto;}.sf-toolbar-info-piece b.sf-toolbar-ajax-info {    color: #F5F5F5;}.sf-toolbar-ajax-requests {    table-layout: auto;    width: 100%;}.sf-toolbar-ajax-requests td {    background-color: #444;    border-bottom: 1px solid #777;    color: #F5F5F5;    font-size: 12px;    padding: 4px;}.sf-toolbar-ajax-requests tr:last-child td {    border-bottom: 0;}.sf-toolbar-ajax-requests th {    background-color: #222;    border-bottom: 0;    color: #AAA;    font-size: 11px;    padding: 4px;}.sf-ajax-request-url {    max-width: 250px;    line-height: 9px;    overflow: hidden;    text-overflow: ellipsis;}.sf-toolbar-ajax-requests .sf-ajax-request-url a {    text-decoration: none;}.sf-toolbar-ajax-requests .sf-ajax-request-url a:hover {    text-decoration: underline;}.sf-ajax-request-duration {    text-align: right;}.sf-ajax-request-loading {    animation: sf-blink .5s ease-in-out infinite;}@keyframes sf-blink {    0% { background: #222; }    50% { background: #444; }    100% { background: #222; }}.sf-toolbar-block.sf-toolbar-block-dump .sf-toolbar-info {    max-width: none;    width: 100%;    position: fixed;    box-sizing: border-box;    left: 0;}.sf-toolbar-block-dump pre.sf-dump {    background-color: #222;    border-color: #777;    border-radius: 0;    margin: 6px 0 12px 0;}.sf-toolbar-block-dump pre.sf-dump:last-child {    margin-bottom: 0;}.sf-toolbar-block-dump pre.sf-dump .sf-dump-search-wrapper {    margin-bottom: 5px;}.sf-toolbar-block-dump pre.sf-dump span.sf-dump-search-count {    color: #333;    font-size: 12px;}.sf-toolbar-block-dump .sf-toolbar-info-piece {    display: block;}.sf-toolbar-block-dump .sf-toolbar-info-piece .sf-toolbar-file-line {    color: #AAA;    margin-left: 4px;}.sf-toolbar-block-dump .sf-toolbar-info img {    display: none;}/* Responsive Design */.sf-toolbar-icon .sf-toolbar-label,.sf-toolbar-icon .sf-toolbar-value {    display: none;}.sf-toolbar-block-config .sf-toolbar-icon .sf-toolbar-label {    display: inline-block;}/* Legacy Design - these styles are maintained to make old panels look   a bit better on the new toolbar */.sf-toolbar-block .sf-toolbar-info-piece-additional-detail {    color: #AAA;    font-size: 12px;}.sf-toolbar-status-green .sf-toolbar-info-piece-additional-detail,.sf-toolbar-status-yellow .sf-toolbar-info-piece-additional-detail,.sf-toolbar-status-red .sf-toolbar-info-piece-additional-detail {    color: #FFF;}@media (min-width: 768px) {    .sf-toolbar-icon .sf-toolbar-label,    .sf-toolbar-icon .sf-toolbar-value {        display: inline;    }    .sf-toolbar-block .sf-toolbar-icon img,    .sf-toolbar-block .sf-toolbar-icon svg {        top: 6px;    }    .sf-toolbar-block-time .sf-toolbar-icon svg,    .sf-toolbar-block-memory .sf-toolbar-icon svg {        display: none;    }    .sf-toolbar-block-time .sf-toolbar-icon svg + span,    .sf-toolbar-block-memory .sf-toolbar-icon svg + span {        margin-left: 0;    }    .sf-toolbar-block .sf-toolbar-icon {        padding: 0 10px;    }    .sf-toolbar-block-time .sf-toolbar-icon {        padding-right: 5px;    }    .sf-toolbar-block-memory .sf-toolbar-icon {        padding-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-icon {        padding-left: 0;        padding-right: 0;    }    .sf-toolbar-block-request .sf-toolbar-label {        margin-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-status + svg {        margin-left: 5px;    }    .sf-toolbar-block-request .sf-toolbar-icon svg + .sf-toolbar-label {        margin-left: 0;     }    .sf-toolbar-block-request .sf-toolbar-label + .sf-toolbar-value {        margin-right: 10px;    }    .sf-toolbar-block-request:hover .sf-toolbar-info {        max-width: none;    }    .sf-toolbar-block .sf-toolbar-info-piece b {        font-size: 12px;    }    .sf-toolbar-block .sf-toolbar-info-piece span {        font-size: 13px;    }    .sf-toolbar-block-right {        float: right;        margin-left: 0;        margin-right: 0;    }}@media (min-width: 1024px) {    .sf-toolbar-block .sf-toolbar-info-piece-additional,    .sf-toolbar-block .sf-toolbar-info-piece-additional-detail {        display: inline;    }    .sf-toolbar-block .sf-toolbar-info-piece-additional:empty,    .sf-toolbar-block .sf-toolbar-info-piece-additional-detail:empty {        display: none;    }}/***** Error Toolbar *****/.sf-error-toolbar .sf-toolbarreset {    background: #222;    color: #f5f5f5;    font: 13px/36px Arial, sans-serif;    height: 36px;    padding: 0 15px;    text-align: left;}.sf-error-toolbar .sf-toolbarreset svg {    height: auto;}.sf-error-toolbar .sf-toolbarreset a {    color: #99cdd8;    margin-left: 5px;    text-decoration: underline;}.sf-error-toolbar .sf-toolbarreset a:hover {    text-decoration: none;}.sf-error-toolbar .sf-toolbarreset .sf-toolbar-icon {    float: left;    padding: 5px 0;    margin-right: 10px;}/***** Media query print: Do not print the Toolbar. *****/@media print {    .sf-toolbar {        display: none;    }}</style><script nonce="0aead5633ee5d53eecf9ceb066f9fd12">/*<![CDATA[*/    (function () {        Sfjs.loadToolbar('17001f');    })();/*]]>*/</script>
+</body>
+</html>
